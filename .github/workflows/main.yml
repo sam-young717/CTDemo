@@ -1,4 +1,4 @@
-name: Unit testing with coverage (master)
+name: Running gtests, collecting coverage (push master)
 
 on:
   push:
