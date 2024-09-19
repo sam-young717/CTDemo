@@ -36,25 +36,15 @@ function (cpptest_enable_coverage)
   # Configure coverage log file
   set(CPPTEST_COVERAGE_LOG_FILE ${CPPTEST_COVERAGE_WORKSPACE}/${CPPTEST_PROJECT_NAME}.clog)
   # Configure C/C++test installation directory
-  set(CPPTEST_HOME "" CACHE STRING "C/C++test installation directory")
   if(CPPTEST_HOME)
     set(CPPTEST_HOME_DIR ${CPPTEST_HOME})
   else()
     set(CPPTEST_HOME_DIR $ENV{CPPTEST_HOME})
   endif()
-
-  if(NOT CPPTEST_HOME_DIR)
-    message(FATAL_ERROR "$CPPTEST_HOME not set" )
-  endif()
-
-  if(DTP_PROJECT)
-    set(DTP_PROJECT_NAME ${DTP_PROJECT})
-  else()
-    set(DTP_PROJECT_NAME ${CMAKE_PROJECT_NAME})
-  endif()
   
-  string(TIMESTAMP CURRENT_DATE "%Y-%m-%d")
-  message("***********" ${CURRENT_DATE})
+  if(NOT CPPTEST_HOME_DIR)
+    message(FATAL_ERROR "CPPTEST_HOME not set" )
+  endif()
 
   # Build C/C++test coverage runtime library
   set(CPPTEST_RUNTIME_BUILD_DIR ${CMAKE_BINARY_DIR}/cpptest-runtime)
@@ -101,7 +91,7 @@ function (cpptest_enable_coverage)
       -exclude "regex:*"
       -include "regex:${CPPTEST_SOURCE_DIR}/*"
       -exclude "regex:${CPPTEST_BINARY_DIR}/*"
-      -ignore "regex:${CPPTEST_SOURCE_DIR}/tests/*"
+      -ignore "regex:*_test.cpp"
       -ignore "regex:${CPPTEST_BINARY_DIR}/*")
 
   # Use advanced settings file for cpptestcc, if exists
@@ -123,7 +113,7 @@ function (cpptest_enable_coverage)
   # set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE
   #    "${CPPTEST_CPPTESTCC} ${CPPTEST_CPPTESTCC_OPTS} -- ")
 
-  # Compute coverage data files (.json) into ${CPPTEST_SOURCE_DIR}/.coverage
+  # Compute coverage data files (.cov) into ${CPPTEST_SOURCE_DIR}/.coverage
   add_custom_target(cpptestcov-compute
     COMMAND
     mkdir -p "${CPPTEST_SOURCE_DIR}/.coverage"
@@ -146,40 +136,28 @@ function (cpptest_enable_coverage)
   add_custom_target(cpptestcov-report
     COMMAND
     ${CPPTEST_HOME_DIR}/bin/cpptestcov report text
-        -coverage=${CPPTEST_COVERAGE_TYPE_REPORT}
+        -root ${CPPTEST_SOURCE_DIR}
+        -coverage ${CPPTEST_COVERAGE_TYPE_REPORT}
         "${CPPTEST_SOURCE_DIR}/.coverage" >
         "${CPPTEST_SOURCE_DIR}/.coverage/coverage.txt"
     &&
     ${CPPTEST_HOME_DIR}/bin/cpptestcov report markdown
-        -coverage=${CPPTEST_COVERAGE_TYPE_REPORT}
+        -root ${CPPTEST_SOURCE_DIR}
+        -coverage ${CPPTEST_COVERAGE_TYPE_REPORT}
         "${CPPTEST_SOURCE_DIR}/.coverage" >
         "${CPPTEST_SOURCE_DIR}/.coverage/coverage.md"
     &&
     ${CPPTEST_HOME_DIR}/bin/cpptestcov report html
-        -coverage=${CPPTEST_COVERAGE_TYPE_REPORT}
-        "${CPPTEST_SOURCE_DIR}/.coverage" >
-        "${CPPTEST_SOURCE_DIR}/.coverage/coverage.html"
-    &&
-    ${CPPTEST_HOME_DIR}/bin/cpptestcov report html-multipage
-        -coverage=${CPPTEST_COVERAGE_TYPE_REPORT}
-        -code
-        -out=../.coverage/report
+        -root ${CPPTEST_SOURCE_DIR}
+        -coverage ${CPPTEST_COVERAGE_TYPE_REPORT}
+        --single-page
+        -out "${CPPTEST_SOURCE_DIR}/.coverage/coverage.html"
         "${CPPTEST_SOURCE_DIR}/.coverage"
     &&
     ${CPPTEST_HOME_DIR}/bin/cpptestcov report text
-        -coverage=${CPPTEST_COVERAGE_TYPE_REPORT}
+        -root ${CPPTEST_SOURCE_DIR}
+        -coverage ${CPPTEST_COVERAGE_TYPE_REPORT}
         "${CPPTEST_SOURCE_DIR}/.coverage"
-    &&
-    ${CPPTEST_HOME_DIR}/bin/cpptestcov report mcdc
-        "${CPPTEST_SOURCE_DIR}/.coverage"
-    &&
-    ${CPPTEST_HOME_DIR}/bin/cpptestcov report json
-        -coverage=${CPPTEST_COVERAGE_TYPE_REPORT}
-        "${CPPTEST_SOURCE_DIR}/.coverage" >> report.json
-    &&
-    ${CPPTEST_HOME_DIR}/bin/cpptestcov report cobertura
-        "${CPPTEST_SOURCE_DIR}/.coverage" > 
-        "${CPPTEST_SOURCE_DIR}/.coverage/coverage_cubertura.xml"
   )
 
   # Apply coverage suppressions to existing coverage data files

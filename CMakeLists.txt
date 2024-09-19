@@ -47,8 +47,9 @@ message(STATUS "INCLUDE_DIRS: ${INCLUDE_DIRS}")
 add_library(${TARGET_NAME} STATIC ${SRC_FILES})
 set_target_properties(${TARGET_NAME} PROPERTIES
   CXX_EXTENSIONS OFF
-  CXX_STANDARD 14
+  CXX_STANDARD 14  
   CXX_STANDARD_REQUIRED ON
+  COMPILE_WARNING_AS_ERROR OFF
   LINKER_LANGUAGE CXX
 )
 
@@ -67,7 +68,7 @@ if(ENABLE_GT_TESTS)
   FetchContent_Declare(
     googletest
     GIT_REPOSITORY https://github.com/google/googletest.git
-    GIT_TAG release-1.10.0
+    GIT_TAG v1.15.0
   )
 
   FetchContent_GetProperties(googletest)
@@ -75,7 +76,7 @@ if(ENABLE_GT_TESTS)
   if(NOT googletest_POPULATED)
     FetchContent_Populate(googletest)
     # Prevent GoogleTest from overriding our compiler/linker options when building with Visual Studio
-    # set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+    #set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
     # Prevent GoogleTest from using PThreads
     set(gtest_disable_pthreads ON CACHE BOOL "" FORCE)
     # adds the targers: gtest, gtest_main, gmock, gmock_main
