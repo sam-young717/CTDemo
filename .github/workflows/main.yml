@@ -45,13 +45,13 @@ jobs:
 #    - name: Setup Pages
 #      uses: actions/configure-pages@v5
 
-  - name: Archive reports
-    if: always()
-    uses: actions/upload-artifact@v4
-    with:
-      name: CpptestReports
-      path: |
-        ${{github.workspace}}/.coverage/*.*
+    - name: Archive reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: CpptestReports
+        path: |
+          ${{github.workspace}}/.coverage/*.*
 
 #    - name: Upload artifact
 #      uses: actions/upload-pages-artifact@v3
