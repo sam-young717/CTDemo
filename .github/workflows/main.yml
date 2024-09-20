@@ -41,10 +41,10 @@ jobs:
       working-directory: ${{github.workspace}}/build
       shell: bash
       run: make cpptestcov-compute cpptestcov-suppress cpptestcov-report 
- 
-   - name: Setup Pages
+    
+    - name: Setup Pages
       uses: actions/configure-pages@v5
-
+      
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
