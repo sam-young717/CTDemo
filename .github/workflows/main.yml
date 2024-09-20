@@ -22,6 +22,11 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
+    - name: Set build id
+      shell: bash
+      working-directory: ${{github.workspace}}
+      run: echo "build_id=build-$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_ENV 
+
     - name: Configure CMake
       shell: bash
       working-directory: ${{github.workspace}}
@@ -69,7 +74,7 @@ jobs:
       working-directory: ${{github.workspace}}
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run:  cpptestcov report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage build/atm_gtest_results.xml
+      run:  cpptestcov report dtp -settings cpptestcli.properties -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage build/atm_gtest_results.xml
     
     - name: Line Coverage Quality Gate
       working-directory: ${{github.workspace}}
