@@ -66,9 +66,9 @@ jobs:
 
     - name: Publish Reports to DTP
       working-directory: ${{github.workspace}}
-        shell: bash
-        # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run:  cpptestcov report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage atm_gtest_results.xml
+      shell: bash
+      # Execute the build.  You can specify a specific target with "--target <NAME>"
+      run:  cpptestcov report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage build/atm_gtest_results.xml
     
     - name: Line Coverage Quality Gate
       working-directory: ${{github.workspace}}
