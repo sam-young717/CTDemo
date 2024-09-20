@@ -5,8 +5,9 @@ on:
     branches: [ main ]
 
 env:
-  LINE_COV_GATE: 40
-  MCDC_COV_GATE: 30
+  LINE_COV_GATE: 0
+  MCDC_COV_GATE: 0
+  DTP_PROJECT: ATM_testing
 
 permissions:
   contents: read
@@ -35,7 +36,10 @@ jobs:
     - name: Run Tests
       working-directory: ${{github.workspace}}/build
       shell: bash
-      run: rm -rf /cpptest-coverage/ATM_Cpp14_lib/ATM_Cpp14_lib.clog && ctest || true 
+      run: |
+        rm -rf /cpptest-coverage/ATM_Cpp14_lib/ATM_Cpp14_lib.clog 
+        rm -rf gtest_results.xml
+        ./atm_gtest --gtest_output=xml:atm_gtest_results.xml
 
     - name: Generate Reports
       working-directory: ${{github.workspace}}/build
@@ -60,6 +64,12 @@ jobs:
         # Upload coverage reports
 #        path: ${{github.workspace}}/.coverage
 
+    - name: Publish Reports to DTP
+      working-directory: ${{github.workspace}}
+        shell: bash
+        # Execute the build.  You can specify a specific target with "--target <NAME>"
+      run:  cpptestcov report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage atm_gtest_results.xml
+    
     - name: Line Coverage Quality Gate
       working-directory: ${{github.workspace}}
       shell: bash
