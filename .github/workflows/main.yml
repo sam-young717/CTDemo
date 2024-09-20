@@ -43,10 +43,10 @@ jobs:
       run: make cpptestcov-compute cpptestcov-suppress cpptestcov-report 
  
    - name: Setup Pages
-        uses: actions/configure-pages@v5
+      uses: actions/configure-pages@v5
 
     - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v3
       with:
         # Upload coverage reports
         path: ${{github.workspace}}/.coverage
