@@ -43,7 +43,7 @@ jobs:
       run: make cpptestcov-compute cpptestcov-suppress cpptestcov-report 
  
     - name: Archive reports
-      working-directory: ${{github.workspace}}/.build
+      working-directory: ${{github.workspace}}
       if: always()
       uses: actions/upload-artifact@v4
       with:
