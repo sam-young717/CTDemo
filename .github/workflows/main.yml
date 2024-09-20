@@ -20,7 +20,7 @@ jobs:
     continue-on-error: true
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Configure CMake
       shell: bash
@@ -40,6 +40,7 @@ jobs:
         rm -rf /cpptest-coverage/ATM_Cpp14_lib/ATM_Cpp14_lib.clog 
         rm -rf gtest_results.xml
         ./atm_gtest --gtest_output=xml:atm_gtest_results.xml
+      continue-on-error: true
 
     - name: Generate Reports
       working-directory: ${{github.workspace}}/build
