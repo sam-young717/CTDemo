@@ -66,11 +66,13 @@ TEST(Account, debitSimple) {
   ASSERT_EQ(acct.getBalance(), initial - amount);
 }
 
-// TEST(Account, getBalanceInitBad) {
-//  ::testing::Test::RecordProperty("req", "ATM_test-520");
-//   const double initial = 223.0;
-//   Account acct(initial);
-//   ASSERT_EQ(acct.getBalance(), initial - 1.0);
-// }
-
+/*
+ TEST(Account, getBalanceInitBad) {
+  ::testing::Test::RecordProperty("req", "ATM_test-520");
+  ::testing::Test::RecordProperty("filename", __FILE__);
+  const double initial = 223.0;
+  Account acct(initial);
+  ASSERT_EQ(acct.getBalance(), initial - 1.0);
+ }
+*/
 
