@@ -67,7 +67,7 @@ TEST(Account, debitSimple) {
   ASSERT_EQ(acct.getBalance(), initial - amount);
 }
 
-/*
+/* 
  TEST(Account, getBalanceInitBad) {
   ::testing::Test::RecordProperty("req", "ATM_test-520");
   ::testing::Test::RecordProperty("filename", __FILE__);
