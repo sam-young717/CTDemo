@@ -1,12 +1,12 @@
-name: Unit testing with coverage (master)
+name: Running gtests on pull request to main
 on:
   # Triggers the workflow pull request events but only for the master (main) branch.
   pull_request:
     branches: [ master, main ]
 
 env:
-  LINE_COV_GATE: 20
-  MCDC_COV_GATE: 10
+  LINE_COV_GATE: 26
+  MCDC_COV_GATE: 32
 
 permissions:
   contents: read
@@ -33,9 +33,13 @@ jobs:
       run: cmake --build .build
 
     - name: Run Tests
-      working-directory: ${{github.workspace}}/.build
+      working-directory: ${{github.workspace}}/build
       shell: bash
-      run: rm -rf cpptest-coverage/ATM_Cpp14_lib/ATM_Cpp14_lib.clog && ctest || true 
+      run: |
+        rm -rf /cpptest-coverage/ATM_Cpp14_lib/ATM_Cpp14_lib.clog 
+        rm -rf gtest_results.xml
+        ./atm_gtest --gtest_output=xml:atm_gtest_results.xml
+      continue-on-error: true
 
     - name: Generate Reports
       working-directory: ${{github.workspace}}/.build
@@ -47,8 +51,9 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: CpptestReports
+        include-hidden-files: true
         path: |
-          .coverage/*.*
+          ${{github.workspace}}/.coverage/*.*
 
     - name: Line Coverage Quality Gate
       working-directory: ${{github.workspace}}

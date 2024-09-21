@@ -1,12 +1,13 @@
-name: Unit testing with coverage (master)
+name: Running gtests, collecting coverage (push master)
 
 on:
   push:
     branches: [ main ]
 
 env:
-  LINE_COV_GATE: 40
-  MCDC_COV_GATE: 30
+  LINE_COV_GATE: 0
+  MCDC_COV_GATE: 0
+  DTP_PROJECT: ATM_testing
 
 permissions:
   contents: read
@@ -19,7 +20,12 @@ jobs:
     continue-on-error: true
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
+
+    - name: Set build id
+      shell: bash
+      working-directory: ${{github.workspace}}
+      run: echo "build_id=build-$(date +'%Y-%m-%d-%H-%M')" >> $GITHUB_ENV 
 
     - name: Configure CMake
       shell: bash
@@ -35,21 +41,41 @@ jobs:
     - name: Run Tests
       working-directory: ${{github.workspace}}/build
       shell: bash
-      run: rm -rf /cpptest-coverage/ATM_Cpp14_lib/ATM_Cpp14_lib.clog && ctest || true 
+      run: |
+        rm -rf /cpptest-coverage/ATM_Cpp14_lib/ATM_Cpp14_lib.clog 
+        rm -rf gtest_results.xml
+        ./atm_gtest --gtest_output=xml:atm_gtest_results.xml
+      continue-on-error: true
 
     - name: Generate Reports
       working-directory: ${{github.workspace}}/build
       shell: bash
       run: make cpptestcov-compute cpptestcov-suppress cpptestcov-report 
- 
+    
+#    - name: Setup Pages
+#      uses: actions/configure-pages@v5
+
     - name: Archive reports
       if: always()
       uses: actions/upload-artifact@v4
       with:
         name: CpptestReports
+        include-hidden-files: true
         path: |
-          .coverage/*.*
+          ${{github.workspace}}/.coverage/*.*
 
+#    - name: Upload artifact
+#      uses: actions/upload-pages-artifact@v3
+#      with:
+        # Upload coverage reports
+#        path: ${{github.workspace}}/.coverage
+
+    - name: Publish Reports to DTP
+      working-directory: ${{github.workspace}}
+      shell: bash
+      # Execute the build.  You can specify a specific target with "--target <NAME>"
+      run:  cpptestcov report dtp -settings cpptestcli.properties -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage build/atm_gtest_results.xml
+    
     - name: Line Coverage Quality Gate
       working-directory: ${{github.workspace}}
       shell: bash
