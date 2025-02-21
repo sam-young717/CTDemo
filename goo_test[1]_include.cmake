@@ -1,0 +1,5 @@
+if(EXISTS "/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/goo_test[1]_tests.cmake")
+  include("/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/goo_test[1]_tests.cmake")
+else()
+  add_test(goo_test_NOT_BUILT goo_test_NOT_BUILT)
+endif()

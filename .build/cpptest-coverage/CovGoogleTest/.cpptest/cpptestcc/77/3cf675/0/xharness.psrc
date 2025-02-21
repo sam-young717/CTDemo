@@ -1,0 +1,17 @@
+xharness.parseFile true
+xharness.addCoverage true
+xharness.reconstruct true
+edgtk.keepDependencyGenerationOptions true
+xharness.useStatementCoverage true
+xharness.useDecisionCoverage true
+xharness.useBlockCoverage true
+xharness.useMcDcCoverage true
+xharness.useSimpleConditionCoverage true
+xharness.useFunctionCoverage true
+xharness.usePathCoverage false
+xharness.useCallCoverage true
+xharness.addRuntimeAutoFinalization true
+xharness.coverageMapFile /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/.build/cpptest-coverage/CovGoogleTest/.cpptest/cpptestcc/1739558836788_254815/0/goo.cpp.map
+xharness.routineManager "symbol_file=*" command=setProperty property=canAddCoverageIn value=off
+xharness.routineManager "symbol_file=/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/*" command=setProperty property=canAddCoverageIn value=on
+xharness.routineManager "symbol_file=/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/.build/*" command=setProperty property=canAddCoverageIn value=off

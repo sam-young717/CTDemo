@@ -1,0 +1,6 @@
+2025-02-20 16:05:16,773 [INFO] Starting cpptestcov-index 2024.2.0 (10.7.1.20241114B889)...
+2025-02-20 16:05:16,779 [INFO] Arguments: ['/mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/.coverage']
+2025-02-20 16:05:16,781 [INFO] Working dir: /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/.build
+2025-02-20 16:05:16,783 [INFO] Python version: 3.12.3
+2025-02-20 16:05:16,784 [INFO] OS arch: x86_64
+2025-02-20 16:05:16,786 [INFO] OS name: Linux
