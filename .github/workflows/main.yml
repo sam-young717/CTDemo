@@ -94,7 +94,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload coverage reports
-          path: ${{github.workspace}}/build/.coverage
+          path: ${{github.workspace}}/.coverage
         
       - name: Archive reports
         if: always()
@@ -103,7 +103,7 @@ jobs:
           name: CpptestCTReports
           include-hidden-files: true
           path: |
-            build/.coverage/*.*
+            .coverage/*.*
 
       - name: Deploy to GitHub Pages
         id: deployment
