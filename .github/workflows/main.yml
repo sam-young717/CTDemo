@@ -45,7 +45,7 @@ jobs:
       
       - name: Configure Project
         run: |
-          cmake -B.build -DCPPTEST_COVERAGE=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCPPTEST_HOME=/opt/parasoft/cpptest/ct -DBUILD_TEST=ON -DCMAKE_PREFIX_PATH=$(pwd)/.build/dependencies/
+          cmake -DCPPTEST_COVERAGE=ON -S . -B .build
 
       # Builds your CMake project. (This step is optional, as it is not required for code analysis).
       - name: Build Project
