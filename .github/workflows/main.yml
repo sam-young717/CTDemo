@@ -45,7 +45,7 @@ jobs:
       
       - name: Configure Project
         run: |
-          cmake -DCPPTEST_COVERAGE=ON -S . -B .build
+          cmake -DCPPTEST_COVERAGE=ON -S . -B actions-runner/_work/CTDemo/CTDemo/.build
 
       # Builds your CMake project. (This step is optional, as it is not required for code analysis).
       - name: Build Project
