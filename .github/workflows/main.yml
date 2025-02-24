@@ -58,7 +58,7 @@ jobs:
           rm -rf build/cpptest-coverage/CovGoogleTest/CovGoogleTest.clog
           rm -rf build/gtest_results.xml
           cmake --build .build
-          --gtest_filter="*vector_test*" --gtest_output=xml:build/gtest_results.xml
+          ./goo_test --gtest_filter="GooTest" --gtest_output=xml:build/gtest_results.xml
 
       # Builds your CMake project. (This step is optional, as it is not required for code analysis).
       - name: Compute Coverage
