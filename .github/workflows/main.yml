@@ -66,29 +66,29 @@ jobs:
       - name: Compute Coverage
         working-directory: ${{github.workspace}}/build
         run: |
-          cpptestcov compute -map cpptest-coverage/CovGoogleTest/.cpptest -clog cpptest-coverage/CovGoogleTest/CovGoogleTest.clog -out .coverage
+          cpptestcov-compute -map cpptest-coverage/CovGoogleTest/.cpptest -clog cpptest-coverage/CovGoogleTest/CovGoogleTest.clog -out .coverage
 
       - name: Report Coverage to Console
         working-directory: ${{github.workspace}}/build
         run: |
-          cpptestcov report text .coverage
+          cpptestcov-report text .coverage
 
       - name: Compute Index for VS Code
         working-directory: ${{github.workspace}}/build
         run: |
-          cpptestcov index .coverage
+          cpptestcov-index .coverage
 
       - name: Generate Coverage Reports
         working-directory: ${{github.workspace}}/build
         shell: bash
         # Execute the build.  You can specify a specific target with "--target <NAME>"
-        run:  cpptestcov report html .coverage -code -out .coverage/coverage.html
+        run:  cpptestcov-report html .coverage -code -out .coverage/coverage.html
 
       - name: Publish Reports to DTP
         working-directory: ${{github.workspace}}/build
         shell: bash
         # Execute the build.  You can specify a specific target with "--target <NAME>"
-        run:  cpptestcov report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage gtest_results.xml
+        run:  cpptestcov-report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage gtest_results.xml
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
