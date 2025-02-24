@@ -45,7 +45,6 @@ jobs:
       
       - name: Configure Project
         run: |
-          # git config --global --add safe.directory /workspaces/CovGoogleTest
           cmake -Bbuild -DCPPTEST_COVERAGE=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCPPTEST_HOME=/opt/parasoft/cpptest/ct -DBUILD_TEST=ON -DCMAKE_PREFIX_PATH=$(pwd)/build/dependencies/
 
       # Builds your CMake project. (This step is optional, as it is not required for code analysis).
