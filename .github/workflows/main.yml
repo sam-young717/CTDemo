@@ -71,7 +71,7 @@ jobs:
       - name: Report Coverage to Console
         working-directory: ${{github.workspace}}/build
         run: |
-          cpptestcov-report text .coverage
+          bash -c 'cd .build;make cpptestcov-suppress cpptestcov-report'
 
       - name: Compute Index for VS Code
         working-directory: ${{github.workspace}}/build
