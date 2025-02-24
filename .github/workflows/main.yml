@@ -63,10 +63,10 @@ jobs:
           bash -c 'cmake --build .build && cd .build && rm -rf cpptest-coverage/CovGoogleTest/CovGoogleTest.clog && ctest || true && make cpptestcov-compute cpptestcov-suppress cpptestcov-report' 
 
       # Builds your CMake project. (This step is optional, as it is not required for code analysis).
-      - name: Compute Coverage
-        working-directory: ${{github.workspace}}/build
-        run: |
-          cpptestcov-compute -map cpptest-coverage/CovGoogleTest/.cpptest -clog cpptest-coverage/CovGoogleTest/CovGoogleTest.clog -out .coverage
+      # - name: Compute Coverage
+      #   working-directory: ${{github.workspace}}/build
+      #   run: |
+      #     cpptestcov-compute -map cpptest-coverage/CovGoogleTest/.cpptest -clog cpptest-coverage/CovGoogleTest/CovGoogleTest.clog -out .coverage
 
       - name: Report Coverage to Console
         working-directory: ${{github.workspace}}/build
