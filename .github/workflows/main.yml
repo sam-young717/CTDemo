@@ -31,6 +31,8 @@ jobs:
     # Specifies the type of runner that the job will run on.
     runs-on: self-hosted
 
+    environment: github-pages
+
     # Steps represent a sequence of tasks that will be executed as part of the job.
     steps:
 
@@ -118,6 +120,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Show Coverage HTML Link
         shell: bash
