@@ -67,7 +67,7 @@ jobs:
           # cmake --build .build
           # ctest VERBOSE=1 --gtest_filter="GooTest" --gtest_output=xml:build/gtest_results.xml
 
-          bash -c 'cmake --build .build && cd .build && rm -rf cpptest-coverage/CovGoogleTest/CovGoogleTest.clog && ctest || true && make cpptestcov-compute cpptestcov-suppress cpptestcov-report' 
+          bash -c 'cmake --build .build && cd .build && rm -rf cpptest-coverage/CovGoogleTest/CovGoogleTest.clog && ctest || true && make cpptestcov-compute cpptestcov-suppress cpptestcov-report cpptestcov-index' 
 
       # Builds your CMake project. (This step is optional, as it is not required for code analysis).
       # - name: Compute Coverage
