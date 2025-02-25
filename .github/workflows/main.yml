@@ -89,7 +89,7 @@ jobs:
         working-directory: ${{github.workspace}}/.build
         shell: bash
         # Execute the build.  You can specify a specific target with "--target <NAME>"
-        run:  cpptestcov-report html .coverage -code -out .coverage/coverage.html
+        run:  cpptestcov report html .coverage -code -out .coverage/coverage.html
 
       - name: Publish Reports to DTP
         working-directory: ${{github.workspace}}/.build
