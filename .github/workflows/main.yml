@@ -76,23 +76,23 @@ jobs:
       #     cpptestcov-compute -map cpptest-coverage/CovGoogleTest/.cpptest -clog cpptest-coverage/CovGoogleTest/CovGoogleTest.clog -out .coverage
 
       - name: Report Coverage to Console
-        working-directory: ${{github.workspace}}/build
+        working-directory: ${{github.workspace}}/.build
         run: |
           bash -c 'cd .build;make cpptestcov-suppress cpptestcov-report'
 
       - name: Compute Index for VS Code
-        working-directory: ${{github.workspace}}/build
+        working-directory: ${{github.workspace}}/.build
         run: |
           bash -c 'cd .build;make cpptestcov-suppress cpptestcov-index'
 
       - name: Generate Coverage Reports
-        working-directory: ${{github.workspace}}/build
+        working-directory: ${{github.workspace}}/.build
         shell: bash
         # Execute the build.  You can specify a specific target with "--target <NAME>"
         run:  cpptestcov-report html .coverage -code -out .coverage/coverage.html
 
       - name: Publish Reports to DTP
-        working-directory: ${{github.workspace}}/build
+        working-directory: ${{github.workspace}}/.build
         shell: bash
         # Execute the build.  You can specify a specific target with "--target <NAME>"
         run:  cpptestcov-report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage gtest_results.xml
