@@ -49,7 +49,7 @@ jobs:
       
       - name: Configure Project
         run: |
-          cmake -DCPPTEST_COVERAGE=ON -S /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/actions-runner/_work/CTDemo/CTDemo/.build -B /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/actions-runner/_work/CTDemo/CTDemo/.build
+          cmake -DCPPTEST_COVERAGE=ON -S /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/.build -B /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/.build
 
       # Builds your CMake project. (This step is optional, as it is not required for code analysis).
       - name: Build Project
