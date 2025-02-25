@@ -128,7 +128,7 @@ jobs:
         run: echo "Check html report https://parasoft-se.github.io/CovGoogleTest/coverage.html"
         
       - name: Line Coverage Quality Gate
-        working-directory: ${{github.workspace}}/build
+        working-directory: ${{github.workspace}}/.build
         shell: bash
         # Query for project's coverage and compare with the gate requirements
         run: |
@@ -136,7 +136,7 @@ jobs:
           echo "Check html report https://parasoft-se.github.io/CovGoogleTest/coverage.html"
         
       - name: MCDC Coverage Quality Gate
-        working-directory: ${{github.workspace}}/build
+        working-directory: ${{github.workspace}}/.build
         shell: bash
         # Query for project's coverage and compare with the gate requirements
         run: |
