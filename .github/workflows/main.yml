@@ -52,9 +52,9 @@ jobs:
           cmake -DCPPTEST_COVERAGE=ON -S /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest -B /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/.build
 
       # Builds your CMake project. (This step is optional, as it is not required for code analysis).
-      - name: Build Project
-        run: |
-          cmake --build .build -j24
+      # - name: Build Project
+      #   run: |
+      #     cmake --build .build -j24
 
       - name: Run Unit Tests
         run: |
