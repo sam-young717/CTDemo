@@ -91,11 +91,11 @@ jobs:
         # Execute the build.  You can specify a specific target with "--target <NAME>"
         run:  make cpptestcov-report .coverage -out .coverage/coverage.html
 
-      - name: Publish Reports to DTP
-        working-directory: ${{github.workspace}}/.build
-        shell: bash
-        # Execute the build.  You can specify a specific target with "--target <NAME>"
-        run:  cpptestcov-report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage gtest_results.xml
+      # - name: Publish Reports to DTP
+      #   working-directory: ${{github.workspace}}/.build
+      #   shell: bash
+      #   # Execute the build.  You can specify a specific target with "--target <NAME>"
+      #   run:  cpptestcov-report dtp -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage gtest_results.xml
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
