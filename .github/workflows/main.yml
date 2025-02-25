@@ -56,6 +56,10 @@ jobs:
       #   run: |
       #     cmake --build .build -j24
 
+      - name: Create required directories
+        run: |
+          mkdir -p /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/examples/CovGoogleTest/.build/cpptest-coverage/CovGoogleTest/.cpptest
+
       - name: Run Unit Tests
         run: |
           # rm -rf build/cpptest-coverage/CovGoogleTest/CovGoogleTest.clog
