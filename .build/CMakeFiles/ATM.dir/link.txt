@@ -1,0 +1,2 @@
+/usr/bin/ar qc libATM.a CMakeFiles/ATM.dir/Account.cpp.o CMakeFiles/ATM.dir/ATM.cpp.o CMakeFiles/ATM.dir/Bank.cpp.o CMakeFiles/ATM.dir/BaseDisplay.cpp.o
+/usr/bin/ranlib libATM.a

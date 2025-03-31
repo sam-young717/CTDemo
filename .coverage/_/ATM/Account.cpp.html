@@ -1,0 +1,154 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Parasoft C/C++test - Code Coverage Report</title>
+<link rel="stylesheet" href="../cpptestcov-report.css" type="text/css">
+
+<script>
+const covRanges={"8": {"FC": [[9, 30, 2]]}, "13": {"BC": [[0, 1, 2]], "LC": [[0, 1, 2]], "SC": [[0, 1, 2]]}, "14": {"BC": [[0, 0, 2]], "SC": [[0, 0, 2]]}, "15": {"BC": [[0, 0, 2]], "SC": [[0, 0, 2]]}, "17": {"FC": [[9, 52, 0]]}, "19": {"BC": [[5, 11, 0]], "DC": [[5, 11, 1]], "LC": [[0, 75, 0]], "MCDC": [[5, 11, 2]], "SC": [[5, 11, 0]], "SCC": [[5, 11, 1]]}, "20": {"BC": [[5, 71, 0]], "CC": [[5, 70, 0]], "LC": [[0, 72, 0]], "SC": [[5, 71, 0]]}, "22": {"BC": [[5, 72, 2]], "CC": [[5, 71, 2]], "LC": [[0, 73, 2]], "SC": [[5, 72, 2]]}, "26": {"FC": [[16, 38, 0]]}, "28": {"BC": [[4, 70, 0]], "CC": [[4, 68, 0]], "LC": [[0, 70, 0]], "SC": [[4, 69, 0]]}, "29": {"BC": [[0, 0, 0]]}, "30": {"BC": [[0, 24, 0]], "LC": [[0, 24, 0]], "SC": [[4, 23, 0]]}, "31": {"BC": [[0, 25, 0]], "CC": [[12, 23, 0]], "LC": [[0, 26, 0]], "SC": [[4, 25, 0]]}, "35": {"FC": [[16, 36, 0]]}, "37": {"BC": [[4, 71, 0]], "CC": [[4, 69, 0]], "LC": [[0, 71, 0]], "SC": [[4, 70, 0]]}, "38": {"BC": [[0, 24, 0]], "LC": [[0, 24, 0]], "SC": [[4, 23, 0]]}, "39": {"BC": [[0, 25, 0]], "CC": [[12, 23, 0]], "LC": [[0, 26, 0]], "SC": [[4, 25, 0]]}, "42": {"FC": [[13, 71, 2]]}, "44": {"BC": [[1, 27, 2]], "LC": [[0, 27, 2]], "SC": [[1, 26, 2]]}, "45": {"BC": [[0, 0, 2]]}, "46": {"BC": [[0, 45, 2]], "CC": [[5, 21, 2]], "DC": [[5, 45, 2]], "LC": [[0, 49, 2]], "MCDC": [[5, 45, 2]], "SC": [[5, 45, 2]], "SCC": [[5, 45, 2]]}, "47": {"BC": [[2, 38, 2]], "CC": [[2, 36, 2]], "LC": [[0, 38, 2]], "SC": [[2, 37, 2]]}, "48": {"BC": [[0, 26, 2]], "LC": [[0, 27, 2]], "SC": [[2, 26, 2]]}, "52": {"BC": [[5, 33, 2]], "DC": [[5, 33, 2]], "LC": [[0, 37, 2]], "SC": [[5, 33, 2]]}, "53": {"BC": [[2, 41, 2]], "CC": [[2, 40, 2], [22, 39, 2]], "LC": [[0, 42, 2]], "SC": [[2, 41, 2]]}, "58": {"BC": [[1, 15, 2]], "CC": [[1, 15, 2]], "LC": [[0, 15, 2]], "SC": [[1, 15, 2]]}, "59": {"BC": [[0, 26, 2]], "CC": [[0, 26, 2], [3, 24, 2]], "SC": [[0, 26, 2]]}, "60": {"BC": [[0, 24, 2]], "CC": [[0, 24, 2], [3, 22, 2]], "SC": [[0, 24, 2]]}, "61": {"BC": [[0, 85, 2]], "CC": [[0, 85, 2]], "FC": [[38, 85, 2]], "SC": [[0, 85, 2]]}, "62": {"BC": [[0, 4, 2]], "CC": [[0, 4, 2]], "SC": [[0, 4, 2]]}, "63": {"BC": [[4, 68, 2], [0, 68, 2]], "CC": [[4, 66, 2], [28, 45, 2], [48, 65, 2], [0, 68, 2]], "LC": [[0, 68, 2]], "SC": [[4, 67, 2], [0, 68, 2]]}, "64": {"BC": [[0, 33, 2], [0, 37, 2]], "CC": [[8, 25, 2], [0, 37, 2]], "DC": [[8, 33, 2]], "LC": [[0, 37, 2]], "MCDC": [[8, 33, 2]], "SC": [[8, 33, 2], [0, 37, 2]], "SCC": [[8, 33, 2]]}, "65": {"BC": [[8, 27, 2], [0, 28, 2]], "CC": [[0, 28, 2]], "LC": [[0, 28, 2]], "SC": [[8, 27, 2], [0, 28, 2]]}, "66": {"BC": [[0, 5, 2]], "CC": [[0, 5, 2]], "SC": [[0, 5, 2]]}, "67": {"BC": [[0, 6, 2]], "CC": [[0, 4, 2]], "SC": [[0, 5, 2]]}, "68": {"BC": [[0, 28, 2]], "LC": [[0, 29, 2]], "SC": [[4, 28, 2]]}}
+const covSymbols={"8": {"FC": [["-", 2]]}, "13": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "17": {"FC": [["+", 0]]}, "19": {"BC": [["+", 0]], "DC": [["[+-]", 1]], "LC": [["+", 0]], "MCDC": [["[-]", 2]], "SC": [["+", 0]], "SCC": [["[+-]", 1]]}, "20": {"BC": [["+", 0]], "CC": [["+", 0]], "LC": [["+", 0]], "SC": [["+", 0]]}, "22": {"BC": [["-", 2]], "CC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "26": {"FC": [["+", 0]]}, "28": {"BC": [["+", 0]], "CC": [["+", 0]], "LC": [["+", 0]], "SC": [["+", 0]]}, "30": {"LC": [["+", 0]], "SC": [["+", 0]]}, "31": {"CC": [["+", 0]], "LC": [["+", 0]], "SC": [["+", 0]]}, "35": {"FC": [["+", 0]]}, "37": {"BC": [["+", 0]], "CC": [["+", 0]], "LC": [["+", 0]], "SC": [["+", 0]]}, "38": {"LC": [["+", 0]], "SC": [["+", 0]]}, "39": {"CC": [["+", 0]], "LC": [["+", 0]], "SC": [["+", 0]]}, "42": {"FC": [["-", 2]]}, "44": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "46": {"CC": [["-", 2]], "DC": [["[--]", 2]], "LC": [["-", 2]], "MCDC": [["[-]", 2]], "SC": [["-", 2]], "SCC": [["[--]", 2]]}, "47": {"BC": [["-", 2]], "CC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "48": {"LC": [["-", 2]], "SC": [["-", 2]]}, "52": {"BC": [["-", 2]], "DC": [["[--]", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "53": {"BC": [["-", 2]], "CC": [["-", 2], ["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "58": {"BC": [["-", 2]], "CC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "59": {"CC": [["-", 2]]}, "60": {"CC": [["-", 2]]}, "61": {"FC": [["-", 2]]}, "63": {"BC": [["-", 2]], "CC": [["-", 2], ["-", 2], ["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "64": {"CC": [["-", 2]], "DC": [["[--]", 2]], "LC": [["-", 2]], "MCDC": [["[-]", 2]], "SC": [["-", 2]], "SCC": [["[--]", 2]]}, "65": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "68": {"LC": [["-", 2]], "SC": [["-", 2]]}}
+const enabledMetrics={"LC": false, "SC": false, "BC": false, "DC": false, "SCC": false, "MCDC": false, "FC": false, "CC": false}</script>
+<script type="text/javascript" src="../cpptestcov-report.js" defer></script>
+
+</head>
+<body onload="initDecorations()">
+<h1>Parasoft C/C++test - Code Coverage Report</h1>
+<ul><small>
+<li>LC - Line Coverage</li>
+<li>SC - Statement Coverage</li>
+<li>BC - Block Coverage</li>
+<li>DC - Decision (Branch) Coverage</li>
+<li>SCC - Simple Condition Coverage</li>
+<li>MCDC - Modified Condition Decision Coverage</li>
+<li>FC - Function Coverage</li>
+<li>CC - Call Coverage</li>
+</small></ul>
+<div class='navigation'><a href='../../coverage.html'>all</a> > <a href='index.html'>ATM</a> > Account.cpp</div>
+<table class='stats'>
+<thead>
+<tr>
+<th class="element" onclick="sortName(event)">Function</th><th class="metric" onclick="sortPercentage(event)">LC</th><th class="metric" onclick="sortPercentage(event)">SC</th><th class="metric" onclick="sortPercentage(event)">BC</th><th class="metric" onclick="sortPercentage(event)">DC</th><th class="metric" onclick="sortPercentage(event)">SCC</th><th class="metric" onclick="sortPercentage(event)">MCDC</th><th class="metric" onclick="sortPercentage(event)">FC</th><th class="metric" onclick="sortPercentage(event)">CC</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href='#603b873964a9fdc579591658af0c6e89'>Account::Account(Account&amp;&amp;)</a></td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covlow'>0% 0/1</td><td class='stats covna'>N/A</td></tr>
+<tr><td><a href='#fdcba28c4364bba40243784058761079'>Account::Account(double)</a></td><td class='stats covmed'>67% 2/3</td><td class='stats covmed'>67% 2/3</td><td class='stats covmed'>67% 2/3</td><td class='stats covmed'>50% 1/2</td><td class='stats covmed'>50% 1/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covmed'>50% 1/2</td></tr>
+<tr><td><a href='#6c4259353846662530105951b07988ad'>Account::debit(double)</a></td><td class='stats covhigh'>100% 3/3</td><td class='stats covhigh'>100% 3/3</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 2/2</td></tr>
+<tr><td><a href='#07457c1228cbaf97ee1ded694969abd4'>Account::deposit(double)</a></td><td class='stats covhigh'>100% 3/3</td><td class='stats covhigh'>100% 3/3</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 2/2</td></tr>
+<tr><td><a href='#ae486e399376288fa63535ef73358861'>Account::listTransactions(BaseDisplay &amp;, UserRequest)</a></td><td class='stats covlow'>0% 0/8</td><td class='stats covlow'>0% 0/8</td><td class='stats covlow'>0% 0/5</td><td class='stats covlow'>0% 0/4</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/7</td></tr>
+<tr><td><a href='#cc4495ca46a6a0727ed10220154fa34a'>Account::listTransactions(BaseDisplay &amp;, UserRequest)::[lambda(std::tuple&lt;UserRequest, double&gt;) (instance 1)]</a></td><td class='stats covlow'>0% 0/3</td><td class='stats covlow'>0% 0/3</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/4</td></tr>
+</tbody>
+<tfoot>
+<tr class='totalRow'><td>TOTAL (6 functions)</td><td class='stats covmed'>38% 8/21</td><td class='stats covmed'>38% 8/21</td><td class='stats covlow'>31% 4/13</td><td class='stats covlow'>13% 1/8</td><td class='stats covlow'>17% 1/6</td><td class='stats covlow'>0% 0/3</td><td class='stats covmed'>50% 3/6</td><td class='stats covlow'>29% 5/17</td></tr>
+</tfoot>
+</table>
+<div class="codeViewer">
+<div class="collapseExpand">
+<input type='checkbox' id='checkbox-LC' onchange='updateDecorations("LC", this.checked);'><label>LC</label>
+<input type='checkbox' id='checkbox-SC' onchange='updateDecorations("SC", this.checked);'><label>SC</label>
+<input type='checkbox' id='checkbox-BC' onchange='updateDecorations("BC", this.checked);'><label>BC</label>
+<input type='checkbox' id='checkbox-DC' onchange='updateDecorations("DC", this.checked);'><label>DC</label>
+<input type='checkbox' id='checkbox-SCC' onchange='updateDecorations("SCC", this.checked);'><label>SCC</label>
+<input type='checkbox' id='checkbox-MCDC' onchange='updateDecorations("MCDC", this.checked);'><label>MCDC</label>
+<input type='checkbox' id='checkbox-FC' onchange='updateDecorations("FC", this.checked);'><label>FC</label>
+<input type='checkbox' id='checkbox-CC' onchange='updateDecorations("CC", this.checked);'><label>CC</label>
+<span> | </span>
+<a href="javascript:expandAllAnnotations()">Expand <span style="font-size: small;">&#8691;</span></a> |
+<a href="javascript:collapseAllAnnotations()">Collapse <span style="font-size: small;">&#8691;</span></a>
+</div>
+<table class="code">
+<thead style="position: sticky; z-index: 100; top: 18px;">
+<tr style="text-align: left;" id="codebox-header">
+<th style="width: 4em;">Line</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody class="codebox" id="codebox-body">
+<tr ><td class='lineNo' ><span>1</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-1' >#include &quot;Account.hxx&quot;</td></tr>
+<tr ><td class='lineNo' ><span>2</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-2' >#include &quot;ATM.hxx&quot;</td></tr>
+<tr ><td class='lineNo' ><span>3</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-3' >#include &quot;BaseDisplay.hxx&quot;</td></tr>
+<tr ><td class='lineNo' ><span>4</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-4' > </td></tr>
+<tr ><td class='lineNo' ><span>5</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-5' >#include &lt;utility&gt;</td></tr>
+<tr ><td class='lineNo' ><span>6</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-6' > </td></tr>
+<tr ><td class='lineNo' ><span>7</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-7' >// C++11/14: move constructor</td></tr>
+<tr id='603b873964a9fdc579591658af0c6e89'><td class='lineNo' ><span>8</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-8' >Account::Account(Account&amp;&amp; a):</td></tr>
+<tr ><td class='lineNo' ><span>9</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-9' >    myAccountNumber(a.myAccountNumber),</td></tr>
+<tr ><td class='lineNo' ><span>10</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-10' >    myBalance(a.myBalance),</td></tr>
+<tr ><td class='lineNo' ><span>11</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-11' >    myPassword(std::move(a.myPassword)),</td></tr>
+<tr ><td class='lineNo' ><span>12</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-12' >    myTransactions(std::move(a.myTransactions))</td></tr>
+<tr ><td class='lineNo' ><span>13</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-13' >{</td></tr>
+<tr ><td class='lineNo' ><span>14</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-14' > </td></tr>
+<tr ><td class='lineNo' ><span>15</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-15' >}</td></tr>
+<tr ><td class='lineNo' ><span>16</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-16' > </td></tr>
+<tr id='fdcba28c4364bba40243784058761079'><td class='lineNo' ><span>17</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-17' >Account::Account(double initial): myBalance(initial)</td></tr>
+<tr ><td class='lineNo' ><span>18</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-18' >{</td></tr>
+<tr ><td class='lineNo' onclick='toggleAnnotation("annotation-19")'><span><span class='a-tgl'>&#8691; </span>19</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-19' >	if (initial) { // parasoft-suppress MISRACPP2023-7_0_2-a &quot;ok in this case&quot;</td></tr>
+<tr class='annotation-tgl hid-tgl' id='annotation-19'><td> </td><td class='annotation'>	if (initial) { // parasoft-suppress MISRACPP2023-7_0_2-a &quot;ok in this case&quot;<br>     ^<br>     DC=50% 1/2<br><br>	if (initial) { // parasoft-suppress MISRACPP2023-7_0_2-a &quot;ok in this case&quot;<br>     ^<br>     SCC=50% 1/2, Values tested: True<br><br>	if (initial) { // parasoft-suppress MISRACPP2023-7_0_2-a &quot;ok in this case&quot;<br>     ^<br>     MCDC=0% 0/1<br>     Condition A: Not Covered<br>     ==========================================================<br>     Tested condition values:<br>       A        Outcome<br>       True     True    |   A<br>     Missing condition values:<br>       A        Outcome<br>       False    False   |   A<br>     ==========================================================<br><br></td></tr>
+<tr ><td class='lineNo' ><span>20</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-20' >	    myTransactions.emplace_back(UserRequest::REQUEST_DEPOSIT, initial);</td></tr>
+<tr ><td class='lineNo' ><span>21</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-21' >	} else {</td></tr>
+<tr ><td class='lineNo' ><span>22</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-22' >	    myTransactions.emplace_back(UserRequest::REQUEST_WITHDRAW, initial);</td></tr>
+<tr ><td class='lineNo' ><span>23</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-23' >	}</td></tr>
+<tr ><td class='lineNo' ><span>24</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-24' >}</td></tr>
+<tr ><td class='lineNo' ><span>25</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-25' > </td></tr>
+<tr id='07457c1228cbaf97ee1ded694969abd4'><td class='lineNo' ><span>26</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-26' >double Account::deposit(double amount)</td></tr>
+<tr ><td class='lineNo' ><span>27</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-27' >{</td></tr>
+<tr ><td class='lineNo' ><span>28</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-28' >    myTransactions.emplace_back(UserRequest::REQUEST_DEPOSIT, amount);</td></tr>
+<tr ><td class='lineNo' ><span>29</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-29' > </td></tr>
+<tr ><td class='lineNo' ><span>30</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-30' >    myBalance += amount;</td></tr>
+<tr ><td class='lineNo' ><span>31</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-31' >    return (getBalance());</td></tr>
+<tr ><td class='lineNo' ><span>32</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-32' >}</td></tr>
+<tr ><td class='lineNo' ><span>33</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-33' > </td></tr>
+<tr ><td class='lineNo' ><span>34</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-34' > </td></tr>
+<tr id='6c4259353846662530105951b07988ad'><td class='lineNo' ><span>35</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-35' >double Account::debit(double amount)</td></tr>
+<tr ><td class='lineNo' ><span>36</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-36' >{</td></tr>
+<tr ><td class='lineNo' ><span>37</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-37' >    myTransactions.emplace_back(UserRequest::REQUEST_WITHDRAW, amount);</td></tr>
+<tr ><td class='lineNo' ><span>38</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-38' >    myBalance -= amount;</td></tr>
+<tr ><td class='lineNo' ><span>39</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-39' >    return (getBalance());</td></tr>
+<tr ><td class='lineNo' ><span>40</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-40' >}</td></tr>
+<tr ><td class='lineNo' ><span>41</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-41' > </td></tr>
+<tr id='ae486e399376288fa63535ef73358861'><td class='lineNo' ><span>42</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-42' >int Account::listTransactions(BaseDisplay&amp; display, UserRequest type) {</td></tr>
+<tr ><td class='lineNo' ><span>43</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-43' > </td></tr>
+<tr ><td class='lineNo' ><span>44</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-44' >	int transactionsCount = 0;</td></tr>
+<tr ><td class='lineNo' ><span>45</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-45' > </td></tr>
+<tr ><td class='lineNo' onclick='toggleAnnotation("annotation-46")'><span><span class='a-tgl'>&#8691; </span>46</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-46' >	if (display.getType() == BaseDisplay::UNKNOWN) {</td></tr>
+<tr class='annotation-tgl hid-tgl' id='annotation-46'><td> </td><td class='annotation'>	if (display.getType() == BaseDisplay::UNKNOWN) {<br>     ^<br>     DC=0% 0/2<br><br>	if (display.getType() == BaseDisplay::UNKNOWN) {<br>     ^<br>     SCC=0% 0/2, Values tested: <br><br>	if (display.getType() == BaseDisplay::UNKNOWN) {<br>     ^<br>     MCDC=0% 0/1<br>     Condition A: Not Covered<br>     ==========================================================<br>     Tested condition values:<br>       A        Outcome<br>       --       --      |   -<br>     Missing condition values:<br>       A        Outcome<br>       False    False   |   A<br>       True     True    |   A<br>     ==========================================================<br><br></td></tr>
+<tr ><td class='lineNo' ><span>47</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-47' >		display.logError(&quot;Unknown display&quot;);</td></tr>
+<tr ><td class='lineNo' ><span>48</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-48' >		return transactionsCount;</td></tr>
+<tr ><td class='lineNo' ><span>49</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-49' >	}</td></tr>
+<tr ><td class='lineNo' ><span>50</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-50' > </td></tr>
+<tr ><td class='lineNo' ><span>51</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-51' >	// C++11/14: for-each statement:</td></tr>
+<tr ><td class='lineNo' onclick='toggleAnnotation("annotation-52")'><span><span class='a-tgl'>&#8691; </span>52</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-52' >	for(auto&amp;&amp; tuple : myTransactions) {</td></tr>
+<tr class='annotation-tgl hid-tgl' id='annotation-52'><td> </td><td class='annotation'>	for(auto&amp;&amp; tuple : myTransactions) {<br>     ^<br>     DC=0% 0/2<br><br></td></tr>
+<tr ><td class='lineNo' ><span>53</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-53' >		display.showBalance(std::get&lt;1&gt;(tuple));</td></tr>
+<tr ><td class='lineNo' ><span>54</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-54' >	}</td></tr>
+<tr ><td class='lineNo' ><span>55</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-55' > </td></tr>
+<tr ><td class='lineNo' ><span>56</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-56' > </td></tr>
+<tr ><td class='lineNo' ><span>57</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-57' >	// C++11/14: lambda expression</td></tr>
+<tr ><td class='lineNo' ><span>58</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-58' >	std::for_each(</td></tr>
+<tr ><td class='lineNo' ><span>59</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-59' >			myTransactions.begin(),</td></tr>
+<tr ><td class='lineNo' ><span>60</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-60' >			myTransactions.end(),</td></tr>
+<tr id='cc4495ca46a6a0727ed10220154fa34a'><td class='lineNo' ><span>61</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-61' >			[display, &amp;transactionsCount, type](std::tuple&lt;UserRequest, double&gt; tuple) mutable</td></tr>
+<tr ><td class='lineNo' ><span>62</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-62' >			{</td></tr>
+<tr ><td class='lineNo' ><span>63</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-63' >				display.showTransaction(std::get&lt;0&gt;(tuple), std::get&lt;1&gt;(tuple));</td></tr>
+<tr ><td class='lineNo' onclick='toggleAnnotation("annotation-64")'><span><span class='a-tgl'>&#8691; </span>64</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-64' >				if (std::get&lt;0&gt;(tuple) == type) {</td></tr>
+<tr class='annotation-tgl hid-tgl' id='annotation-64'><td> </td><td class='annotation'>				if (std::get&lt;0&gt;(tuple) == type) {<br>        ^<br>        DC=0% 0/2<br><br>				if (std::get&lt;0&gt;(tuple) == type) {<br>        ^<br>        SCC=0% 0/2, Values tested: <br><br>				if (std::get&lt;0&gt;(tuple) == type) {<br>        ^<br>        MCDC=0% 0/1<br>        Condition A: Not Covered<br>        ==========================================================<br>        Tested condition values:<br>          A        Outcome<br>          --       --      |   -<br>        Missing condition values:<br>          A        Outcome<br>          False    False   |   A<br>          True     True    |   A<br>        ==========================================================<br><br></td></tr>
+<tr ><td class='lineNo' ><span>65</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-65' >				    transactionsCount++;</td></tr>
+<tr ><td class='lineNo' ><span>66</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-66' >				}</td></tr>
+<tr ><td class='lineNo' ><span>67</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-67' >			});</td></tr>
+<tr ><td class='lineNo' ><span>68</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-68' >    return transactionsCount;</td></tr>
+<tr ><td class='lineNo' ><span>69</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-69' >}</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+<footer>
+<hr>
+<div class="codeinfo">
+</div>
+<div class="scm">
+</div>
+<div class="footdate">
+<p>Parasoft C/C++test - Code Coverage Report - Generated on 2025-03-31 16:17:14</p>
+</div>
+</footer>
+</html>
