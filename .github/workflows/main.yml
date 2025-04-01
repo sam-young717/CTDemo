@@ -30,30 +30,27 @@ jobs:
     - name: Configure CMake
       shell: bash
       working-directory: ${{github.workspace}}
-      run: cmake -DCPPTEST_COVERAGE=ON -S . -B build
+      run: cmake -DCPPTEST_COVERAGE=ON -S . -B .build
 
     - name: Build 
-      working-directory: ${{github.workspace}}
+      working-directory: ${{github.workspace}}/.build
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run: cmake --build build
+      run: make
 
     - name: Run Tests
-      working-directory: ${{github.workspace}}/build
+      working-directory: ${{github.workspace}}/.build
       shell: bash
       run: |
-        rm -rf /cpptest-coverage/ATM_Cpp14_lib/ATM_Cpp14_lib.clog 
+        rm -rf /cpptest-coverage/ATM/ATM.clog 
         rm -rf gtest_results.xml
-        ./atm_gtest --gtest_output=xml:atm_gtest_results.xml
+        ./atm_gtest --gtest_output=xml:gtest_results.xml
       continue-on-error: true
 
     - name: Generate Reports
-      working-directory: ${{github.workspace}}/build
+      working-directory: ${{github.workspace}}/.build
       shell: bash
       run: make cpptestcov-compute cpptestcov-suppress cpptestcov-report 
-    
-#    - name: Setup Pages
-#      uses: actions/configure-pages@v5
 
     - name: Archive reports
       if: always()
@@ -64,21 +61,11 @@ jobs:
         path: |
           ${{github.workspace}}/.coverage/*.*
 
-    - name: Adding cpptestcov
-      run: |
-        which cpptestcov
-
-#    - name: Upload artifact
-#      uses: actions/upload-pages-artifact@v3
-#      with:
-        # Upload coverage reports
-#        path: ${{github.workspace}}/.coverage
-
     - name: Publish Reports to DTP
       working-directory: ${{github.workspace}}
       shell: bash
       # Execute the build.  You can specify a specific target with "--target <NAME>"
-      run:  cpptestcov report dtp -settings cpptestcli.properties -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage build/atm_gtest_results.xml
+      run:  cpptestcov report dtp -settings cpptestcli.properties -property build.id=${build_id} -property dtp.project=${DTP_PROJECT} .coverage .build/gtest_results.xml
     
     - name: Line Coverage Quality Gate
       working-directory: ${{github.workspace}}
