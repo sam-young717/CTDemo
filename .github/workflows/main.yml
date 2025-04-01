@@ -66,7 +66,7 @@ jobs:
 
     - name: Adding cpptestcov
       run: |
-        echo "C:\Users\syoung\Documents\CppTestLinux\cpptest-ct\bin" >> $GITHUB_PATH
+        which cpptestcov
 
 #    - name: Upload artifact
 #      uses: actions/upload-pages-artifact@v3
