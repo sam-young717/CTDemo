@@ -64,6 +64,9 @@ jobs:
         path: |
           ${{github.workspace}}/.coverage/*.*
 
+    - name: check dir
+      run: ls
+
 #    - name: Upload artifact
 #      uses: actions/upload-pages-artifact@v3
 #      with:
