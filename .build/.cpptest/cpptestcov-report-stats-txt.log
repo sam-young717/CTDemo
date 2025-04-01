@@ -1,6 +1,0 @@
-2025-03-31 16:17:15,877 [INFO] Starting cpptestcov-report-stats-txt 2025.1.0 (10.7.2.20250219B956)...
-2025-03-31 16:17:15,884 [INFO] Arguments: ['-root', '/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM', '-coverage', 'LC,SC,BC,DC,SCC,MCDC,FC,CC', '/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.coverage']
-2025-03-31 16:17:15,885 [INFO] Working dir: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build
-2025-03-31 16:17:15,886 [INFO] Python version: 3.12.3
-2025-03-31 16:17:15,888 [INFO] OS arch: x86_64
-2025-03-31 16:17:15,889 [INFO] OS name: Linux

@@ -1,1 +1,0 @@
-/usr/bin/c++  -Wl,--whole-archive "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime/libcpptest_static.a" -Wl,--no-whole-archive CMakeFiles/atm_gtest.dir/unitTests/gtest_main.cpp.o -o atm_gtest  libATM.a lib/libgtest_main.a lib/libgtest.a 
