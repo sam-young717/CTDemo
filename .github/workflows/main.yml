@@ -64,8 +64,9 @@ jobs:
         path: |
           ${{github.workspace}}/.coverage/*.*
 
-    - name: check dir
-      run: ls
+    - name: Adding cpptestcov
+      run: |
+        echo "C:\Users\syoung\Documents\CppTestLinux\cpptest-ct\bin" >> $GITHUB_PATH
 
 #    - name: Upload artifact
 #      uses: actions/upload-pages-artifact@v3
