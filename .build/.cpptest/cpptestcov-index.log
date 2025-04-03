@@ -1,0 +1,6 @@
+2025-04-01 10:05:31,506 [INFO] Starting cpptestcov-index 2025.1.0 (10.7.2.20250219B956)...
+2025-04-01 10:05:31,510 [INFO] Arguments: ['/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.coverage']
+2025-04-01 10:05:31,511 [INFO] Working dir: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build
+2025-04-01 10:05:31,512 [INFO] Python version: 3.12.3
+2025-04-01 10:05:31,512 [INFO] OS arch: x86_64
+2025-04-01 10:05:31,513 [INFO] OS name: Linux
