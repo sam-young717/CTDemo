@@ -1,6 +1,6 @@
-2025-04-03 14:41:33,810 [INFO] Starting cpptestcov-index 2025.1.0 (10.7.2.20250219B956)...
-2025-04-03 14:41:33,814 [INFO] Arguments: ['/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.coverage']
-2025-04-03 14:41:33,816 [INFO] Working dir: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build
-2025-04-03 14:41:33,818 [INFO] Python version: 3.12.3
-2025-04-03 14:41:33,820 [INFO] OS arch: x86_64
-2025-04-03 14:41:33,821 [INFO] OS name: Linux
+2025-04-03 15:23:04,220 [INFO] Starting cpptestcov-index 2025.1.0 (10.7.2.20250219B956)...
+2025-04-03 15:23:04,223 [INFO] Arguments: ['/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.coverage']
+2025-04-03 15:23:04,224 [INFO] Working dir: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build
+2025-04-03 15:23:04,224 [INFO] Python version: 3.12.3
+2025-04-03 15:23:04,225 [INFO] OS arch: x86_64
+2025-04-03 15:23:04,225 [INFO] OS name: Linux

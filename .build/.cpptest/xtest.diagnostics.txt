@@ -1,4 +1,4 @@
-Diagnostics file initialized on Thu Apr 03 15:00:22 EDT 2025
+Diagnostics file initialized on Thu Apr 03 15:22:57 EDT 2025
 
 ================================================================================================
 SERVICE: com.parasoft.xtest.lic.client.internal.service.LicenseService@7c1e2a2d
@@ -92,15 +92,16 @@ Services provider profiler (COUNT > 1):
 + -------------------------------------- + ----- + --------- +
 | NAME                                   | COUNT | TOTAL [s] |
 + -------------------------------------- + ----- + --------- +
+| getService(IApplication)               | 49    | 0.0       |
 | getService(IProfilerStatisticsService) | 3     | 0.0       |
 | getService(IProfilerService)           | 3     | 0.0       |
-| getService(IApplication)               | 49    | 0.001     |
-| getService(ILicenseService)            | 4     | 0.02      |
-| getService(ISystemService)             | 3     | 0.02      |
-| getServices(IPreferences)              | 4     | 0.031     |
-| getService(ITelemetryReporter)         | 3     | 0.108     |
+| getService(ITelemetryReporter$Factory) | 2     | 0.0       |
+| getService(ILicenseService)            | 4     | 0.011     |
+| getService(ISystemService)             | 3     | 0.023     |
+| getServices(IPreferences)              | 4     | 0.025     |
+| getService(ITelemetryReporter)         | 3     | 0.093     |
 + -------------------------------------- + ----- + --------- +
-TOTAL: 0.18
+TOTAL: 0.152
 ================================================================================================
 SERVICES INSTANCES COUNT
 ================================================================================================
@@ -129,13 +130,15 @@ License Profiler
 + ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
 | NAME                                                         | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
-| LicenseService.isEnabled[Main]                               | 2     | 1.33      | 0.663   | 0.667   | 0.665   |
-| IntLicManager.getState[C++Test]                              | 38    | 1.328     | 0.0     | 0.664   | 0.034   |
-| IntLicManager.activateLicense                                | 1     | 0.665     | 0.665   | 0.665   | 0.665   |
-| IntLicManager.WAIT[main]                                     | 1     | 0.662     | 0.662   | 0.662   | 0.662   |
-| IntLicManager.WAIT[ServiceDiagnosticCollector Thread]        | 1     | 0.661     | 0.661   | 0.661   | 0.661   |
-| LicenseModule.initializeModule                               | 1     | 0.13      | 0.13    | 0.13    | 0.13    |
-| IntLicManager.activateFinished                               | 1     | 0.006     | 0.006   | 0.006   | 0.006   |
+| IntLicManager.getState[C++Test]                              | 38    | 1.353     | 0.0     | 0.675   | 0.035   |
+| LicenseService.isEnabled[Main]                               | 2     | 1.35      | 0.674   | 0.676   | 0.675   |
+| IntLicManager.activateLicense                                | 1     | 0.676     | 0.676   | 0.676   | 0.676   |
+| IntLicManager.WAIT[main]                                     | 1     | 0.672     | 0.672   | 0.672   | 0.672   |
+| IntLicManager.WAIT[ServiceDiagnosticCollector Thread]        | 1     | 0.672     | 0.672   | 0.672   | 0.672   |
+| LicenseModule.initializeModule                               | 1     | 0.085     | 0.085   | 0.085   | 0.085   |
+| IntLicManager.activateFinished                               | 1     | 0.025     | 0.025   | 0.025   | 0.025   |
+| LicenseService.isEnabled[Enforce-Max-Errors]                 | 1     | 0.002     | 0.002   | 0.002   | 0.002   |
+| LicenseService.isEnabled[Performance-Benchmarking]           | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
 | IntLicManager.checkFinished                                  | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
 | LicenseService.isEnabled[CT-Extended-Coverage]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Security]                           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
@@ -145,7 +148,6 @@ License Profiler
 | LicenseService.isEnabled[Team-Share-Access]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Mass-Creation]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Automation]                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Performance-Benchmarking]           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Native-Tests-Import]                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Embedded-Testing]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[API-Test-Creation]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
@@ -154,7 +156,6 @@ License Profiler
 | LicenseService.isEnabled[Coverage]                           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Spring-Framework]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Concerto-Access]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Enforce-Max-Errors]                 | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Rule-Wizard]                        | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | IntLicManager.getState[C++Test CT Core]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Email-Reports]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
@@ -180,27 +181,27 @@ License Profiler
 | LicenseService.isEnabled[CT-Basic-Coverage]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Self-Healing]                       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 4.783s
+TOTAL: 4.837s
 
 Async Call Profiler
 + ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
 | NAME                                        | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-| InternalLicenseManager.activateLicense:429  | 1     | 0.672     | 0.672   | 0.672   | 0.672   |
+| InternalLicenseManager.activateLicense:429  | 1     | 0.702     | 0.702   | 0.702   | 0.702   |
 | AsyncCallHandler.startThread                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | InternalLicenseManager.invokeAsyncCall:1282 | 40    | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.672s
+TOTAL: 0.702s
 
 VM Info Profiler
 + ------ + ----- + --------- + ------- + ------- + ------- +
 | NAME   | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------ + ----- + --------- + ------- + ------- + ------- +
-| Docker | 1     | 0.009     | 0.009   | 0.009   | 0.009   |
+| Docker | 1     | 0.008     | 0.008   | 0.008   | 0.008   |
 | Azure  | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
 | AWS    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------ + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.01s
+TOTAL: 0.009s
 
 Default Profiler
 + ------------------------- + ----- + --------- + ------- + ------- + ------- +
@@ -217,9 +218,9 @@ MEMORY STATISTICS
 + -------------- + --------- +
 | Memory Metric  | Size [MB] |
 + -------------- + --------- +
-| Current memory | 25        |
+| Current memory | 26        |
 | Max memory     | 4121      |
-| Total memory   | 25        |
+| Total memory   | 26        |
 + -------------- + --------- +
 ================================================================================================
 LOG ISSUES
@@ -230,9 +231,9 @@ LOG ISSUES
 + ------------- + ----- +
 | TRACE         | 0     |
 | TIME          | 0     |
-| DEBUG         | 101   |
-| INFO          | 71    |
-| WARN          | 2     |
-| ERROR         | 1     |
+| DEBUG         | 106   |
+| INFO          | 72    |
+| WARN          | 1     |
+| ERROR         | 0     |
 | FATAL         | 0     |
 + ------------- + ----- +
