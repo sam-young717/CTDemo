@@ -39,7 +39,7 @@ jobs:
       run: |
         rm -rf /cpptest-coverage/ATM/ATM.clog 
         rm -rf gtest_results.xml
-        ./atm_gtest --gtest_output=xml:gtest_results.xml
+        ./atm_test --gtest_output=xml:gtest_results.xml
       continue-on-error: true
 
     - name: Generate Reports

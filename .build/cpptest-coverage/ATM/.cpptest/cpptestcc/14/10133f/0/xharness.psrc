@@ -11,7 +11,7 @@ xharness.useFunctionCoverage true
 xharness.usePathCoverage false
 xharness.useCallCoverage true
 xharness.addRuntimeAutoFinalization true
-xharness.coverageMapFile /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-coverage/ATM/.cpptest/cpptestcc/1743705563322_380829/0/Account.cpp.map
+xharness.coverageMapFile /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-coverage/ATM/.cpptest/cpptestcc/1743706749006_390243/0/Account.cpp.map
 xharness.routineManager "symbol_file=*" command=setProperty property=canAddCoverageIn value=off
 xharness.routineManager "symbol_file=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/*" command=setProperty property=canAddCoverageIn value=on
 xharness.routineManager "symbol_file=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/*" command=setProperty property=canAddCoverageIn value=off
