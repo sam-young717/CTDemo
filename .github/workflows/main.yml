@@ -37,7 +37,8 @@ jobs:
       working-directory: ${{github.workspace}}/.build
       shell: bash
       run: |
-        rm -rf /cpptest-coverage/ATM/ATM.clog 
+        rm -rf /cpptest-coverage/ATM/ATM.clog
+        ls
         rm -rf gtest_results.xml
         ./atm_test --gtest_output=xml:gtest_results.xml
       continue-on-error: true
