@@ -45,7 +45,7 @@ jobs:
     - name: Generate Reports
       working-directory: ${{github.workspace}}/.build
       shell: bash
-      run: make cpptestcov-compute cpptestcov-suppress cpptestcov-report -ignore-clog-integrity-error
+      run: make cpptestcov-compute cpptestcov-suppress cpptestcov-report
 
     - name: Publish Reports to DTP
       working-directory: ${{github.workspace}}
