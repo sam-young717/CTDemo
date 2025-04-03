@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/runtime")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

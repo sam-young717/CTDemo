@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM
+CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build
+CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build
 
 # Utility rule file for cpptestcov-suppress.
 
@@ -67,7 +67,7 @@ include CMakeFiles/cpptestcov-suppress.dir/compiler_depend.make
 include CMakeFiles/cpptestcov-suppress.dir/progress.make
 
 CMakeFiles/cpptestcov-suppress:
-	/mnt/c/Users/syoung/Documents/LastData/cpptest-ct//bin/cpptestcov suppress /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.coverage
+	/mnt/c/Users/syoung/Documents/LastData/cpptest-ct//bin/cpptestcov suppress /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.coverage
 
 cpptestcov-suppress: CMakeFiles/cpptestcov-suppress
 cpptestcov-suppress: CMakeFiles/cpptestcov-suppress.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/cpptestcov-suppress.dir/clean:
 .PHONY : CMakeFiles/cpptestcov-suppress.dir/clean
 
 CMakeFiles/cpptestcov-suppress.dir/depend:
-	cd /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles/cpptestcov-suppress.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles/cpptestcov-suppress.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/cpptestcov-suppress.dir/depend
 

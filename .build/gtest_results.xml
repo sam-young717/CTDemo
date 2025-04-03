@@ -1,50 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="13" failures="2" disabled="0" errors="0" time="0.004" timestamp="2025-04-01T10:00:05.312" name="AllTests">
-  <testsuite name="Account" tests="8" failures="1" disabled="0" skipped="0" errors="0" time="0.001" timestamp="2025-04-01T10:00:05.312">
-    <testcase name="getBalanceDefault" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp" line="6" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.312" classname="Account">
+<testsuites tests="15" failures="2" disabled="0" errors="0" time="0.007" timestamp="2025-04-03T14:40:30.137" name="AllTests">
+  <testsuite name="Account" tests="9" failures="1" disabled="0" skipped="0" errors="0" time="0.004" timestamp="2025-04-03T14:40:30.137">
+    <testcase name="listTransactionsUnknownDisplay" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="14" status="run" result="completed" time="0.004" timestamp="2025-04-03T14:40:30.137" classname="Account" />
+    <testcase name="getBalanceDefault" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="31" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.141" classname="Account">
       <properties>
         <property name="req" value="ATM_test-520"/>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="getBalanceInit" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp" line="13" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.312" classname="Account">
+    <testcase name="getBalanceInit" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="38" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.141" classname="Account">
       <properties>
         <property name="req" value="ATM_test-520"/>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="getAndSetPassword" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp" line="21" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.312" classname="Account">
+    <testcase name="getAndSetPassword" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="46" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.141" classname="Account">
       <properties>
         <property name="req" value="ATM_test-520"/>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="getAndSetPasswordEmpty" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp" line="31" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.313" classname="Account">
+    <testcase name="getAndSetPasswordEmpty" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="56" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.142" classname="Account">
       <properties>
         <property name="req" value="ATM_test-520"/>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="getAndSetAccountNumber" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp" line="41" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.313" classname="Account">
+    <testcase name="getAndSetAccountNumber" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="66" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.142" classname="Account">
       <properties>
         <property name="req" value="ATM_test-520"/>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="depositSimple" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp" line="50" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.313" classname="Account">
+    <testcase name="depositSimple" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="75" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.142" classname="Account">
       <properties>
         <property name="req" value="ATM_test-520"/>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="debitSimple" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp" line="60" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.313" classname="Account">
+    <testcase name="debitSimple" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="85" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.142" classname="Account">
       <properties>
         <property name="req" value="ATM_test-520"/>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="getBalanceInitBad" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp" line="71" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.314" classname="Account">
-      <failure message="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp:76&#x0A;Expected equality of these values:&#x0A;  acct.getBalance()&#x0A;    Which is: 223&#x0A;  initial - 1.0&#x0A;    Which is: 222&#x0A;" type=""><![CDATA[/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp:76
+    <testcase name="getBalanceInitBad" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="96" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.142" classname="Account">
+      <failure message="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp:101&#x0A;Expected equality of these values:&#x0A;  acct.getBalance()&#x0A;    Which is: 223&#x0A;  initial - 1.0&#x0A;    Which is: 222&#x0A;" type=""><![CDATA[/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp:101
 Expected equality of these values:
   acct.getBalance()
     Which is: 223
@@ -53,41 +54,49 @@ Expected equality of these values:
 ]]></failure>
       <properties>
         <property name="req" value="ATM_test-520"/>
-        <property name="filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/AccountTest.hpp"/>
+        <property name="filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
   </testsuite>
-  <testsuite name="Bank" tests="5" failures="1" disabled="0" skipped="0" errors="0" time="0.002" timestamp="2025-04-01T10:00:05.314">
-    <testcase name="addAccount" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp" line="6" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.314" classname="Bank">
+  <testsuite name="Bank" tests="5" failures="1" disabled="0" skipped="0" errors="0" time="0.002" timestamp="2025-04-03T14:40:30.142">
+    <testcase name="addAccount" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="104" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.142" classname="Bank">
       <properties>
         <property name="req" value="ATM_test-521"/>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="addAccountMultiple" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp" line="14" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.314" classname="Bank">
+    <testcase name="addAccountMultiple" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="112" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.142" classname="Bank">
       <properties>
         <property name="req" value="ATM_test-521"/>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="getAccount_1" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp" line="26" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.315" classname="Bank">
+    <testcase name="getAccount_1" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="124" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.142" classname="Bank">
       <properties>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="getAccount_2" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp" line="36" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.315" classname="Bank">
+    <testcase name="getAccount_2" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="134" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.142" classname="Bank">
       <properties>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
-    <testcase name="getAccount_3" file="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp" line="46" status="run" result="completed" time="0." timestamp="2025-04-01T10:00:05.315" classname="Bank">
-      <failure message="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp:53&#x0A;Value of: nullptr != acct&#x0A;  Actual: false&#x0A;Expected: true&#x0A;" type=""><![CDATA[/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp:53
+    <testcase name="getAccount_3" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="144" status="run" result="completed" time="0.002" timestamp="2025-04-03T14:40:30.142" classname="Bank">
+      <failure message="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp:151&#x0A;Value of: nullptr != acct&#x0A;  Actual: false&#x0A;Expected: true&#x0A;" type=""><![CDATA[/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp:151
 Value of: nullptr != acct
   Actual: false
 Expected: true
 ]]></failure>
       <properties>
-        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/BankTest.hpp"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
+      </properties>
+    </testcase>
+  </testsuite>
+  <testsuite name="BaseDisplay" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0." timestamp="2025-04-03T14:40:30.145">
+    <testcase name="getType" file="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp" line="154" status="run" result="completed" time="0." timestamp="2025-04-03T14:40:30.145" classname="BaseDisplay">
+      <properties>
+        <property name="req" value="ATM_test-522"/>
+        <property name="cpptest_filename" value="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp"/>
       </properties>
     </testcase>
   </testsuite>

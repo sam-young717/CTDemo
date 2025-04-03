@@ -54,17 +54,17 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM
+CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build
+CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
 all: CMakeFiles/ATM.dir/all
-all: CMakeFiles/atm_gtest.dir/all
+all: CMakeFiles/atm_test.dir/all
 all: _deps/googletest-build/all
 .PHONY : all
 
@@ -77,7 +77,7 @@ clean: CMakeFiles/cpptestcov-compute.dir/clean
 clean: CMakeFiles/cpptestcov-report.dir/clean
 clean: CMakeFiles/cpptestcov-suppress.dir/clean
 clean: CMakeFiles/ATM.dir/clean
-clean: CMakeFiles/atm_gtest.dir/clean
+clean: CMakeFiles/atm_test.dir/clean
 clean: _deps/googletest-build/clean
 .PHONY : clean
 
@@ -139,14 +139,14 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/cpptestcov-compute.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-compute.dir/build.make CMakeFiles/cpptestcov-compute.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-compute.dir/build.make CMakeFiles/cpptestcov-compute.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles --progress-num= "Built target cpptestcov-compute"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles --progress-num= "Built target cpptestcov-compute"
 .PHONY : CMakeFiles/cpptestcov-compute.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cpptestcov-compute.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpptestcov-compute.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 .PHONY : CMakeFiles/cpptestcov-compute.dir/rule
 
 # Convenience name for target.
@@ -165,14 +165,14 @@ CMakeFiles/cpptestcov-compute.dir/clean:
 CMakeFiles/cpptestcov-report.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-report.dir/build.make CMakeFiles/cpptestcov-report.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-report.dir/build.make CMakeFiles/cpptestcov-report.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles --progress-num= "Built target cpptestcov-report"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles --progress-num= "Built target cpptestcov-report"
 .PHONY : CMakeFiles/cpptestcov-report.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cpptestcov-report.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpptestcov-report.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 .PHONY : CMakeFiles/cpptestcov-report.dir/rule
 
 # Convenience name for target.
@@ -191,14 +191,14 @@ CMakeFiles/cpptestcov-report.dir/clean:
 CMakeFiles/cpptestcov-suppress.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-suppress.dir/build.make CMakeFiles/cpptestcov-suppress.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptestcov-suppress.dir/build.make CMakeFiles/cpptestcov-suppress.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles --progress-num= "Built target cpptestcov-suppress"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles --progress-num= "Built target cpptestcov-suppress"
 .PHONY : CMakeFiles/cpptestcov-suppress.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cpptestcov-suppress.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpptestcov-suppress.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 .PHONY : CMakeFiles/cpptestcov-suppress.dir/rule
 
 # Convenience name for target.
@@ -217,14 +217,14 @@ CMakeFiles/cpptestcov-suppress.dir/clean:
 CMakeFiles/ATM.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles --progress-num=1,2,3,4,5 "Built target ATM"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles --progress-num=1,2,3,4,5 "Built target ATM"
 .PHONY : CMakeFiles/ATM.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ATM.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ATM.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 .PHONY : CMakeFiles/ATM.dir/rule
 
 # Convenience name for target.
@@ -237,32 +237,32 @@ CMakeFiles/ATM.dir/clean:
 .PHONY : CMakeFiles/ATM.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/atm_gtest.dir
+# Target rules for target CMakeFiles/atm_test.dir
 
 # All Build rule for target.
-CMakeFiles/atm_gtest.dir/all: CMakeFiles/ATM.dir/all
-CMakeFiles/atm_gtest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-CMakeFiles/atm_gtest.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_gtest.dir/build.make CMakeFiles/atm_gtest.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_gtest.dir/build.make CMakeFiles/atm_gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles --progress-num=6,7 "Built target atm_gtest"
-.PHONY : CMakeFiles/atm_gtest.dir/all
+CMakeFiles/atm_test.dir/all: CMakeFiles/ATM.dir/all
+CMakeFiles/atm_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/atm_test.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_test.dir/build.make CMakeFiles/atm_test.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_test.dir/build.make CMakeFiles/atm_test.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles --progress-num=6,7 "Built target atm_test"
+.PHONY : CMakeFiles/atm_test.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/atm_gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/atm_gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
-.PHONY : CMakeFiles/atm_gtest.dir/rule
+CMakeFiles/atm_test.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 11
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/atm_test.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
+.PHONY : CMakeFiles/atm_test.dir/rule
 
 # Convenience name for target.
-atm_gtest: CMakeFiles/atm_gtest.dir/rule
-.PHONY : atm_gtest
+atm_test: CMakeFiles/atm_test.dir/rule
+.PHONY : atm_test
 
 # clean rule for target.
-CMakeFiles/atm_gtest.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_gtest.dir/build.make CMakeFiles/atm_gtest.dir/clean
-.PHONY : CMakeFiles/atm_gtest.dir/clean
+CMakeFiles/atm_test.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_test.dir/build.make CMakeFiles/atm_test.dir/clean
+.PHONY : CMakeFiles/atm_test.dir/clean
 
 #=============================================================================
 # Target rules for target _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
@@ -271,14 +271,14 @@ CMakeFiles/atm_gtest.dir/clean:
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles --progress-num=8,9 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles --progress-num=8,9 "Built target gmock"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/rule
 
 # Convenience name for target.
@@ -298,14 +298,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletes
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles --progress-num=10,11 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles --progress-num=10,11 "Built target gmock_main"
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/rule
 
 # Convenience name for target.
@@ -324,14 +324,14 @@ _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles --progress-num=12,13 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles --progress-num=12,13 "Built target gtest"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -350,14 +350,14 @@ _deps/googletest-build/googletest/CMakeFiles/gtest.dir/clean:
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles --progress-num=14,15 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles --progress-num=14,15 "Built target gtest_main"
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 .PHONY : _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.

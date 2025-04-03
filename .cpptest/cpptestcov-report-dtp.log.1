@@ -1,58 +1,456 @@
-2025-04-01 10:30:43,595 [INFO] Starting cpptestcov-report-dtp 2024.2.0 (10.7.1.20241114B889)... at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:31)
-2025-04-01 10:30:43,596 [INFO] Arguments: [-settings, cpptestcli.properties, -property, build.id=, -property, dtp.project=, .coverage, .build/gtest_results.xml] at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:32)
-2025-04-01 10:30:43,597 [INFO] Max memory available: 4120903680 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:33)
-2025-04-01 10:30:43,598 [INFO] Available CPUs: 22 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:34)
-2025-04-01 10:30:43,602 [INFO] Java home: /usr/lib/jvm/java-17-openjdk-amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:35)
-2025-04-01 10:30:43,602 [INFO] Java version: 17.0.14 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:36)
-2025-04-01 10:30:43,602 [INFO] Java vendor: Ubuntu at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:37)
-2025-04-01 10:30:43,603 [INFO] OS arch: amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:38)
-2025-04-01 10:30:43,603 [INFO] OS name: Linux at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:39)
-2025-04-01 10:30:43,604 [INFO] OS version: 5.15.146.1-microsoft-standard-WSL2 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:40)
-2025-04-01 10:30:43,605 [INFO] Working dir (user.dir): /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:41)
-2025-04-01 10:30:43,605 [INFO] Home dir (user.home): /home/syoung at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:42)
-2025-04-01 10:30:43,663 [INFO] [CONSOLE] cpptestcov-report-dtp 2024.2.0 (10.7.1.20241114B889) -- Copyright (C) 2024 Parasoft Corporation at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2025-04-01 10:30:43,741 [INFO] Started ProfilerDumper listening thread on command file: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/xtest_dump_stats.cmd at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.<init>(ProfilerStatisticsService.java:54)
-2025-04-01 10:30:43,807 [WARN] Break execution at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.call(DTPReporter.java:107)
-com.parasoft.cpptest.coverage.common.BreakExecutionException: null
-	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.callImpl(DTPReporter.java:170) ~[com.parasoft.cpptest.coverage.report.dtp-2024.2.0.20241114B889.jar:?]
-	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.call(DTPReporter.java:105) ~[com.parasoft.cpptest.coverage.report.dtp-2024.2.0.20241114B889.jar:?]
-	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.call(DTPReporter.java:34) ~[com.parasoft.cpptest.coverage.report.dtp-2024.2.0.20241114B889.jar:?]
-	at picocli.CommandLine.executeUserObject(CommandLine.java:1953) ~[picocli-4.6.3.jar:4.6.3]
-	at picocli.CommandLine.access$1300(CommandLine.java:145) ~[picocli-4.6.3.jar:4.6.3]
-	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358) ~[picocli-4.6.3.jar:4.6.3]
-	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352) ~[picocli-4.6.3.jar:4.6.3]
-	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314) ~[picocli-4.6.3.jar:4.6.3]
-	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179) ~[picocli-4.6.3.jar:4.6.3]
-	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316) ~[picocli-4.6.3.jar:4.6.3]
-	at picocli.CommandLine.execute(CommandLine.java:2078) ~[picocli-4.6.3.jar:4.6.3]
-	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.executeReporter(DTPReporter.java:138) ~[com.parasoft.cpptest.coverage.report.dtp-2024.2.0.20241114B889.jar:?]
-	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.main(DTPReporter.java:91) ~[com.parasoft.cpptest.coverage.report.dtp-2024.2.0.20241114B889.jar:?]
-2025-04-01 10:30:43,820 [INFO] Diagnostics mode is ON. File=/tmp/parasoft-syoung/storages/storage_2025-04-01_10-30-43/logs/run_2025-04-01_10-30-43/xtest.diagnostics.txt at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.initialize(ServiceDiagnosticCollector.java:294)
-2025-04-01 10:30:43,831 [DEBUG]  at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:133)
-2025-04-01 10:30:43,835 [DEBUG] Total: 0 seconds (total - 0 seconds) at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:136)
-2025-04-01 10:30:43,848 [DEBUG] Memory Statistics Profiler
+2025-04-03 14:33:30,106 [INFO] Starting cpptestcov-report-dtp 2024.2.0 (10.7.1.20241114B889)... at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:31)
+2025-04-03 14:33:30,110 [INFO] Arguments: [-root, ., -settings, cpptestct.properties, .coverage, /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/gtest_results.xml] at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:32)
+2025-04-03 14:33:30,110 [INFO] Max memory available: 4120903680 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:33)
+2025-04-03 14:33:30,111 [INFO] Available CPUs: 22 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:34)
+2025-04-03 14:33:30,112 [INFO] Java home: /usr/lib/jvm/java-17-openjdk-amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:35)
+2025-04-03 14:33:30,112 [INFO] Java version: 17.0.14 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:36)
+2025-04-03 14:33:30,113 [INFO] Java vendor: Ubuntu at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:37)
+2025-04-03 14:33:30,113 [INFO] OS arch: amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:38)
+2025-04-03 14:33:30,113 [INFO] OS name: Linux at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:39)
+2025-04-03 14:33:30,114 [INFO] OS version: 5.15.146.1-microsoft-standard-WSL2 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:40)
+2025-04-03 14:33:30,115 [INFO] Working dir (user.dir): /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:41)
+2025-04-03 14:33:30,115 [INFO] Home dir (user.home): /home/syoung at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:42)
+2025-04-03 14:33:30,254 [INFO] [CONSOLE] cpptestcov-report-dtp 2024.2.0 (10.7.1.20241114B889) -- Copyright (C) 2024 Parasoft Corporation at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:30,457 [INFO] Started ProfilerDumper listening thread on command file: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/xtest_dump_stats.cmd at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.<init>(ProfilerStatisticsService.java:54)
+2025-04-03 14:33:30,570 [DEBUG] Configured native libraries path by property "xtest.os.libs.dir": /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/lib/os/linux/x86_64 at com.parasoft.xtest.common.nativecode.NativeDLL.loadLibrary(NativeDLL.java:62)
+2025-04-03 14:33:30,571 [DEBUG] Loading Xtest native library from: /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/lib/os/linux/x86_64/... at com.parasoft.xtest.common.nativecode.NativeDLL.loadLibrary(NativeDLL.java:70)
+2025-04-03 14:33:30,654 [INFO] Diagnostics mode is ON. File=/tmp/parasoft-syoung/storages/storage_2025-04-03_14-33-29/logs/run_2025-04-03_14-33-29/xtest.diagnostics.txt at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.initialize(ServiceDiagnosticCollector.java:294)
+2025-04-03 14:33:30,664 [INFO] Encoding and charset detected: at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:30)
+2025-04-03 14:33:30,665 [INFO] - default charset: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:31)
+2025-04-03 14:33:30,666 [INFO] - native encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:35)
+2025-04-03 14:33:30,667 [INFO] - file encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:48)
+2025-04-03 14:33:30,667 [INFO] Configured to use:  at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:60)
+2025-04-03 14:33:30,667 [INFO] - native encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:61)
+2025-04-03 14:33:30,668 [INFO] - file encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:62)
+2025-04-03 14:33:30,673 [DEBUG] Initializing variables provider ... com.parasoft.xtest.common.variables.EnvironmentVariablesResolver$EnvironmentVariablesProvider at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:60)
+2025-04-03 14:33:30,674 [DEBUG] Registering dynamic variable ... env_var at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,674 [DEBUG] Initializing variables provider ... com.parasoft.xtest.common.variables.DynamicVariablesResolver$DynamicableVariablesProvider at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:60)
+2025-04-03 14:33:30,675 [DEBUG] Registering dynamic variable ... scontrol_branch at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,675 [DEBUG] Registering dynamic variable ... exec_env at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,675 [DEBUG] Registering dynamic variable ... user_name at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,676 [DEBUG] Registering dynamic variable ... config_name at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,676 [DEBUG] Registering dynamic variable ... tool_name at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,676 [DEBUG] Registering dynamic variable ... analysis_type at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,677 [DEBUG] Registering dynamic variable ... dtp_project at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,677 [DEBUG] Registering dynamic variable ... general_project at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,677 [DEBUG] Registering dynamic variable ... jvm_prop at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,678 [DEBUG] Registering dynamic variable ... setting at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,678 [DEBUG] Registering dynamic variable ... time at com.parasoft.xtest.common.variables.AbstractVariablesProvider.initialize(AbstractVariablesProvider.java:64)
+2025-04-03 14:33:30,707 [INFO] [CONSOLE] Loading GoogleTest results ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:30,708 [INFO] [CONSOLE] /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/gtest_results.xml ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:30,813 [INFO] [CONSOLE] Done. at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:30,813 [INFO] [CONSOLE] === Parasoft Unit Tests Summary === at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:30,814 [INFO] [CONSOLE]  at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:30,814 [INFO] [CONSOLE] Unit tests failures: 2
+Executed test cases: 14
+  Passed: 12
+  Failed: 2
+  Skipped: 0 at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:30,815 [INFO] [CONSOLE]  at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:30,857 [DEBUG] Using default coverage storage version: V2 at com.parasoft.xtest.coverage.internal.storage.CoverageStorageFactory.getStorageVersion(CoverageStorageFactory.java:83)
+2025-04-03 14:33:30,875 [DEBUG] CoverageStatisticsManager constructed at com.parasoft.xtest.coverage.internal.CoverageStatisticsManager.<init>(CoverageStatisticsManager.java:93)
+2025-04-03 14:33:30,877 [INFO] New coverage session manager created: session_2025-04-03_14-33-30-828 at com.parasoft.xtest.coverage.CoverageService.getSessionManager(CoverageService.java:41)
+2025-04-03 14:33:30,881 [DEBUG] Using default coverage storage version: V2 at com.parasoft.xtest.coverage.internal.storage.CoverageStorageFactory.getStorageVersion(CoverageStorageFactory.java:83)
+2025-04-03 14:33:30,914 [DEBUG] Returning new coverage storage for version V2, session session_2025-04-03_14-33-30-828: com.parasoft.xtest.coverage.internal.storage.v2.CoverageStorageV2 at com.parasoft.xtest.coverage.internal.storage.CoverageStorageFactory.createStorage(CoverageStorageFactory.java:63)
+2025-04-03 14:33:30,917 [ERROR] Coverage storage monitor cannot be enabled because vfs library is not present on the classpath at com.parasoft.xtest.coverage.internal.CoverageStatisticsManager.shouldCreateStorageMonitor(CoverageStatisticsManager.java:845)
+2025-04-03 14:33:30,918 [DEBUG] Initialization of coverage storage started at com.parasoft.xtest.coverage.xml.CoverageFilesManager.load(CoverageFilesManager.java:243)
+2025-04-03 14:33:30,919 [DEBUG] Coverage storage location (/tmp/parasoft-syoung/storages/storage_2025-04-03_14-33-29/com.parasoft.xtest.coverage/session_2025-04-03_14-33-30-828) is not a directory, exiting at com.parasoft.xtest.coverage.xml.CoverageFilesManager.load(CoverageFilesManager.java:246)
+2025-04-03 14:33:30,919 [DEBUG] Initialization of coverage storage finished at com.parasoft.xtest.coverage.xml.CoverageFilesManager.load(CoverageFilesManager.java:266)
+2025-04-03 14:33:30,919 [DEBUG] Failed to delete coverage data dir: /tmp/parasoft-syoung/storages/storage_2025-04-03_14-33-29/com.parasoft.xtest.coverage/session_2025-04-03_14-33-30-828 at com.parasoft.xtest.coverage.xml.CoverageFilesManager.deleteStorageDirs(CoverageFilesManager.java:312)
+2025-04-03 14:33:31,191 [INFO] [CONSOLE] Loading coverage data from .coverage ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:31,333 [INFO] [CONSOLE] 1402c6ae.cov (CTDemo/Account.cpp) ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:31,337 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$4@4fa06f52 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:31,340 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$4@4fa06f52 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:31,355 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$5@7d151a at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:31,355 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$5@7d151a at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:31,361 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$1$1@4351171a at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:31,374 [INFO] Reading local settings for source controls... at com.parasoft.xtest.scontrol.preferences.SourceControlPreferencesPatcher.patchWithLocalSettingsExt(SourceControlPreferencesPatcher.java:75)
+2025-04-03 14:33:31,381 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$1$1@4351171a at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:31,389 [WARN] None of supported source controls is enabled in settings. The report will not contain any source control references. at com.parasoft.xtest.results.sourcecontrol.SourceControlProcessor.reportSCProblem(SourceControlProcessor.java:331)
+2025-04-03 14:33:31,401 [DEBUG] Service com.parasoft.xtest.results.api.suppressions.ISuppressionsService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-04-03 14:33:31,469 [INFO] [CONSOLE] 1402f295.cov (CTDemo/Account.hxx) ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:31,483 [INFO] [CONSOLE] 271bbea5.cov (CTDemo/Bank.cpp) ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:31,498 [INFO] [CONSOLE] 7e5c4499.cov (CTDemo/BaseDisplay.hxx) ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:31,512 [INFO] [CONSOLE] 7e5ca8d2.cov (CTDemo/BaseDisplay.cpp) ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:31,528 [INFO] [CONSOLE] 9b68223d.cov (CTDemo/ATM.cpp) ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:31,542 [INFO] [CONSOLE] Done. at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:31,544 [DEBUG] Service access - IResultPostProcessorService: Location Processor at com.parasoft.cpptest.coverage.report.dtp.ReportUtil.getPostProcessedResults(ReportUtil.java:33)
+2025-04-03 14:33:31,545 [DEBUG] Service access - IResultPostProcessorService: Source Control Processor at com.parasoft.cpptest.coverage.report.dtp.ReportUtil.getPostProcessedResults(ReportUtil.java:33)
+2025-04-03 14:33:31,551 [DEBUG] Service access - IResultPostProcessorService: Coverage Processor at com.parasoft.cpptest.coverage.report.dtp.ReportUtil.getPostProcessedResults(ReportUtil.java:33)
+2025-04-03 14:33:31,551 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$3@2adddc06 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:31,555 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$3@2adddc06 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:31,556 [DEBUG] Service access - IResultPostProcessorService: Author Processor at com.parasoft.cpptest.coverage.report.dtp.ReportUtil.getPostProcessedResults(ReportUtil.java:33)
+2025-04-03 14:33:31,556 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$6@301d8120 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:31,557 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$6@301d8120 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:31,561 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.authorship.internal.computer.AuthorshipService@5cbb84b1 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:31,562 [DEBUG] Service access - IResultPostProcessorService: Locations Author Processor at com.parasoft.cpptest.coverage.report.dtp.ReportUtil.getPostProcessedResults(ReportUtil.java:33)
+2025-04-03 14:33:31,562 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$7@6d367020 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:31,581 [DEBUG] Setting: scope.scontrol mapped to storage key: scope.scontrol at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-04-03 14:33:31,583 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.authorship.internal.computer.AuthorshipService@5cbb84b1 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:31,583 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.coverage.all.CoverageServicesRegistry$7@6d367020 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:31,595 [DEBUG] Setting: dtp.url mapped to storage key: dtp.url at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-04-03 14:33:31,596 [DEBUG] Setting: dtp.password mapped to storage key: dtp.password at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-04-03 14:33:31,596 [DEBUG] Setting: dtp.project mapped to storage key: dtp.project at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-04-03 14:33:31,599 [DEBUG] Not an instance of stateful oidc service, ignoring: null at com.parasoft.xtest.common.dtp.DtpPreferences.getStatefulOidcService(DtpPreferences.java:100)
+2025-04-03 14:33:31,602 [DEBUG] Service access - IResultReporterService: CoverageReporter at com.parasoft.cpptest.coverage.report.dtp.ReportUtil.initializeReporters(ReportUtil.java:65)
+2025-04-03 14:33:31,630 [INFO] Getting IDtpServiceRegistry at com.parasoft.xtest.reports.xml.ResultsSessionData.<init>(ResultsSessionData.java:112)
+2025-04-03 14:33:31,633 [DEBUG] Not an instance of stateful oidc service, ignoring: null at com.parasoft.xtest.common.dtp.DtpPreferences.getStatefulOidcService(DtpPreferences.java:100)
+2025-04-03 14:33:31,657 [DEBUG] Created a new persistently cached instance of service via factory: null::null::null::/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo::0::DeviceCode::1285646988 at com.parasoft.xtest.common.oidc.OidcServiceFactory.getService(OidcServiceFactory.java:42)
+2025-04-03 14:33:31,658 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.common.oidc.OidcService@42c2f48c at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:31,660 [DEBUG] Oidc service is disabled at com.parasoft.xtest.common.httpclient.XRestClient.createExecutor(XRestClient.java:182)
+2025-04-03 14:33:31,667 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.common.oidc.OidcService@42c2f48c at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:31,904 [INFO] [CONSOLE] DTP Services: Loading available services from https://localhost:8443/grs/api/v1.9/dtpServices at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:31,905 [INFO] DTP Services: Loading available services from https://localhost:8443/grs/api/v1.9/dtpServices at com.parasoft.xtest.common.dtp.DtpServiceRegistry.writeOnConsole(DtpServiceRegistry.java:388)
+2025-04-03 14:33:31,914 [DEBUG] Executing request:  URI: https://localhost:8443/grs/api/v1.9/dtpServices, RestClient: com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient@1cb37ee4 at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:246)
+2025-04-03 14:33:32,258 [DEBUG] JSON: {"moreInfoUrl":"https://localhost:8443/grs/api","services":{"projects":"https://localhost:8443/grs/api/v1.9/projects","staticAnalysisViolationsMetadataUpdate":"https://localhost:8443/grs/api/v1.9/staticAnalysisViolations/metadata","dynamicAnalysisTestCasesMetadata":"https://localhost:8443/grs/api/v1.9/dynamicAnalysisTestCases/metadataSearch","dataCollectorV2":"https://localhost:8082/api/v2/dataCollector","testConfigurationsExtended":"https://localhost:8443/grs/api/v1.9/testConfigurations","staticAnalysisUnbranchedViolationsMetadata":"https://localhost:8443/grs/api/v1.9/unbranchedViolations/metadataSearch","existingLocalSourceCopy":"https://localhost:8082/api/v1/existingLocalSourceCopy","rules":"https://localhost:8443/grs/api/v1.9/rules","tools":"https://localhost:8443/grs/api/v1.9/tools","changeExplorer":"https://localhost:8443/grs/dtp/explorers/change","buildReviews":"https://localhost:8443/grs/api/v1.9/buildReviews","priorities":"https://localhost:8443/grs/api/v1.9/priorities","testActions":"https://localhost:8443/grs/api/v1.9/metadata/testAction","processIntelligenceEngine":"http://localhost:8314","staticAnalysisViolations":"https://localhost:8443/grs/api/v1.9/staticAnalysisViolations","builds":"https://localhost:8443/grs/api/v1.9/builds","metricsExplorer":"https://localhost:8443/grs/dtp/explorers/metrics","violationsExplorer":"https://localhost:8443/grs/dtp/explorers/violations","staticAnalysisFindings":"https://localhost:8443/grs/api/v1.9/staticAnalysisFindings","unbranchedResourcesSearch":"https://localhost:8443/grs/api/v1.9/unbranchedResourcesSearch","linkedAppRequirements":"https://localhost:8443/grs/api/v1.9/linkedApps/current/requirements","reportedResourcesScmRepositories":"https://localhost:8443/grs/api/v1.9/reportedResourcesScmRepositories","localSettings":"https://localhost:8443/grs/api/v1.9/dtpServices/localSettings","coverage":"https://localhost:8443/grs/api/v1.9/coverage","staticAnalysisViolationsMetadata":"https://localhost:8443/grs/api/v1.9/staticAnalysisViolations/metadataSearch","dynamicAnalysisTestCases":"https://localhost:8443/grs/api/v1.9/dynamicAnalysisTestCases","testExplorer":"https://localhost:8443/grs/dtp/explorers/test","licenseServerV1.1":"https://localhost:8443/licenseserver/api/v1.1","filters":"https://localhost:8443/grs/api/v1.9/filters","dataCollector":"https://localhost:8082/api/v1/dataCollector","coverageExplorer":"https://localhost:8443/grs/dtp/explorers/coverage","ruleMapResources":"https://localhost:8443/grs/api/v1.9/testConfigurations/ruleMaps/resources","license":"https://localhost:8443/grs/api/v1.9/license/token","dynamicAnalysisTestCasesMetadataUpdate":"https://localhost:8443/grs/api/v1.9/dynamicAnalysisTestCases/metadata","testConfigurationsUpload":"https://localhost:8443/grs/api/v1.9/testConfigurations","testConfigurations":"https://localhost:8443/grs/api/v1.9/testConfigurations","licenseServer":"https://localhost:8443/licenseserver/api/v1","reportCenter":"https://localhost:8443/grs/index.jsp"}} at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:636)
+2025-04-03 14:33:32,275 [DEBUG] JSON entry: projects:https://localhost:8443/grs/api/v1.9/projects at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,276 [DEBUG] JSON entry: staticAnalysisViolationsMetadataUpdate:https://localhost:8443/grs/api/v1.9/staticAnalysisViolations/metadata at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,276 [DEBUG] JSON entry: dynamicAnalysisTestCasesMetadata:https://localhost:8443/grs/api/v1.9/dynamicAnalysisTestCases/metadataSearch at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,277 [DEBUG] JSON entry: dataCollectorV2:https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,278 [DEBUG] JSON entry: testConfigurationsExtended:https://localhost:8443/grs/api/v1.9/testConfigurations at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,278 [DEBUG] JSON entry: staticAnalysisUnbranchedViolationsMetadata:https://localhost:8443/grs/api/v1.9/unbranchedViolations/metadataSearch at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,279 [DEBUG] JSON entry: existingLocalSourceCopy:https://localhost:8082/api/v1/existingLocalSourceCopy at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,279 [DEBUG] JSON entry: rules:https://localhost:8443/grs/api/v1.9/rules at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,280 [DEBUG] JSON entry: tools:https://localhost:8443/grs/api/v1.9/tools at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,280 [DEBUG] JSON entry: changeExplorer:https://localhost:8443/grs/dtp/explorers/change at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,281 [DEBUG] JSON entry: buildReviews:https://localhost:8443/grs/api/v1.9/buildReviews at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,281 [DEBUG] JSON entry: priorities:https://localhost:8443/grs/api/v1.9/priorities at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,282 [DEBUG] JSON entry: testActions:https://localhost:8443/grs/api/v1.9/metadata/testAction at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,283 [DEBUG] JSON entry: processIntelligenceEngine:http://localhost:8314 at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,283 [DEBUG] JSON entry: staticAnalysisViolations:https://localhost:8443/grs/api/v1.9/staticAnalysisViolations at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,283 [DEBUG] JSON entry: builds:https://localhost:8443/grs/api/v1.9/builds at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,284 [DEBUG] JSON entry: metricsExplorer:https://localhost:8443/grs/dtp/explorers/metrics at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,287 [DEBUG] JSON entry: violationsExplorer:https://localhost:8443/grs/dtp/explorers/violations at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,288 [DEBUG] JSON entry: staticAnalysisFindings:https://localhost:8443/grs/api/v1.9/staticAnalysisFindings at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,288 [DEBUG] JSON entry: unbranchedResourcesSearch:https://localhost:8443/grs/api/v1.9/unbranchedResourcesSearch at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,289 [DEBUG] JSON entry: linkedAppRequirements:https://localhost:8443/grs/api/v1.9/linkedApps/current/requirements at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,289 [DEBUG] JSON entry: reportedResourcesScmRepositories:https://localhost:8443/grs/api/v1.9/reportedResourcesScmRepositories at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,290 [DEBUG] JSON entry: localSettings:https://localhost:8443/grs/api/v1.9/dtpServices/localSettings at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,290 [DEBUG] JSON entry: coverage:https://localhost:8443/grs/api/v1.9/coverage at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,290 [DEBUG] JSON entry: staticAnalysisViolationsMetadata:https://localhost:8443/grs/api/v1.9/staticAnalysisViolations/metadataSearch at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,291 [DEBUG] JSON entry: dynamicAnalysisTestCases:https://localhost:8443/grs/api/v1.9/dynamicAnalysisTestCases at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,292 [DEBUG] JSON entry: testExplorer:https://localhost:8443/grs/dtp/explorers/test at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,293 [DEBUG] JSON entry: licenseServerV1.1:https://localhost:8443/licenseserver/api/v1.1 at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,293 [DEBUG] JSON entry: filters:https://localhost:8443/grs/api/v1.9/filters at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,294 [DEBUG] JSON entry: dataCollector:https://localhost:8082/api/v1/dataCollector at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,294 [DEBUG] JSON entry: coverageExplorer:https://localhost:8443/grs/dtp/explorers/coverage at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,294 [DEBUG] JSON entry: ruleMapResources:https://localhost:8443/grs/api/v1.9/testConfigurations/ruleMaps/resources at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,295 [DEBUG] JSON entry: license:https://localhost:8443/grs/api/v1.9/license/token at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,295 [DEBUG] JSON entry: dynamicAnalysisTestCasesMetadataUpdate:https://localhost:8443/grs/api/v1.9/dynamicAnalysisTestCases/metadata at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,295 [DEBUG] JSON entry: testConfigurationsUpload:https://localhost:8443/grs/api/v1.9/testConfigurations at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,296 [DEBUG] JSON entry: testConfigurations:https://localhost:8443/grs/api/v1.9/testConfigurations at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,296 [DEBUG] JSON entry: licenseServer:https://localhost:8443/licenseserver/api/v1 at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,296 [DEBUG] JSON entry: reportCenter:https://localhost:8443/grs/index.jsp at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,305 [DEBUG] Updated services cache file in /tmp/parasoft-syoung/storages/storage_2025-04-03_14-33-29/.dtp_services_cache at com.parasoft.xtest.common.dtp.DtpServiceRegistry.updateServicesFile(DtpServiceRegistry.java:503)
+2025-04-03 14:33:32,305 [INFO] [CONSOLE] DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations] at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:32,306 [INFO] DTP Services: Registering the following services: [projects, staticAnalysisViolationsMetadataUpdate, dynamicAnalysisTestCasesMetadata, testConfigurationsExtended, staticAnalysisUnbranchedViolationsMetadata, rules, tools, buildReviews, priorities, testActions, staticAnalysisViolations, builds, staticAnalysisFindings, unbranchedResourcesSearch, linkedAppRequirements, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, filters, ruleMapResources, license, dynamicAnalysisTestCasesMetadataUpdate, testConfigurationsUpload, testConfigurations] at com.parasoft.xtest.common.dtp.DtpServiceRegistry.writeOnConsole(DtpServiceRegistry.java:388)
+2025-04-03 14:33:32,306 [DEBUG] Not an instance of stateful oidc service, ignoring: null at com.parasoft.xtest.common.dtp.DtpPreferences.getStatefulOidcService(DtpPreferences.java:100)
+2025-04-03 14:33:32,306 [DEBUG] Not an instance of stateful oidc service, ignoring: null at com.parasoft.xtest.common.dtp.DtpPreferences.getStatefulOidcService(DtpPreferences.java:100)
+2025-04-03 14:33:32,307 [DEBUG] Oidc service is disabled at com.parasoft.xtest.common.httpclient.XRestClient.createExecutor(XRestClient.java:182)
+2025-04-03 14:33:32,308 [INFO] [CONSOLE] DTP Services: Loading available services from https://localhost:8443/grs/api/v1/dtpServices at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:32,308 [INFO] DTP Services: Loading available services from https://localhost:8443/grs/api/v1/dtpServices at com.parasoft.xtest.common.dtp.DtpServiceRegistry.writeOnConsole(DtpServiceRegistry.java:388)
+2025-04-03 14:33:32,308 [DEBUG] Executing request:  URI: https://localhost:8443/grs/api/v1/dtpServices, RestClient: com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient@49206065 at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:246)
+2025-04-03 14:33:32,336 [DEBUG] JSON: {"moreInfoUrl":"https://localhost:8443/grs/api","services":{"dataCollectorV2":"https://localhost:8082/api/v2/dataCollector","testConfigurationsExtended":"https://localhost:8443/grs/api/v1/testConfigurations","existingLocalSourceCopy":"https://localhost:8082/api/v1/existingLocalSourceCopy","rules":"https://localhost:8443/grs/api/v1/rules","tools":"https://localhost:8443/grs/api/v1/tools","changeExplorer":"https://localhost:8443/grs/dtp/explorers/change","priorities":"https://localhost:8443/grs/api/v1/priorities","processIntelligenceEngine":"http://localhost:8314","staticAnalysisViolations":"https://localhost:8443/grs/api/v1/staticAnalysisViolations","builds":"https://localhost:8443/grs/api/v1/builds","metricsExplorer":"https://localhost:8443/grs/dtp/explorers/metrics","violationsExplorer":"https://localhost:8443/grs/dtp/explorers/violations","reportedResourcesScmRepositories":"https://localhost:8443/grs/api/v1/reportedResourcesScmRepositories","localSettings":"https://localhost:8443/grs/api/v1/dtpServices/localSettings","coverage":"https://localhost:8443/grs/api/v1/coverage","staticAnalysisViolationsMetadata":"https://localhost:8443/grs/api/v1/staticAnalysisViolations/metadata","dynamicAnalysisTestCases":"https://localhost:8443/grs/api/v1/dynamicAnalysisTestCases","testExplorer":"https://localhost:8443/grs/dtp/explorers/test","licenseServerV1.1":"https://localhost:8443/licenseserver/api/v1.1","filters":"https://localhost:8443/grs/api/v1/filters","dataCollector":"https://localhost:8082/api/v1/dataCollector","coverageExplorer":"https://localhost:8443/grs/dtp/explorers/coverage","ruleMapResources":"https://localhost:8443/grs/api/v1/testConfigurations/ruleMaps/resources","license":"https://localhost:8443/grs/api/v1/license/token","testConfigurations":"https://localhost:8443/grs/api/v1/testConfigurations","licenseServer":"https://localhost:8443/licenseserver/api/v1","reportCenter":"https://localhost:8443/grs/index.jsp"}} at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:636)
+2025-04-03 14:33:32,338 [DEBUG] JSON entry: dataCollectorV2:https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,338 [DEBUG] JSON entry: testConfigurationsExtended:https://localhost:8443/grs/api/v1/testConfigurations at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,339 [DEBUG] JSON entry: existingLocalSourceCopy:https://localhost:8082/api/v1/existingLocalSourceCopy at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,340 [DEBUG] JSON entry: rules:https://localhost:8443/grs/api/v1/rules at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,340 [DEBUG] JSON entry: tools:https://localhost:8443/grs/api/v1/tools at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,341 [DEBUG] JSON entry: changeExplorer:https://localhost:8443/grs/dtp/explorers/change at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,341 [DEBUG] JSON entry: priorities:https://localhost:8443/grs/api/v1/priorities at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,342 [DEBUG] JSON entry: processIntelligenceEngine:http://localhost:8314 at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,342 [DEBUG] JSON entry: staticAnalysisViolations:https://localhost:8443/grs/api/v1/staticAnalysisViolations at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,343 [DEBUG] JSON entry: builds:https://localhost:8443/grs/api/v1/builds at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,343 [DEBUG] JSON entry: metricsExplorer:https://localhost:8443/grs/dtp/explorers/metrics at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,344 [DEBUG] JSON entry: violationsExplorer:https://localhost:8443/grs/dtp/explorers/violations at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,344 [DEBUG] JSON entry: reportedResourcesScmRepositories:https://localhost:8443/grs/api/v1/reportedResourcesScmRepositories at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,345 [DEBUG] JSON entry: localSettings:https://localhost:8443/grs/api/v1/dtpServices/localSettings at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,345 [DEBUG] JSON entry: coverage:https://localhost:8443/grs/api/v1/coverage at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,345 [DEBUG] JSON entry: staticAnalysisViolationsMetadata:https://localhost:8443/grs/api/v1/staticAnalysisViolations/metadata at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,346 [DEBUG] JSON entry: dynamicAnalysisTestCases:https://localhost:8443/grs/api/v1/dynamicAnalysisTestCases at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,347 [DEBUG] JSON entry: testExplorer:https://localhost:8443/grs/dtp/explorers/test at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,347 [DEBUG] JSON entry: licenseServerV1.1:https://localhost:8443/licenseserver/api/v1.1 at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,348 [DEBUG] JSON entry: filters:https://localhost:8443/grs/api/v1/filters at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,348 [DEBUG] JSON entry: dataCollector:https://localhost:8082/api/v1/dataCollector at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,349 [DEBUG] JSON entry: coverageExplorer:https://localhost:8443/grs/dtp/explorers/coverage at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,350 [DEBUG] JSON entry: ruleMapResources:https://localhost:8443/grs/api/v1/testConfigurations/ruleMaps/resources at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,350 [DEBUG] JSON entry: license:https://localhost:8443/grs/api/v1/license/token at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,351 [DEBUG] JSON entry: testConfigurations:https://localhost:8443/grs/api/v1/testConfigurations at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,352 [DEBUG] JSON entry: licenseServer:https://localhost:8443/licenseserver/api/v1 at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,352 [DEBUG] JSON entry: reportCenter:https://localhost:8443/grs/index.jsp at com.parasoft.xtest.common.dtp.DtpServiceRegistry$DtpServicesClient.getServices(DtpServiceRegistry.java:655)
+2025-04-03 14:33:32,357 [DEBUG] Updated services cache file in /tmp/parasoft-syoung/storages/storage_2025-04-03_14-33-29/.dtp_services_cache at com.parasoft.xtest.common.dtp.DtpServiceRegistry.updateServicesFile(DtpServiceRegistry.java:503)
+2025-04-03 14:33:32,359 [INFO] [CONSOLE] DTP Services: Registering the following services: [dataCollectorV2, testConfigurationsExtended, existingLocalSourceCopy, rules, tools, changeExplorer, priorities, processIntelligenceEngine, staticAnalysisViolations, builds, metricsExplorer, violationsExplorer, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, testExplorer, licenseServerV1.1, filters, dataCollector, coverageExplorer, ruleMapResources, license, testConfigurations, licenseServer, reportCenter] at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:32,361 [INFO] DTP Services: Registering the following services: [dataCollectorV2, testConfigurationsExtended, existingLocalSourceCopy, rules, tools, changeExplorer, priorities, processIntelligenceEngine, staticAnalysisViolations, builds, metricsExplorer, violationsExplorer, reportedResourcesScmRepositories, localSettings, coverage, staticAnalysisViolationsMetadata, dynamicAnalysisTestCases, testExplorer, licenseServerV1.1, filters, dataCollector, coverageExplorer, ruleMapResources, license, testConfigurations, licenseServer, reportCenter] at com.parasoft.xtest.common.dtp.DtpServiceRegistry.writeOnConsole(DtpServiceRegistry.java:388)
+2025-04-03 14:33:32,363 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.common.dtp.DtpServiceRegistry@407873d3 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:32,364 [DEBUG] Service access - IResultReporterService: CoverageConsoleReporter at com.parasoft.cpptest.coverage.report.dtp.ReportUtil.initializeReporters(ReportUtil.java:65)
+2025-04-03 14:33:32,364 [DEBUG] Service access - IResultReporterService: transformerReporter at com.parasoft.cpptest.coverage.report.dtp.ReportUtil.initializeReporters(ReportUtil.java:65)
+2025-04-03 14:33:32,366 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.common.dtp.DtpServiceRegistry@407873d3 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:32,399 [INFO] Getting IDtpServiceRegistry at com.parasoft.xtest.reports.xml.ResultsSessionData.<init>(ResultsSessionData.java:112)
+2025-04-03 14:33:32,403 [DEBUG] Service access - IResultReporterService: SourcesReporter at com.parasoft.cpptest.coverage.report.dtp.ReportUtil.initializeReporters(ReportUtil.java:65)
+2025-04-03 14:33:32,476 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.authorship.internal.authors.AuthorsPreferences@534c6767 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
+2025-04-03 14:33:32,479 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.authorship.internal.authors.AuthorsPreferences@534c6767 at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
+2025-04-03 14:33:32,519 [DEBUG] Service com.parasoft.xtest.results.api.reassignments.IReassignmentsService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-04-03 14:33:32,520 [DEBUG] Service com.parasoft.xtest.results.api.IResultPostProcessorService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-04-03 14:33:32,565 [DEBUG] Service com.parasoft.xtest.results.api.reassignments.IReassignmentsService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-04-03 14:33:32,566 [DEBUG] Service com.parasoft.xtest.results.api.IResultPostProcessorService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-04-03 14:33:32,919 [INFO] Coverage files loaded in cache: 6 at com.parasoft.xtest.coverage.internal.CoverageLocationsLoader.load(CoverageLocationsLoader.java:61)
+2025-04-03 14:33:32,937 [DEBUG] Coverage initialization started. at com.parasoft.xtest.coverage.internal.xml.CoverageXmlStorage.initializeStatistics(CoverageXmlStorage.java:486)
+2025-04-03 14:33:32,938 [DEBUG] Loading coverage finished at com.parasoft.xtest.coverage.internal.xml.CoverageXmlStorage.initializeStatistics(CoverageXmlStorage.java:532)
+2025-04-03 14:33:32,976 [DEBUG] Setting: report.suppressed_msgs mapped to storage key: report.suppressed_msgs at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-04-03 14:33:32,976 [DEBUG] Setting: report.dtp.publish mapped to storage key: report.dtp.publish at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
+2025-04-03 14:33:32,977 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:32,978 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:32,978 [DEBUG] Resolved: ${scontrol_branch}-linux_x86_64 --> ${scontrol_branch}-linux_x86_64 at com.parasoft.xtest.common.variables.AggregateVariablesResolver.performSubstitution(AggregateVariablesResolver.java:77)
+2025-04-03 14:33:32,978 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:32,978 [DEBUG] Resolved: ${scontrol_branch} --> ${scontrol_branch} at com.parasoft.xtest.common.variables.AggregateVariablesResolver.performSubstitution(AggregateVariablesResolver.java:77)
+2025-04-03 14:33:32,979 [DEBUG] Resolved: ${project_module} --> ${project_module} at com.parasoft.xtest.common.variables.AggregateVariablesResolver.performSubstitution(AggregateVariablesResolver.java:77)
+2025-04-03 14:33:32,987 [DEBUG] Available Cloud VMs: [Docker, AWS, Azure] at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:45)
+2025-04-03 14:33:32,988 [DEBUG] Docker: Detection... at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:52)
+2025-04-03 14:33:32,996 [DEBUG] Docker: Processing file: cgroup at com.parasoft.xtest.common.vm.DockerDetector.extractDockerId(DockerDetector.java:152)
+2025-04-03 14:33:32,997 [DEBUG] Docker: Processing file: cgroup at com.parasoft.xtest.common.vm.DockerDetector.extractDockerId(DockerDetector.java:152)
+2025-04-03 14:33:32,999 [DEBUG] Docker: Processing file: mountinfo at com.parasoft.xtest.common.vm.DockerDetector.extractDockerId(DockerDetector.java:152)
+2025-04-03 14:33:33,000 [DEBUG] AWS: Detection... at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:52)
+2025-04-03 14:33:33,006 [DEBUG] AWS: No hypervisor file found. at com.parasoft.xtest.common.vm.AWSDetector.getAWSSystemUUID(AWSDetector.java:90)
+2025-04-03 14:33:33,007 [DEBUG] Azure: Detection... at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:52)
+2025-04-03 14:33:33,009 [DEBUG] Azure: /sys/devices/virtual/dmi/id/chassis_asset_tag file is not found... at com.parasoft.xtest.common.vm.AzureDetector.isAzureDetected(AzureDetector.java:124)
+2025-04-03 14:33:33,009 [DEBUG] Azure: /var/lib/dhclient/dhclient-eth0.lease file is not found... at com.parasoft.xtest.common.vm.AzureDetector.isAzureDetected(AzureDetector.java:124)
+2025-04-03 14:33:33,009 [DEBUG] Azure: /var/lib/dhcp/dhclient.eth0.leases file is not found... at com.parasoft.xtest.common.vm.AzureDetector.isAzureDetected(AzureDetector.java:124)
+2025-04-03 14:33:33,009 [DEBUG] Cannot detect Azure environment. None of used Azure id is valid at com.parasoft.xtest.common.vm.AzureDetector.usingAzureVM(AzureDetector.java:113)
+2025-04-03 14:33:33,010 [DEBUG] No Cloud VMInfo found at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:84)
+2025-04-03 14:33:33,057 [DEBUG] Telemetry event: xtest.report.dtp.publish.data at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:82)
+2025-04-03 14:33:33,058 [WARN] Missing ITelemetryReporter service at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:87)
+2025-04-03 14:33:33,079 [INFO] [CONSOLE] Generated XML report: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/coverage.xml at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:33,083 [INFO] XRestReportPublisher - checking enabled state with property: report.dtp.publish at com.parasoft.xtest.reports.publish.XRestReportPublisher.isPublishEnabled(XRestReportPublisher.java:56)
+2025-04-03 14:33:33,083 [INFO]        enabled state:true at com.parasoft.xtest.reports.publish.XRestReportPublisher.isPublishEnabled(XRestReportPublisher.java:62)
+2025-04-03 14:33:33,084 [DEBUG] Not an instance of stateful oidc service, ignoring: null at com.parasoft.xtest.common.dtp.DtpPreferences.getStatefulOidcService(DtpPreferences.java:100)
+2025-04-03 14:33:33,091 [INFO] XRestReportPublisher - starting report publication at com.parasoft.xtest.reports.publish.XRestReportPublisher.publishReports(XRestReportPublisher.java:135)
+2025-04-03 14:33:33,092 [INFO]        publishing report: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/coverage.xml at com.parasoft.xtest.reports.publish.XRestReportPublisher.publishReports(XRestReportPublisher.java:136)
+2025-04-03 14:33:33,099 [INFO]        publishing report file size: 9813 at com.parasoft.xtest.reports.publish.XRestReportPublisher.publishReports(XRestReportPublisher.java:137)
+2025-04-03 14:33:33,104 [INFO] Getting IDtpServiceRegistry at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:177)
+2025-04-03 14:33:33,105 [INFO] Getting URI for dataCollectorV2 at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:192)
+2025-04-03 14:33:33,105 [INFO]         received URI:https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:193)
+2025-04-03 14:33:33,106 [INFO] [CONSOLE] Publishing to DTP https://localhost:8443 for CT - Compliance + Coverage project ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:33,107 [INFO] XRestPublisherClient created successfully. Authorizing for user: admin at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:206)
+2025-04-03 14:33:33,109 [DEBUG] Oidc service is disabled at com.parasoft.xtest.common.httpclient.XRestClient.createExecutor(XRestClient.java:182)
+2025-04-03 14:33:33,127 [DEBUG] Zipped /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/coverage.xml -> 2775 at com.parasoft.xtest.common.io.ZipUtils.toZipByteArray(ZipUtils.java:193)
+2025-04-03 14:33:33,127 [INFO] Publishing file: coverage.xml_CT - Compliance + Coverage-2025-04-03 at com.parasoft.xtest.common.dtp.DtpFilePublisher$XRestPublisherClient.publish(DtpFilePublisher.java:242)
+2025-04-03 14:33:33,143 [DEBUG] Starting XRestClient.postMultipart to https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.httpclient.XRestClient.postMultipart(XRestClient.java:357)
+2025-04-03 14:33:33,144 [DEBUG] Executing request:  URI: https://localhost:8082/api/v2/dataCollector, RestClient: com.parasoft.xtest.common.dtp.DtpFilePublisher$XRestPublisherClient@625dfff3 at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:246)
+2025-04-03 14:33:33,567 [DEBUG] Ended XRestClient.postMultipart to https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.httpclient.XRestClient.postMultipart(XRestClient.java:361)
+2025-04-03 14:33:33,569 [INFO] Publishing file ended, total time :442 [ms] at com.parasoft.xtest.common.dtp.DtpFilePublisher$XRestPublisherClient.publish(DtpFilePublisher.java:274)
+2025-04-03 14:33:33,571 [INFO] Publishing report ended, total time :467 [ms] at com.parasoft.xtest.reports.publish.XRestReportPublisher.publishReports(XRestReportPublisher.java:160)
+2025-04-03 14:33:33,572 [INFO] [CONSOLE] Report published successfully to DTP: File has been uploaded successfully. at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:33,582 [INFO] [CONSOLE] === Parasoft Coverage Summary === at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:33,586 [INFO] [CONSOLE]  at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:33,587 [INFO] [CONSOLE] Line Coverage:  27% 21/79 at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:33,588 [INFO] [CONSOLE]  at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:33,608 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:33,609 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:33,609 [DEBUG] Resolved: ${scontrol_branch}-linux_x86_64 --> ${scontrol_branch}-linux_x86_64 at com.parasoft.xtest.common.variables.AggregateVariablesResolver.performSubstitution(AggregateVariablesResolver.java:77)
+2025-04-03 14:33:33,609 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:33,610 [DEBUG] Resolved: ${scontrol_branch} --> ${scontrol_branch} at com.parasoft.xtest.common.variables.AggregateVariablesResolver.performSubstitution(AggregateVariablesResolver.java:77)
+2025-04-03 14:33:33,610 [DEBUG] Resolved: ${project_module} --> ${project_module} at com.parasoft.xtest.common.variables.AggregateVariablesResolver.performSubstitution(AggregateVariablesResolver.java:77)
+2025-04-03 14:33:33,611 [DEBUG] Available Cloud VMs: [Docker, AWS, Azure] at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:45)
+2025-04-03 14:33:33,623 [DEBUG] Service com.parasoft.xtest.analyzers.api.IAnalyzerService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-04-03 14:33:33,791 [TIME] XML report generation.: 183 ms at com.parasoft.xtest.reports.xml.ReportsGenerator.generateSessionXMLs(ReportsGenerator.java:283)
+2025-04-03 14:33:33,792 [DEBUG] Service com.parasoft.xtest.analyzers.api.IAnalyzerService is not available. at com.parasoft.xtest.services.api.AbstractServicesProvider.getServices(AbstractServicesProvider.java:64)
+2025-04-03 14:33:33,797 [DEBUG] Telemetry event: xtest.test.configuration.run.data at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:82)
+2025-04-03 14:33:33,798 [WARN] Missing ITelemetryReporter service at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:87)
+2025-04-03 14:33:33,817 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:33,818 [DEBUG] Resolved: ${scontrol_branch}-linux_x86_64 --> ${scontrol_branch}-linux_x86_64 at com.parasoft.xtest.common.variables.AggregateVariablesResolver.performSubstitution(AggregateVariablesResolver.java:77)
+2025-04-03 14:33:33,901 [INFO] Generating report using service: com.parasoft.xtest.reports.internal.ReportsService at com.parasoft.xtest.reports.xml.XMLReporterService.generateReports(XMLReporterService.java:283)
+2025-04-03 14:33:33,910 [INFO] Transforming report to: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330 using xml report: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/report.xml at com.parasoft.xtest.reports.xml.XMLReporterService.generateReports(XMLReporterService.java:291)
+2025-04-03 14:33:33,912 [INFO] Transforming: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/report.xml using transformer: XML at com.parasoft.xtest.reports.xml.XMLReporterService.generateReports(XMLReporterService.java:293)
+2025-04-03 14:33:33,930 [INFO] [CONSOLE] Generated XML report: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/report.xml at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:33,930 [INFO] XRestReportPublisher - checking enabled state with property: report.dtp.publish at com.parasoft.xtest.reports.publish.XRestReportPublisher.isPublishEnabled(XRestReportPublisher.java:56)
+2025-04-03 14:33:33,931 [INFO]        enabled state:true at com.parasoft.xtest.reports.publish.XRestReportPublisher.isPublishEnabled(XRestReportPublisher.java:62)
+2025-04-03 14:33:33,932 [DEBUG] Not an instance of stateful oidc service, ignoring: null at com.parasoft.xtest.common.dtp.DtpPreferences.getStatefulOidcService(DtpPreferences.java:100)
+2025-04-03 14:33:33,937 [DEBUG] Telemetry event: xtest.report.dtp.publish.data at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:82)
+2025-04-03 14:33:33,938 [WARN] Missing ITelemetryReporter service at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:87)
+2025-04-03 14:33:33,940 [INFO] XRestReportPublisher - starting report publication at com.parasoft.xtest.reports.publish.XRestReportPublisher.publishReports(XRestReportPublisher.java:135)
+2025-04-03 14:33:33,941 [INFO]        publishing report: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/report.xml at com.parasoft.xtest.reports.publish.XRestReportPublisher.publishReports(XRestReportPublisher.java:136)
+2025-04-03 14:33:33,944 [INFO]        publishing report file size: 16112 at com.parasoft.xtest.reports.publish.XRestReportPublisher.publishReports(XRestReportPublisher.java:137)
+2025-04-03 14:33:33,945 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:33,945 [DEBUG] Resolved: ${scontrol_branch}-linux_x86_64 --> ${scontrol_branch}-linux_x86_64 at com.parasoft.xtest.common.variables.AggregateVariablesResolver.performSubstitution(AggregateVariablesResolver.java:77)
+2025-04-03 14:33:33,945 [INFO]        controller id: cpptestcov at com.parasoft.xtest.reports.publish.PublishDataFactory.createMainReportData(PublishDataFactory.java:73)
+2025-04-03 14:33:33,946 [INFO]        publishing tool id: xtest at com.parasoft.xtest.reports.publish.PublishDataFactory.createMainReportData(PublishDataFactory.java:74)
+2025-04-03 14:33:33,946 [INFO]        publishing host name: syoung-pc at com.parasoft.xtest.reports.publish.PublishDataFactory.createMainReportData(PublishDataFactory.java:75)
+2025-04-03 14:33:33,946 [INFO]        publishing user name: syoung at com.parasoft.xtest.reports.publish.PublishDataFactory.createMainReportData(PublishDataFactory.java:76)
+2025-04-03 14:33:33,946 [INFO] Getting IDtpServiceRegistry at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:177)
+2025-04-03 14:33:33,947 [INFO] Getting URI for dataCollectorV2 at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:192)
+2025-04-03 14:33:33,947 [INFO]         received URI:https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:193)
+2025-04-03 14:33:33,948 [INFO] [CONSOLE] Publishing to DTP https://localhost:8443 for CT - Compliance + Coverage project ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:33,948 [INFO] XRestPublisherClient created successfully. Authorizing for user: admin at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:206)
+2025-04-03 14:33:33,948 [DEBUG] Oidc service is disabled at com.parasoft.xtest.common.httpclient.XRestClient.createExecutor(XRestClient.java:182)
+2025-04-03 14:33:33,961 [DEBUG] Zipped /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/report.xml -> 3407 at com.parasoft.xtest.common.io.ZipUtils.toZipByteArray(ZipUtils.java:193)
+2025-04-03 14:33:33,962 [INFO] Publishing file: :syoung-pc:1743705212000.xml+${scontrol_branch}-linux_x86_64+syoung: at com.parasoft.xtest.common.dtp.DtpFilePublisher$XRestPublisherClient.publish(DtpFilePublisher.java:242)
+2025-04-03 14:33:33,963 [DEBUG] Starting XRestClient.postMultipart to https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.httpclient.XRestClient.postMultipart(XRestClient.java:357)
+2025-04-03 14:33:33,963 [DEBUG] Executing request:  URI: https://localhost:8082/api/v2/dataCollector, RestClient: com.parasoft.xtest.common.dtp.DtpFilePublisher$XRestPublisherClient@b34832b at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:246)
+2025-04-03 14:33:34,116 [DEBUG] Ended XRestClient.postMultipart to https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.httpclient.XRestClient.postMultipart(XRestClient.java:361)
+2025-04-03 14:33:34,117 [INFO] Publishing file ended, total time :155 [ms] at com.parasoft.xtest.common.dtp.DtpFilePublisher$XRestPublisherClient.publish(DtpFilePublisher.java:274)
+2025-04-03 14:33:34,117 [INFO] Publishing report ended, total time :171 [ms] at com.parasoft.xtest.reports.publish.XRestReportPublisher.publishReports(XRestReportPublisher.java:160)
+2025-04-03 14:33:34,118 [INFO] [CONSOLE] Report published successfully to DTP: File has been uploaded successfully. at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:34,118 [DEBUG] Telemetry event: xtest.report.generate.data at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:82)
+2025-04-03 14:33:34,119 [WARN] Missing ITelemetryReporter service at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:87)
+2025-04-03 14:33:34,129 [INFO] Succesfully generated manager report: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/report.xml at com.parasoft.xtest.reports.xml.XMLReporterService.generateReports(XMLReporterService.java:302)
+2025-04-03 14:33:34,153 [INFO] Getting IDtpServiceRegistry at com.parasoft.xtest.reports.publish.sources.XRestExistingSourcesProvider.create(XRestExistingSourcesProvider.java:104)
+2025-04-03 14:33:34,155 [DEBUG] Oidc service is disabled at com.parasoft.xtest.common.httpclient.XRestClient.createExecutor(XRestClient.java:182)
+2025-04-03 14:33:34,185 [DEBUG] Executing request:  URI: https://localhost:8082/api/v1/existingLocalSourceCopy, RestClient: com.parasoft.xtest.reports.publish.sources.XRestExistingSourcesProvider$InternalXRestClient@64c6aa6d at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:246)
+2025-04-03 14:33:34,241 [INFO] [CONSOLE] Total source files published to DTP: 0 of 7 (0 B) in 0s at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:34,241 [INFO] [CONSOLE] 7 of them were not published because they are already available on DTP server. at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:34,243 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:34,244 [DEBUG] Source Control Branch from context: null at com.parasoft.xtest.common.variables.ScontrolBranchVariableProvider$CodeBranchVariableResolver.resolveValue(ScontrolBranchVariableProvider.java:46)
+2025-04-03 14:33:34,244 [DEBUG] Resolved: ${scontrol_branch}-linux_x86_64 --> ${scontrol_branch}-linux_x86_64 at com.parasoft.cpptest.coverage.variables.VariableResolverUtil$AggregateVariablesResolver.performSubstitution(VariableResolverUtil.java:76)
+2025-04-03 14:33:34,823 [INFO] Getting IDtpServiceRegistry at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:177)
+2025-04-03 14:33:34,823 [INFO] Getting URI for dataCollectorV2 at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:192)
+2025-04-03 14:33:34,824 [INFO]         received URI:https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:193)
+2025-04-03 14:33:34,824 [INFO] [CONSOLE] Publishing to DTP https://localhost:8443 for CT - Compliance + Coverage project ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:34,826 [INFO] XRestPublisherClient created successfully. Authorizing for user: admin at com.parasoft.xtest.common.dtp.DtpFilePublisher.createClient(DtpFilePublisher.java:206)
+2025-04-03 14:33:34,827 [DEBUG] Oidc service is disabled at com.parasoft.xtest.common.httpclient.XRestClient.createExecutor(XRestClient.java:182)
+2025-04-03 14:33:34,833 [DEBUG] Zipped /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.cpptest/report/session_20250403_143330/coverage-statistics.xml -> 1692 at com.parasoft.xtest.common.io.ZipUtils.toZipByteArray(ZipUtils.java:193)
+2025-04-03 14:33:34,833 [INFO] Publishing file: coverage-statistics.xml at com.parasoft.xtest.common.dtp.DtpFilePublisher$XRestPublisherClient.publish(DtpFilePublisher.java:242)
+2025-04-03 14:33:34,834 [DEBUG] Starting XRestClient.postMultipart to https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.httpclient.XRestClient.postMultipart(XRestClient.java:357)
+2025-04-03 14:33:34,835 [DEBUG] Executing request:  URI: https://localhost:8082/api/v2/dataCollector, RestClient: com.parasoft.xtest.common.dtp.DtpFilePublisher$XRestPublisherClient@1cdc1bbc at com.parasoft.xtest.common.httpclient.XRestClient.executeRequest(XRestClient.java:246)
+2025-04-03 14:33:34,966 [DEBUG] Ended XRestClient.postMultipart to https://localhost:8082/api/v2/dataCollector at com.parasoft.xtest.common.httpclient.XRestClient.postMultipart(XRestClient.java:361)
+2025-04-03 14:33:34,967 [INFO] Publishing file ended, total time :134 [ms] at com.parasoft.xtest.common.dtp.DtpFilePublisher$XRestPublisherClient.publish(DtpFilePublisher.java:274)
+2025-04-03 14:33:34,973 [INFO] [CONSOLE] Report published successfully to DTP: File has been uploaded successfully. at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:35,007 [DEBUG] 
+XRest Profiler
++ ------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                            | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| /api/v2/dataCollector           | 3     | 0.707     | 0.131   | 0.423   | 0.235   |
+| /grs/api/v1.9/dtpServices       | 1     | 0.34      | 0.34    | 0.34    | 0.34    |
+| /api/v1/existingLocalSourceCopy | 1     | 0.046     | 0.046   | 0.046   | 0.046   |
+| /grs/api/v1/dtpServices         | 1     | 0.027     | 0.027   | 0.027   | 0.027   |
++ ------------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 1.12s
+
+Coverage Profiler
++ ------------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+| NAME                                                               | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+| addCoverageInfos(List<ICoverageInfo>, Map<LocRefKey, Set<String>>) | 1     | 0.059     | 0.059   | 0.059   | 0.059   |
+| exportCoverage(URL, String, Properities, IProgressMonitor)         | 1     | 0.04      | 0.04    | 0.04    | 0.04    |
+| getGlobalStorage()                                                 | 1     | 0.036     | 0.036   | 0.036   | 0.036   |
+| storeCoverage(ICoverageCalculator, ...)                            | 6     | 0.027     | 0.0     | 0.024   | 0.004   |
+| getCoverageData                                                    | 1     | 0.012     | 0.012   | 0.012   | 0.012   |
+| recalculateStatistics()                                            | 1     | 0.006     | 0.006   | 0.006   | 0.006   |
+| getMetric(ICoverable)                                              | 41    | 0.002     | 0.0     | 0.002   | 0.0     |
+| addCoverageData(<ReadCoverageData>)                                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| getAllTestCaseIds_V2                                               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| initializeStatistics                                               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ------------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.182s
+
+Results Profiler
++ ------------------------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                                                          | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| .processInput: ResultLocationOwner(LineCoverageStaticInfo)    | 30    | 0.085     | 0.001   | 0.007   | 0.002   |
+| .processInput: ResultLocationOwner(StaticCoverageInfo)        | 6     | 0.079     | 0.006   | 0.036   | 0.013   |
+| .processInput: ResultLocationOwner(DynamicCoverageInfo)       | 8     | 0.036     | 0.002   | 0.012   | 0.004   |
+| .processInput: ResultLocationOwner(GoogleTestExecutionResult) | 14    | 0.029     | 0.001   | 0.004   | 0.002   |
+| .processInput: TestLocationOwner                              | 17    | 0.028     | 0.001   | 0.003   | 0.001   |
+| .processInput: ResultLocationOwner(GoogleTestViolation)       | 2     | 0.004     | 0.001   | 0.002   | 0.002   |
+| .adapt: StaticCoverageInfo                                    | 6     | 0.003     | 0.0     | 0.002   | 0.0     |
+| .processLine: ResultLocationOwner(GoogleTestViolation)        | 2     | 0.002     | 0.001   | 0.001   | 0.001   |
+| .adapt: LineCoverageStaticInfo                                | 30    | 0.0       | 0.0     | 0.0     | 0.0     |
+| .adapt: GoogleTestViolation                                   | 6     | 0.0       | 0.0     | 0.0     | 0.0     |
+| .adapt: DynamicCoverageInfo                                   | 8     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ------------------------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.266s
+
+Result Processors Profiler
++ ---------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                               | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ---------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| CoverageServicesRegistry$4.process | 20    | 0.281     | 0.002   | 0.047   | 0.014   |
+| CoverageServicesRegistry$3.process | 9     | 0.144     | 0.0     | 0.04    | 0.016   |
+| CoverageServicesRegistry$6.process | 5     | 0.033     | 0.0     | 0.018   | 0.006   |
+| CoverageServicesRegistry$4.adapt   | 50    | 0.003     | 0.0     | 0.002   | 0.0     |
+| CoverageServicesRegistry$5.adapt   | 46    | 0.0       | 0.0     | 0.0     | 0.0     |
++ ---------------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.461s
+
+Reports Profiler
++ --------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                                    | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ --------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| CoverageReporterService.publishReport() | 1     | 0.487     | 0.487   | 0.487   | 0.487   |
+| XMLReporterService.generateReport()     | 1     | 0.287     | 0.287   | 0.287   | 0.287   |
+| XMLReporterService.generateReports()    | 1     | 0.234     | 0.234   | 0.234   | 0.234   |
+| ReportsService.generateReports()        | 1     | 0.205     | 0.205   | 0.205   | 0.205   |
+| SourcesReporterThread.run()             | 1     | 0.099     | 0.099   | 0.099   | 0.099   |
+| XMLReporter.reportResult()              | 55    | 0.046     | 0.0     | 0.028   | 0.0     |
+| XMLReporter.openReport()                | 1     | 0.02      | 0.02    | 0.02    | 0.02    |
+| SessionData.readSessionData()           | 1     | 0.007     | 0.007   | 0.007   | 0.007   |
++ --------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 1.385s
+
+VM Info Profiler
++ ------ + ----- + --------- + ------- + ------- + ------- +
+| NAME   | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------ + ----- + --------- + ------- + ------- + ------- +
+| Docker | 1     | 0.006     | 0.006   | 0.006   | 0.006   |
+| Azure  | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
+| AWS    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ------ + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.007s
+
+Default Profiler
++ --------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                                    | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ --------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| TestableInputUtil.calculateFileHash     | 77    | 0.18      | 0.0     | 0.032   | 0.002   |
+| getModificationTime()                   | 198   | 0.161     | 0.0     | 0.004   | 0.0     |
+| TestableInputUtil.calculateItemHashOf   | 30    | 0.083     | 0.0     | 0.016   | 0.002   |
+| TestableInputUtil.calculateLineHashesOf | 30    | 0.052     | 0.0     | 0.003   | 0.001   |
+| FileInfoService.getFileHash.compute     | 7     | 0.049     | 0.002   | 0.028   | 0.007   |
+| CodeBlockFileInfoBuilder.build(File)    | 6     | 0.028     | 0.002   | 0.01    | 0.004   |
+| CodeBlockFileInfoBuilder.build(String)  | 6     | 0.01      | 0.0     | 0.007   | 0.001   |
+| TestableInputUtil.calculateLineHash     | 2     | 0.002     | 0.001   | 0.001   | 0.001   |
++ --------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.565s
+ at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:133)
+2025-04-03 14:33:35,011 [DEBUG] Total: 1 seconds (total - 1 seconds) at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:136)
+2025-04-03 14:33:35,032 [DEBUG] Memory Statistics Profiler
 + -------------- + --------- +
 | Memory Metric  | Size [MB] |
 + -------------- + --------- +
-| Current memory | 13        |
+| Current memory | 18        |
 | Max memory     | 4121      |
-| Total memory   | 13        |
+| Total memory   | 18        |
 + -------------- + --------- +
  at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:140)
-2025-04-01 10:30:43,849 [DEBUG] Log Issues Profiler
+2025-04-03 14:33:35,034 [DEBUG] Log Issues Profiler
 + ------------- + ----- +
 | Logging Level | Count |
 + ------------- + ----- +
 | TRACE         | 0     |
-| TIME          | 0     |
-| DEBUG         | 3     |
-| INFO          | 15    |
-| WARN          | 1     |
-| ERROR         | 0     |
+| TIME          | 1     |
+| DEBUG         | 205   |
+| INFO          | 103   |
+| WARN          | 5     |
+| ERROR         | 1     |
 | FATAL         | 0     |
 + ------------- + ----- +
  at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:144)
-2025-04-01 10:30:43,850 [DEBUG]  at com.parasoft.xtest.common.io.FileInfoServiceFactory.shutdown(FileInfoServiceFactory.java:76)
-2025-04-01 10:30:43,850 [INFO] [CONSOLE]  at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2025-04-01 10:30:43,852 [INFO] [CONSOLE] All done. [189 ms] at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2025-04-01 10:30:43,852 [INFO] Exiting (code 1)... at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.executeReporter(DTPReporter.java:140)
+2025-04-03 14:33:35,037 [DEBUG] FileInfoService - Global statistics:
+   Peak memory usage: 0.824 KB [Hard: 0.727 KB, Soft: 0.098 KB]
+   Current memory usage: 0.824 KB [Hard: 0.727 KB, Soft: 0.098 KB]
+   Entry removes: 0 [GC: 0, Replaced: 0, Trimmed: 0]
+
+FileInfoService - Context statistics:
+   Peak memory usage: 2.727 KB [Hard: 2.629 KB, Soft: 0.098 KB]
+   Current memory usage: 2.727 KB [Hard: 2.629 KB, Soft: 0.098 KB]
+   Entry removes: 0 [GC: 0, Replaced: 0, Trimmed: 0]
+   Entry: average size: 370.286 B, average lines: 66.571, max lines: 143
+      Method: FileInfoService.getFileHash, hitRatio: 95.60% hits: 152, misses: 7
+      Method: FileInfoService.getLineHash, hitRatio: 100.00% hits: 2, misses: 0
+      Method: FileInfoService.getLineHashesOf, hitRatio: 100.00% hits: 30, misses: 0
+ at com.parasoft.xtest.common.io.FileInfoServiceFactory.shutdown(FileInfoServiceFactory.java:76)
+2025-04-03 14:33:35,053 [INFO] Disposing source control caches ... at com.parasoft.xtest.scontrol.internal.JCSSourceControlCache.shutdownCaches(JCSSourceControlCache.java:148)
+2025-04-03 14:33:35,054 [INFO] [CONSOLE]  at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:35,055 [INFO] [CONSOLE] All done. [4,801 ms] at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2025-04-03 14:33:35,056 [INFO] Exiting (code 0)... at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.executeReporter(DTPReporter.java:140)

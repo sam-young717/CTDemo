@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM
+CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build
+CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build
 
 # Utility rule file for cpptestcov-compute.
 
@@ -67,7 +67,7 @@ include CMakeFiles/cpptestcov-compute.dir/compiler_depend.make
 include CMakeFiles/cpptestcov-compute.dir/progress.make
 
 CMakeFiles/cpptestcov-compute:
-	mkdir -p /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.coverage && /mnt/c/Users/syoung/Documents/LastData/cpptest-ct//bin/cpptestcov compute -map="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-coverage/ATM/.cpptest/cpptestcc" -clog="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-coverage/ATM/ATM.clog" -out="/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.coverage" -coverage=LC,SC,BC,DC,SCC,MCDC,FC,CC && /mnt/c/Users/syoung/Documents/LastData/cpptest-ct//bin/cpptestcov index /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.coverage
+	mkdir -p /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.coverage && /mnt/c/Users/syoung/Documents/LastData/cpptest-ct//bin/cpptestcov compute -map="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-coverage/ATM/.cpptest/cpptestcc" -clog="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-coverage/ATM/ATM.clog" -out="/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.coverage" -coverage=LC,SC,BC,DC,SCC,MCDC,FC,CC && /mnt/c/Users/syoung/Documents/LastData/cpptest-ct//bin/cpptestcov index /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.coverage
 
 cpptestcov-compute: CMakeFiles/cpptestcov-compute
 cpptestcov-compute: CMakeFiles/cpptestcov-compute.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/cpptestcov-compute.dir/clean:
 .PHONY : CMakeFiles/cpptestcov-compute.dir/clean
 
 CMakeFiles/cpptestcov-compute.dir/depend:
-	cd /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles/cpptestcov-compute.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles/cpptestcov-compute.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/cpptestcov-compute.dir/depend
 

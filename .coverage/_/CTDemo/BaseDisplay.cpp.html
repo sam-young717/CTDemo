@@ -1,0 +1,125 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Parasoft C/C++test - Code Coverage Report</title>
+<link rel="stylesheet" href="../cpptestcov-report.css" type="text/css">
+
+<script>
+const covRanges={"7": {"FC": [[18, 53, 2]]}, "9": {"BC": [[8, 14, 2]], "DC": [[8, 14, 2]], "LC": [[0, 16, 2]], "MCDC": [[8, 14, 2]], "SC": [[8, 14, 2]], "SCC": [[8, 14, 2]]}, "11": {"BC": [[8, 24, 2]], "LC": [[0, 25, 2]], "SC": [[8, 24, 2]]}, "15": {"FC": [[18, 45, 2]]}, "17": {"BC": [[4, 36, 2]], "LC": [[0, 37, 2]], "SC": [[4, 36, 2]]}, "20": {"BC": [[49, 62, 0]], "FC": [[38, 64, 0]], "LC": [[0, 64, 0]], "SC": [[49, 62, 0]]}, "21": {"BC": [[44, 45, 0]], "FC": [[18, 47, 0]], "LC": [[0, 47, 0]], "SC": [[44, 45, 0]]}, "23": {"FC": [[18, 69, 2]]}, "25": {"BC": [[12, 18, 2]], "DC": [[12, 18, 2]], "LC": [[0, 22, 2]], "SC": [[12, 18, 2]]}, "27": {"BC": [[12, 43, 2]], "LC": [[0, 43, 2]], "SC": [[12, 42, 2]]}, "28": {"BC": [[0, 17, 2]], "LC": [[0, 18, 2]], "SC": [[12, 17, 2]]}, "30": {"BC": [[12, 38, 2]], "LC": [[0, 38, 2]], "SC": [[12, 37, 2]]}, "31": {"BC": [[0, 17, 2]], "LC": [[0, 18, 2]], "SC": [[12, 17, 2]]}, "33": {"BC": [[12, 38, 2]], "LC": [[0, 38, 2]], "SC": [[12, 37, 2]]}, "34": {"BC": [[0, 17, 2]], "LC": [[0, 18, 2]], "SC": [[12, 17, 2]]}, "36": {"BC": [[12, 38, 2]], "LC": [[0, 38, 2]], "SC": [[12, 37, 2]]}, "37": {"BC": [[0, 17, 2]], "LC": [[0, 18, 2]], "SC": [[12, 17, 2]]}, "39": {"BC": [[12, 39, 2]], "LC": [[0, 39, 2]], "SC": [[12, 38, 2]]}, "40": {"BC": [[0, 17, 2]], "LC": [[0, 18, 2]], "SC": [[12, 17, 2]]}, "42": {"BC": [[4, 35, 2]], "LC": [[0, 36, 2]], "SC": [[4, 35, 2]]}}
+const covSymbols={"7": {"FC": [["-", 2]]}, "9": {"BC": [["-", 2]], "DC": [["[--]", 2]], "LC": [["-", 2]], "MCDC": [["[-]", 2]], "SC": [["-", 2]], "SCC": [["[--]", 2]]}, "11": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "15": {"FC": [["-", 2]]}, "17": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "20": {"BC": [["+", 0]], "FC": [["+", 0]], "LC": [["+", 0]], "SC": [["+", 0]]}, "21": {"BC": [["+", 0]], "FC": [["+", 0]], "LC": [["+", 0]], "SC": [["+", 0]]}, "23": {"FC": [["-", 2]]}, "25": {"BC": [["-", 2]], "DC": [["[------]", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "27": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "28": {"LC": [["-", 2]], "SC": [["-", 2]]}, "30": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "31": {"LC": [["-", 2]], "SC": [["-", 2]]}, "33": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "34": {"LC": [["-", 2]], "SC": [["-", 2]]}, "36": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "37": {"LC": [["-", 2]], "SC": [["-", 2]]}, "39": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}, "40": {"LC": [["-", 2]], "SC": [["-", 2]]}, "42": {"BC": [["-", 2]], "LC": [["-", 2]], "SC": [["-", 2]]}}
+const enabledMetrics={"LC": false, "SC": false, "BC": false, "DC": false, "SCC": false, "MCDC": false, "FC": false, "CC": false}</script>
+<script type="text/javascript" src="../cpptestcov-report.js" defer></script>
+
+</head>
+<body onload="initDecorations()">
+<h1>Parasoft C/C++test - Code Coverage Report</h1>
+<ul><small>
+<li>LC - Line Coverage</li>
+<li>SC - Statement Coverage</li>
+<li>BC - Block Coverage</li>
+<li>DC - Decision (Branch) Coverage</li>
+<li>SCC - Simple Condition Coverage</li>
+<li>MCDC - Modified Condition Decision Coverage</li>
+<li>FC - Function Coverage</li>
+<li>CC - Call Coverage</li>
+</small></ul>
+<div class='navigation'><a href='../../coverage.html'>all</a> > <a href='index.html'>CTDemo</a> > BaseDisplay.cpp</div>
+<table class='stats'>
+<thead>
+<tr>
+<th class="element" onclick="sortName(event)">Function</th><th class="metric" onclick="sortPercentage(event)">LC</th><th class="metric" onclick="sortPercentage(event)">SC</th><th class="metric" onclick="sortPercentage(event)">BC</th><th class="metric" onclick="sortPercentage(event)">DC</th><th class="metric" onclick="sortPercentage(event)">SCC</th><th class="metric" onclick="sortPercentage(event)">MCDC</th><th class="metric" onclick="sortPercentage(event)">FC</th><th class="metric" onclick="sortPercentage(event)">CC</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href='#bb418d478fe6bb80a44bc66c7cfa685f'>BaseDisplay::getType()</a></td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td></tr>
+<tr><td><a href='#1f7c6aafcfeefd89cf811431e1ead03f'>BaseDisplay::logError(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt;&gt;)</a></td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covhigh'>100% 1/1</td><td class='stats covna'>N/A</td></tr>
+<tr><td><a href='#3b2f8b0975b0ab9a2952368301965550'>BaseDisplay::showBalance(double)</a></td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covlow'>0% 0/1</td><td class='stats covna'>N/A</td></tr>
+<tr><td><a href='#7f55ba56bea12e08d7227676f62de50b'>BaseDisplay::showInfoToUser(const char *)</a></td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covlow'>0% 0/1</td><td class='stats covna'>N/A</td></tr>
+<tr><td><a href='#1a550700086af9fa02b8bf3599634172'>BaseDisplay::showTransaction(UserRequest, double)</a></td><td class='stats covlow'>0% 0/12</td><td class='stats covlow'>0% 0/12</td><td class='stats covlow'>0% 0/7</td><td class='stats covlow'>0% 0/6</td><td class='stats covna'>N/A</td><td class='stats covna'>N/A</td><td class='stats covlow'>0% 0/1</td><td class='stats covna'>N/A</td></tr>
+</tbody>
+<tfoot>
+<tr class='totalRow'><td>TOTAL (5 functions)</td><td class='stats covlow'>12% 2/17</td><td class='stats covlow'>12% 2/17</td><td class='stats covlow'>17% 2/12</td><td class='stats covlow'>0% 0/8</td><td class='stats covlow'>0% 0/2</td><td class='stats covlow'>0% 0/1</td><td class='stats covmed'>40% 2/5</td><td class='stats covna'>N/A</td></tr>
+</tfoot>
+</table>
+<div class="codeViewer">
+<div class="collapseExpand">
+<input type='checkbox' id='checkbox-LC' onchange='updateDecorations("LC", this.checked);'><label>LC</label>
+<input type='checkbox' id='checkbox-SC' onchange='updateDecorations("SC", this.checked);'><label>SC</label>
+<input type='checkbox' id='checkbox-BC' onchange='updateDecorations("BC", this.checked);'><label>BC</label>
+<input type='checkbox' id='checkbox-DC' onchange='updateDecorations("DC", this.checked);'><label>DC</label>
+<input type='checkbox' id='checkbox-SCC' onchange='updateDecorations("SCC", this.checked);'><label>SCC</label>
+<input type='checkbox' id='checkbox-MCDC' onchange='updateDecorations("MCDC", this.checked);'><label>MCDC</label>
+<input type='checkbox' id='checkbox-FC' onchange='updateDecorations("FC", this.checked);'><label>FC</label>
+<input type='checkbox' id='checkbox-CC' onchange='updateDecorations("CC", this.checked);'><label>CC</label>
+<span> | </span>
+<a href="javascript:expandAllAnnotations()">Expand <span style="font-size: small;">&#8691;</span></a> |
+<a href="javascript:collapseAllAnnotations()">Collapse <span style="font-size: small;">&#8691;</span></a>
+</div>
+<table class="code">
+<thead style="position: sticky; z-index: 100; top: 18px;">
+<tr style="text-align: left;" id="codebox-header">
+<th style="width: 4em;">Line</th>
+<th>Code</th>
+</tr>
+</thead>
+<tbody class="codebox" id="codebox-body">
+<tr ><td class='lineNo' ><span>1</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-1' >#include &quot;BaseDisplay.hxx&quot;</td></tr>
+<tr ><td class='lineNo' ><span>2</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-2' >#include &quot;ATM.hxx&quot;</td></tr>
+<tr ><td class='lineNo' ><span>3</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-3' > </td></tr>
+<tr ><td class='lineNo' ><span>4</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-4' >#include &lt;iostream&gt;</td></tr>
+<tr ><td class='lineNo' ><span>5</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-5' >using namespace std;</td></tr>
+<tr ><td class='lineNo' ><span>6</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-6' > </td></tr>
+<tr id='7f55ba56bea12e08d7227676f62de50b'><td class='lineNo' ><span>7</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-7' >void BaseDisplay::showInfoToUser(const char* message)</td></tr>
+<tr ><td class='lineNo' ><span>8</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-8' >{</td></tr>
+<tr ><td class='lineNo' onclick='toggleAnnotation("annotation-9")'><span><span class='a-tgl'>&#8691; </span>9</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-9' >    if (message)</td></tr>
+<tr class='annotation-tgl hid-tgl' id='annotation-9'><td> </td><td class='annotation'>    if (message)<br>        ^<br>        DC=0% 0/2<br><br>    if (message)<br>        ^<br>        SCC=0% 0/2, Values tested: <br><br>    if (message)<br>        ^<br>        MCDC=0% 0/1<br>        Condition A: Not Covered<br>        ==========================================================<br>        Tested condition values:<br>          A        Outcome<br>          --       --      |   -<br>        Missing condition values:<br>          A        Outcome<br>          False    False   |   A<br>          True     True    |   A<br>        ==========================================================<br><br></td></tr>
+<tr ><td class='lineNo' ><span>10</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-10' >    {</td></tr>
+<tr ><td class='lineNo' ><span>11</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-11' >        cout &lt;&lt; message ;</td></tr>
+<tr ><td class='lineNo' ><span>12</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-12' >    }</td></tr>
+<tr ><td class='lineNo' ><span>13</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-13' >}</td></tr>
+<tr ><td class='lineNo' ><span>14</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-14' > </td></tr>
+<tr id='3b2f8b0975b0ab9a2952368301965550'><td class='lineNo' ><span>15</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-15' >void BaseDisplay::showBalance(double balance)</td></tr>
+<tr ><td class='lineNo' ><span>16</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-16' >{</td></tr>
+<tr ><td class='lineNo' ><span>17</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-17' >    cout &lt;&lt; &quot; : &quot; &lt;&lt; balance &lt;&lt; endl;</td></tr>
+<tr ><td class='lineNo' ><span>18</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-18' >}</td></tr>
+<tr ><td class='lineNo' ><span>19</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-19' > </td></tr>
+<tr id='bb418d478fe6bb80a44bc66c7cfa685f'><td class='lineNo' ><span>20</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-20' >BaseDisplay::DisplayType BaseDisplay::getType() {return SECURE;}</td></tr>
+<tr id='1f7c6aafcfeefd89cf811431e1ead03f'><td class='lineNo' ><span>21</span><span class='lineStatus covered-strong'>&nbsp</span></td><td class='code' id='line-21' >void BaseDisplay::logError(std::string msg) {};</td></tr>
+<tr ><td class='lineNo' ><span>22</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-22' > </td></tr>
+<tr id='1a550700086af9fa02b8bf3599634172'><td class='lineNo' ><span>23</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-23' >void BaseDisplay::showTransaction(UserRequest request, double amount)</td></tr>
+<tr ><td class='lineNo' ><span>24</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-24' >{</td></tr>
+<tr ><td class='lineNo' onclick='toggleAnnotation("annotation-25")'><span><span class='a-tgl'>&#8691; </span>25</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-25' >    switch (request) {</td></tr>
+<tr class='annotation-tgl hid-tgl' id='annotation-25'><td> </td><td class='annotation'>    switch (request) {<br>            ^<br>            DC=0% 0/6<br><br></td></tr>
+<tr ><td class='lineNo' ><span>26</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-26' >        case UserRequest::REQUEST_TRANSACTIONS:</td></tr>
+<tr ><td class='lineNo' ><span>27</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-27' >            cout &lt;&lt; &quot;REQUEST_TRANSACTIONS&quot;;</td></tr>
+<tr ><td class='lineNo' ><span>28</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-28' >            break;</td></tr>
+<tr ><td class='lineNo' ><span>29</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-29' >        case UserRequest::REQUEST_BALANCE:</td></tr>
+<tr ><td class='lineNo' ><span>30</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-30' >            cout &lt;&lt; &quot;REQUEST_BALANCE&quot;;</td></tr>
+<tr ><td class='lineNo' ><span>31</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-31' >            break;</td></tr>
+<tr ><td class='lineNo' ><span>32</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-32' >        case UserRequest::REQUEST_DEPOSIT:</td></tr>
+<tr ><td class='lineNo' ><span>33</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-33' >            cout &lt;&lt; &quot;REQUEST_DEPOSIT&quot;;</td></tr>
+<tr ><td class='lineNo' ><span>34</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-34' >            break;</td></tr>
+<tr ><td class='lineNo' ><span>35</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-35' >        case UserRequest::REQUEST_INVALID:</td></tr>
+<tr ><td class='lineNo' ><span>36</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-36' >            cout &lt;&lt; &quot;REQUEST_INVALID&quot;;</td></tr>
+<tr ><td class='lineNo' ><span>37</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-37' >            break;</td></tr>
+<tr ><td class='lineNo' ><span>38</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-38' >        case UserRequest::REQUEST_WITHDRAW:</td></tr>
+<tr ><td class='lineNo' ><span>39</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-39' >            cout &lt;&lt; &quot;REQUEST_WITHDRAW&quot;;</td></tr>
+<tr ><td class='lineNo' ><span>40</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-40' >            break;</td></tr>
+<tr ><td class='lineNo' ><span>41</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-41' >    }</td></tr>
+<tr ><td class='lineNo' ><span>42</span><span class='lineStatus notcovered-strong'>&nbsp</span></td><td class='code' id='line-42' >    cout &lt;&lt; &quot; : &quot; &lt;&lt; amount &lt;&lt; endl;</td></tr>
+<tr ><td class='lineNo' ><span>43</span><span class='lineStatus '>&nbsp</span></td><td class='code' id='line-43' >}</td></tr>
+</tbody>
+</table>
+</div>
+</body>
+<footer>
+<hr>
+<div class="codeinfo">
+</div>
+<div class="scm">
+</div>
+<div class="footdate">
+<p>Parasoft C/C++test - Code Coverage Report - Generated on 2025-04-03 14:41:35</p>
+</div>
+</footer>
+</html>

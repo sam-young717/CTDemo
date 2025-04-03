@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/runtime
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime
+CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cpptest_static.dir/depend.make
@@ -72,7 +72,7 @@ include CMakeFiles/cpptest_static.dir/flags.make
 CMakeFiles/cpptest_static.dir/src/cpptest.c.o: CMakeFiles/cpptest_static.dir/flags.make
 CMakeFiles/cpptest_static.dir/src/cpptest.c.o: /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/runtime/src/cpptest.c
 CMakeFiles/cpptest_static.dir/src/cpptest.c.o: CMakeFiles/cpptest_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cpptest_static.dir/src/cpptest.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/cpptest_static.dir/src/cpptest.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/cpptest_static.dir/src/cpptest.c.o -MF CMakeFiles/cpptest_static.dir/src/cpptest.c.o.d -o CMakeFiles/cpptest_static.dir/src/cpptest.c.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/runtime/src/cpptest.c
 
 CMakeFiles/cpptest_static.dir/src/cpptest.c.i: cmake_force
@@ -93,7 +93,7 @@ cpptest_static_EXTERNAL_OBJECTS =
 libcpptest_static.a: CMakeFiles/cpptest_static.dir/src/cpptest.c.o
 libcpptest_static.a: CMakeFiles/cpptest_static.dir/build.make
 libcpptest_static.a: CMakeFiles/cpptest_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libcpptest_static.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library libcpptest_static.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/cpptest_static.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpptest_static.dir/link.txt --verbose=$(VERBOSE)
 
@@ -106,6 +106,6 @@ CMakeFiles/cpptest_static.dir/clean:
 .PHONY : CMakeFiles/cpptest_static.dir/clean
 
 CMakeFiles/cpptest_static.dir/depend:
-	cd /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/runtime /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/runtime /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime/CMakeFiles/cpptest_static.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/runtime /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/runtime /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime/CMakeFiles/cpptest_static.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/cpptest_static.dir/depend
 

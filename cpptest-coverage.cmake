@@ -92,7 +92,7 @@ function (cpptest_enable_coverage)
       -include "regex:${CPPTEST_SOURCE_DIR}/*"
       -exclude "regex:${CPPTEST_BINARY_DIR}/*"
       -ignore "regex:${CPPTEST_SOURCE_DIR}/tests/*"
-      -ignore "regex:*_test.cpp"
+      -ignore "regex:*gtest_main.cpp"
       -ignore "regex:${CPPTEST_BINARY_DIR}/*")
 
   # Use advanced settings file for cpptestcc, if exists

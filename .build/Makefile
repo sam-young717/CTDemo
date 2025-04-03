@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM
+CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build
+CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -224,17 +224,17 @@ ATM/fast:
 .PHONY : ATM/fast
 
 #=============================================================================
-# Target rules for targets named atm_gtest
+# Target rules for targets named atm_test
 
 # Build rule for target.
-atm_gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 atm_gtest
-.PHONY : atm_gtest
+atm_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 atm_test
+.PHONY : atm_test
 
 # fast build rule for target.
-atm_gtest/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_gtest.dir/build.make CMakeFiles/atm_gtest.dir/build
-.PHONY : atm_gtest/fast
+atm_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_test.dir/build.make CMakeFiles/atm_test.dir/build
+.PHONY : atm_test/fast
 
 #=============================================================================
 # Target rules for targets named gmock
@@ -384,29 +384,29 @@ BaseDisplay.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATM.dir/build.make CMakeFiles/ATM.dir/BaseDisplay.cpp.s
 .PHONY : BaseDisplay.cpp.s
 
-unitTests/gtest_main.o: unitTests/gtest_main.cpp.o
-.PHONY : unitTests/gtest_main.o
+gtest_main.o: gtest_main.cpp.o
+.PHONY : gtest_main.o
 
 # target to build an object file
-unitTests/gtest_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_gtest.dir/build.make CMakeFiles/atm_gtest.dir/unitTests/gtest_main.cpp.o
-.PHONY : unitTests/gtest_main.cpp.o
+gtest_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_test.dir/build.make CMakeFiles/atm_test.dir/gtest_main.cpp.o
+.PHONY : gtest_main.cpp.o
 
-unitTests/gtest_main.i: unitTests/gtest_main.cpp.i
-.PHONY : unitTests/gtest_main.i
+gtest_main.i: gtest_main.cpp.i
+.PHONY : gtest_main.i
 
 # target to preprocess a source file
-unitTests/gtest_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_gtest.dir/build.make CMakeFiles/atm_gtest.dir/unitTests/gtest_main.cpp.i
-.PHONY : unitTests/gtest_main.cpp.i
+gtest_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_test.dir/build.make CMakeFiles/atm_test.dir/gtest_main.cpp.i
+.PHONY : gtest_main.cpp.i
 
-unitTests/gtest_main.s: unitTests/gtest_main.cpp.s
-.PHONY : unitTests/gtest_main.s
+gtest_main.s: gtest_main.cpp.s
+.PHONY : gtest_main.s
 
 # target to generate assembly for a file
-unitTests/gtest_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_gtest.dir/build.make CMakeFiles/atm_gtest.dir/unitTests/gtest_main.cpp.s
-.PHONY : unitTests/gtest_main.cpp.s
+gtest_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/atm_test.dir/build.make CMakeFiles/atm_test.dir/gtest_main.cpp.s
+.PHONY : gtest_main.cpp.s
 
 # Help Target
 help:
@@ -425,7 +425,7 @@ help:
 	@echo "... cpptestcov-report"
 	@echo "... cpptestcov-suppress"
 	@echo "... ATM"
-	@echo "... atm_gtest"
+	@echo "... atm_test"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
@@ -442,9 +442,9 @@ help:
 	@echo "... BaseDisplay.o"
 	@echo "... BaseDisplay.i"
 	@echo "... BaseDisplay.s"
-	@echo "... unitTests/gtest_main.o"
-	@echo "... unitTests/gtest_main.i"
-	@echo "... unitTests/gtest_main.s"
+	@echo "... gtest_main.o"
+	@echo "... gtest_main.i"
+	@echo "... gtest_main.s"
 .PHONY : help
 
 

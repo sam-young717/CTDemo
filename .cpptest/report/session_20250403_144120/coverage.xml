@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Coverage ver="2" toolVer="2024.2.0.20241114B889" execEnv="linux_x86_64" hasViols="false" project="CT - Compliance + Coverage" buildId="CT - Compliance + Coverage-2025-04-03" climode="true" toolDispName="C/C++test CT" toolId="cpptestcov" machine="syoung-pc" tag="${scontrol_branch}-linux_x86_64" time="2025-04-03T14:41:21-04:00" id="1742337085857" lang="en" user="syoung" toolName="C/C++test CT">
+	<TestConfig machine="syoung-pc" pseudoUrl="builtin://cpptestcov" name="cpptestcov" user="syoung"/>
+	<VersionInfos>
+		<VersionInfo id="LC" ver="1"/>
+	</VersionInfos>
+	<Repositories/>
+	<Locations>
+		<Loc locRef="1" projId="CTDemo" project="CTDemo" resProjPath="Account.cpp" uri="file:/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/Account.cpp" projPath="/CTDemo" hash="-1109400981"/>
+		<Loc locRef="2" projId="CTDemo" project="CTDemo" resProjPath="Account.hxx" uri="file:/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/Account.hxx" projPath="/CTDemo" hash="-1172569836"/>
+		<Loc locRef="3" projId="CTDemo" project="CTDemo" resProjPath="Bank.cpp" uri="file:/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/Bank.cpp" projPath="/CTDemo" hash="1497090602"/>
+		<Loc locRef="4" projId="CTDemo" project="CTDemo" resProjPath="BaseDisplay.hxx" uri="file:/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.hxx" projPath="/CTDemo" hash="14023177"/>
+		<Loc locRef="5" projId="CTDemo" project="CTDemo" resProjPath="BaseDisplay.cpp" uri="file:/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.cpp" projPath="/CTDemo" hash="-812920828"/>
+		<Loc locRef="6" projId="CTDemo" project="CTDemo" resProjPath="ATM.cpp" uri="file:/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/ATM.cpp" projPath="/CTDemo" hash="-1739111765"/>
+	</Locations>
+	<Tests>
+		<Test testRef="1" id=""/>
+	</Tests>
+	<CoverageData type="LC">
+		<CvgData locRef="1">
+			<Stats>
+				<Item itemRef="1" id="_ZN7Account5debitEd" name="Account::debit(double)" hash="-1633621854"/>
+				<Item itemRef="2" id="_ZN7AccountC9EOS_" name="Account::Account(Account&amp;&amp;)" hash="-948436901"/>
+				<Item itemRef="3" id="_ZN7AccountC9Ed" name="Account::Account(double)" hash="591878734"/>
+				<Item itemRef="4" id="_ZN7Account16listTransactionsER11BaseDisplay11UserRequest" name="Account::listTransactions(BaseDisplay &amp;, UserRequest)" hash="1629233084"/>
+				<Item itemRef="5" id="WmntWcWUsersWsyoungWDocumentsWCTRunnerWactionsWrunnerWWworkWCTDemoWCTDemoWAccountWcpp|_ZZN7Account16listTransactionsER11BaseDisplay11UserRequestEUlSt5tupleIJS2_dEEE_" name="Account::listTransactions(BaseDisplay &amp;, UserRequest)::[lambda(std::tuple&lt;UserRequest, double>) (instance 1)]" hash="1629233084"/>
+				<Item itemRef="6" id="_ZN7Account7depositEd" name="Account::deposit(double)" hash="108907848"/>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="1" elems="37 38 39" hashes="127867656 1877160707 -2045644591"/>
+				<StatCvg itemRef="2" elems="13" hashes="123"/>
+				<StatCvg itemRef="3" elems="19 20 22" hashes="1853824349 1768376987 -1236554047"/>
+				<StatCvg itemRef="4" elems="44 46 47 48 52 53 58 68" hashes="67392142 1963162260 827486962 95470225 -1090352996 -994667078 483806807 -1700972623"/>
+				<StatCvg itemRef="5" elems="63 64 65" hashes="908242718 -1658026477 252367393"/>
+				<StatCvg itemRef="6" elems="28 30 31" hashes="1529522812 -2024779579 -2045644591"/>
+			</Static>
+			<Dynamic>
+				<DynCvg itemRef="4">
+					<CtxCvg testRefs="1" elemRefs="44 46 47 48"/>
+				</DynCvg>
+				<DynCvg itemRef="6">
+					<CtxCvg testRefs="1" elemRefs="28 30 31"/>
+				</DynCvg>
+				<DynCvg itemRef="1">
+					<CtxCvg testRefs="1" elemRefs="37 38 39"/>
+				</DynCvg>
+				<DynCvg itemRef="3">
+					<CtxCvg testRefs="1" elemRefs="19 20"/>
+				</DynCvg>
+			</Dynamic>
+		</CvgData>
+		<CvgData locRef="2">
+			<Stats>
+				<Item itemRef="1" id="_ZNK7Account10getBalanceEv" name="Account::getBalance() const" hash="147187839"/>
+				<Item itemRef="2" id="_ZN7Account16setAccountNumberEi" name="Account::setAccountNumber(int)" hash="-972482312"/>
+				<Item itemRef="3" id="_ZN7Account11getPasswordEv" name="Account::getPassword()" hash="1765714659"/>
+				<Item itemRef="4" id="_ZN7Account11setPasswordEPKc" name="Account::setPassword(const char *)" hash="-677733502"/>
+				<Item itemRef="5" id="_ZNK7Account16getAccountNumberEv" name="Account::getAccountNumber() const" hash="-2136691427"/>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="1" elems="27 29" hashes="-1757149934 1287528586"/>
+				<StatCvg itemRef="2" elems="40" hashes="-1913688370"/>
+				<StatCvg itemRef="3" elems="50" hashes="1743881740"/>
+				<StatCvg itemRef="4" elems="45" hashes="1982297764"/>
+				<StatCvg itemRef="5" elems="35" hashes="91425284"/>
+			</Static>
+		</CvgData>
+		<CvgData locRef="3">
+			<Stats>
+				<Item itemRef="1" id="_ZN4Bank10getAccountEiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" name="Bank::getAccount(int, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char>>)" hash="1497965068"/>
+				<Item itemRef="2" id="_ZN4BankC9Ev" name="Bank::Bank()" hash="1867698136"/>
+				<Item itemRef="3" id="_ZN4Bank10addAccountEv" name="Bank::addAccount()" hash="-1361899988"/>
+				<Item itemRef="4" id="_ZN4BankD9Ev" name="Bank::~Bank()" hash="373375205"/>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="1" elems="17 18 20 22 25 30" hashes="1028444248 -1454903092 1591267424 1548137781 1568676787 -1701869175"/>
+				<StatCvg itemRef="2" elems="6" hashes="837639740"/>
+				<StatCvg itemRef="3" elems="36 37 38 39" hashes="1352107249 -1221361444 2113102620 -1701869175"/>
+				<StatCvg itemRef="4" elems="10" hashes="123"/>
+			</Static>
+			<Dynamic>
+				<DynCvg itemRef="1">
+					<CtxCvg testRefs="1" elemRefs="17 18 20 22 25 30"/>
+				</DynCvg>
+				<DynCvg itemRef="4">
+					<CtxCvg testRefs="1" elemRefs="10"/>
+				</DynCvg>
+				<DynCvg itemRef="3">
+					<CtxCvg testRefs="1" elemRefs="36 37 38 39"/>
+				</DynCvg>
+				<DynCvg itemRef="2">
+					<CtxCvg testRefs="1" elemRefs="6"/>
+				</DynCvg>
+			</Dynamic>
+		</CvgData>
+		<CvgData locRef="4">
+			<Stats>
+				<Item itemRef="1" id="_ZN11BaseDisplayD9Ev" name="BaseDisplay::~BaseDisplay()" hash="-26469106"/>
+				<Item itemRef="2" id="_ZN11BaseDisplayC9Ev" name="BaseDisplay::BaseDisplay()" hash="-173552820"/>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="1" elems="16" hashes="401384735"/>
+				<StatCvg itemRef="2" elems="15" hashes="823166497"/>
+			</Static>
+		</CvgData>
+		<CvgData locRef="5">
+			<Stats>
+				<Item itemRef="1" id="_ZN11BaseDisplay8logErrorENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" name="BaseDisplay::logError(std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char>>)" hash="1347939291"/>
+				<Item itemRef="2" id="_ZN11BaseDisplay14showInfoToUserEPKc" name="BaseDisplay::showInfoToUser(const char *)" hash="-1840431111"/>
+				<Item itemRef="3" id="_ZN11BaseDisplay11showBalanceEd" name="BaseDisplay::showBalance(double)" hash="-2065904369"/>
+				<Item itemRef="4" id="_ZN11BaseDisplay15showTransactionE11UserRequestd" name="BaseDisplay::showTransaction(UserRequest, double)" hash="-1546696306"/>
+				<Item itemRef="5" id="_ZN11BaseDisplay7getTypeEv" name="BaseDisplay::getType()" hash="694379763"/>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="1" elems="21" hashes="-919819380"/>
+				<StatCvg itemRef="2" elems="9 11" hashes="-1928097305 213230519"/>
+				<StatCvg itemRef="3" elems="17" hashes="-702470879"/>
+				<StatCvg itemRef="4" elems="25 27 28 30 31 33 34 36 37 39 40 42" hashes="-1874749295 755840885 207609628 1443525806 207609628 165557232 207609628 -1153590007 207609628 -1199258774 207609628 -916470369"/>
+				<StatCvg itemRef="5" elems="20" hashes="264830969"/>
+			</Static>
+			<Dynamic>
+				<DynCvg itemRef="5">
+					<CtxCvg testRefs="1" elemRefs="20"/>
+				</DynCvg>
+				<DynCvg itemRef="1">
+					<CtxCvg testRefs="1" elemRefs="21"/>
+				</DynCvg>
+			</Dynamic>
+		</CvgData>
+		<CvgData locRef="6">
+			<Stats>
+				<Item itemRef="1" id="_ZN3ATMC9EP4BankP11BaseDisplay" name="ATM::ATM(Bank *, BaseDisplay *)" hash="-276912122"/>
+				<Item itemRef="2" id="_ZN3ATM8withdrawEd" name="ATM::withdraw(double)" hash="-1488069952"/>
+				<Item itemRef="3" id="_ZN3ATM11viewAccountEiNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" name="ATM::viewAccount(int, std::__cxx11::basic_string&lt;char, std::char_traits&lt;char>, std::allocator&lt;char>>)" hash="-1361170593"/>
+				<Item itemRef="4" id="_ZN3ATM15showTransationsEv" name="ATM::showTransations()" hash="348991312"/>
+				<Item itemRef="5" id="_ZN3ATM11showBalanceEv" name="ATM::showBalance()" hash="1378591874"/>
+				<Item itemRef="6" id="WmntWcWUsersWsyoungWDocumentsWCTRunnerWactionsWrunnerWWworkWCTDemoWCTDemoWATMWcpp|_ZZN3ATM15showTransationsEvEUlRKSt5tupleIJ11UserRequestdEEE_" name="ATM::showTransations()::[lambda(const std::tuple&lt;UserRequest, double> &amp;) (instance 1)]" hash="348991312"/>
+				<Item itemRef="7" id="_ZN3ATM11makeDepositEd" name="ATM::makeDeposit(double)" hash="136014340"/>
+				<Item itemRef="8" id="_ZN3ATM15fillUserRequestE11UserRequestd" name="ATM::fillUserRequest(UserRequest, double)" hash="1358745247"/>
+			</Stats>
+			<Static>
+				<StatCvg itemRef="1" elems="9 10" hashes="642441668 -1469274842"/>
+				<StatCvg itemRef="2" elems="63 64 65" hashes="-1355841836 1306501935 1299398127"/>
+				<StatCvg itemRef="3" elems="15 17" hashes="1719088503 230991714"/>
+				<StatCvg itemRef="4" elems="46" hashes="909377539"/>
+				<StatCvg itemRef="5" elems="39 40 41" hashes="-1106640546 -30276687 1299398127"/>
+				<StatCvg itemRef="6" elems="49" hashes="1017045465"/>
+				<StatCvg itemRef="7" elems="56 57 58" hashes="1185503244 1306501935 1299398127"/>
+				<StatCvg itemRef="8" elems="23 24 27 29 31 33" hashes="-1069739612 1595945398 554140929 -1475507174 161636948 1801940273"/>
+			</Static>
+		</CvgData>
+	</CoverageData>
+</Coverage>

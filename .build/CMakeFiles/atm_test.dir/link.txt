@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wl,--whole-archive "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime/libcpptest_static.a" -Wl,--no-whole-archive CMakeFiles/atm_test.dir/gtest_main.cpp.o -o atm_test  libATM.a lib/libgtest_main.a lib/libgtest.a 

@@ -56,23 +56,23 @@ if(ENABLE_GT_TESTS)
     )
   endif()
 
-  add_executable(atm_gtest "")
-  target_sources(atm_gtest
+  add_executable(atm_test "")
+  target_sources(atm_test
     PRIVATE
-      unitTests/gtest_main.cpp
+      gtest_main.cpp
   )
-  target_link_libraries(atm_gtest
+  target_link_libraries(atm_test
     PRIVATE
       ${TARGET_NAME}
       gtest_main
   )
 
-  target_include_directories(atm_gtest PRIVATE ${CMAKE_SOURCE_DIR})
+  target_include_directories(atm_test PRIVATE ${CMAKE_SOURCE_DIR})
 
   enable_testing()
   add_test(
-    NAME atm_gtest
-    COMMAND $<TARGET_FILE:atm_gtest>
+    NAME atm_test
+    COMMAND $<TARGET_FILE:atm_test>
   )
 endif()
 

@@ -59,13 +59,13 @@ add_library(cpptest_static STATIC IMPORTED)
 set_property(TARGET cpptest_lib APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(cpptest_lib PROPERTIES
   IMPORTED_COMMON_LANGUAGE_RUNTIME_NOCONFIG ""
-  IMPORTED_OBJECTS_NOCONFIG "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime/CMakeFiles/cpptest_lib.dir/src/cpptest.c.o"
+  IMPORTED_OBJECTS_NOCONFIG "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime/CMakeFiles/cpptest_lib.dir/src/cpptest.c.o"
   )
 
 # Import target "cpptest_shared" for configuration ""
 set_property(TARGET cpptest_shared APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(cpptest_shared PROPERTIES
-  IMPORTED_LOCATION_NOCONFIG "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime/libcpptest_shared.so"
+  IMPORTED_LOCATION_NOCONFIG "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime/libcpptest_shared.so"
   IMPORTED_SONAME_NOCONFIG "libcpptest_shared.so"
   )
 
@@ -73,7 +73,7 @@ set_target_properties(cpptest_shared PROPERTIES
 set_property(TARGET cpptest_static APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(cpptest_static PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "C"
-  IMPORTED_LOCATION_NOCONFIG "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/cpptest-runtime/libcpptest_static.a"
+  IMPORTED_LOCATION_NOCONFIG "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/cpptest-runtime/libcpptest_static.a"
   )
 
 # This file does not depend on other imported targets which have

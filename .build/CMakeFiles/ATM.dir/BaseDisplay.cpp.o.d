@@ -1,7 +1,7 @@
 CMakeFiles/ATM.dir/BaseDisplay.cpp.o: \
- /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/BaseDisplay.cpp \
+ /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/BaseDisplay.hxx \
+ /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.hxx \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -111,8 +111,8 @@ CMakeFiles/ATM.dir/BaseDisplay.cpp.o: \
  /usr/include/c++/13/bits/functional_hash.h \
  /usr/include/c++/13/bits/hash_bytes.h \
  /usr/include/c++/13/bits/basic_string.tcc \
- /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/ATM.hxx \
- /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/Bank.hxx \
+ /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/ATM.hxx \
+ /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/Bank.hxx \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \

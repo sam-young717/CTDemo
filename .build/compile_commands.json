@@ -1,56 +1,56 @@
 [
 {
-  "directory": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build",
-  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/ATM.dir/Account.cpp.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/Account.cpp",
-  "file": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/Account.cpp",
+  "directory": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build",
+  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/ATM.dir/Account.cpp.o -c /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/Account.cpp",
+  "file": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/Account.cpp",
   "output": "CMakeFiles/ATM.dir/Account.cpp.o"
 },
 {
-  "directory": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build",
-  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/ATM.dir/ATM.cpp.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/ATM.cpp",
-  "file": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/ATM.cpp",
+  "directory": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build",
+  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/ATM.dir/ATM.cpp.o -c /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/ATM.cpp",
+  "file": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/ATM.cpp",
   "output": "CMakeFiles/ATM.dir/ATM.cpp.o"
 },
 {
-  "directory": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build",
-  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/ATM.dir/Bank.cpp.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/Bank.cpp",
-  "file": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/Bank.cpp",
+  "directory": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build",
+  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/ATM.dir/Bank.cpp.o -c /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/Bank.cpp",
+  "file": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/Bank.cpp",
   "output": "CMakeFiles/ATM.dir/Bank.cpp.o"
 },
 {
-  "directory": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build",
-  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/ATM.dir/BaseDisplay.cpp.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/BaseDisplay.cpp",
-  "file": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/BaseDisplay.cpp",
+  "directory": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build",
+  "command": "/usr/bin/c++   -std=gnu++14 -o CMakeFiles/ATM.dir/BaseDisplay.cpp.o -c /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.cpp",
+  "file": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.cpp",
   "output": "CMakeFiles/ATM.dir/BaseDisplay.cpp.o"
 },
 {
-  "directory": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build",
-  "command": "/usr/bin/c++  -I/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest  -o CMakeFiles/atm_gtest.dir/unitTests/gtest_main.cpp.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/gtest_main.cpp",
-  "file": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/unitTests/gtest_main.cpp",
-  "output": "CMakeFiles/atm_gtest.dir/unitTests/gtest_main.cpp.o"
+  "directory": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest  -o CMakeFiles/atm_test.dir/gtest_main.cpp.o -c /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp",
+  "file": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp",
+  "output": "CMakeFiles/atm_test.dir/gtest_main.cpp.o"
 },
 {
-  "directory": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-build/googlemock",
-  "command": "/usr/bin/c++  -I/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googlemock/include -I/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googlemock -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googlemock/src/gmock-all.cc",
-  "file": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "directory": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googlemock/include -I/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googlemock -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googlemock/src/gmock-all.cc",
   "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-build/googlemock",
-  "command": "/usr/bin/c++  -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googlemock/include -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googlemock -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googlemock/src/gmock_main.cc",
-  "file": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "directory": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googlemock/include -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googlemock -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googlemock/src/gmock_main.cc",
   "output": "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-build/googletest",
-  "command": "/usr/bin/c++  -I/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest/include -I/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest/src/gtest-all.cc",
-  "file": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "directory": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/c++  -I/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest/include -I/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest/src/gtest-all.cc",
   "output": "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
 },
 {
-  "directory": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-build/googletest",
-  "command": "/usr/bin/c++  -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest/src/gtest_main.cc",
-  "file": "/mnt/c/Users/syoung/Documents/LastData/cpptest-ct/examples/ATM/.build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "directory": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-build/googletest",
+  "command": "/usr/bin/c++  -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest/include -isystem /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest -Wall -Wshadow -Wundef -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=0 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/_deps/googletest-src/googletest/src/gtest_main.cc",
   "output": "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o"
 }
 ]

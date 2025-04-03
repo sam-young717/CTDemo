@@ -10,7 +10,7 @@
 * FC - Function Coverage
 * CC - Call Coverage
 
-> ATM/ATM.cpp                      LC=0% 0/21     SC=0% 0/24     BC=0% 0/14     DC=0% 0/9      SCC=0% 0/4     MCDC=0% 0/2    FC=0% 0/8      CC=0% 0/19     
+> CTDemo/ATM.cpp                   LC=0% 0/21     SC=0% 0/24     BC=0% 0/14     DC=0% 0/9      SCC=0% 0/4     MCDC=0% 0/2    FC=0% 0/8      CC=0% 0/19     
 
   ATM::ATM(Bank *, BaseDisplay *)  LC=0% 0/2      SC=0% 0/2      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
   ATM::fillUserRequest(UserRequest, double) LC=0% 0/6      SC=0% 0/9      BC=0% 0/6      DC=0% 0/7      SCC=0% 0/2     MCDC=0% 0/1    FC=0% 0/1      CC=0% 0/4      
@@ -21,64 +21,41 @@
   ATM::viewAccount(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>) LC=0% 0/2      SC=0% 0/2      BC=0% 0/2      DC=0% 0/2      SCC=0% 0/2     MCDC=0% 0/1    FC=0% 0/1      CC=0% 0/2      
   ATM::withdraw(double)            LC=0% 0/3      SC=0% 0/3      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=0% 0/3      
 
-> ATM/Account.cpp                  LC=38% 8/21    SC=38% 8/21    BC=31% 4/13    DC=13% 1/8     SCC=17% 1/6    MCDC=0% 0/3    FC=50% 3/6     CC=29% 5/17    
+> CTDemo/Account.cpp               LC=57% 12/21   SC=57% 12/21   BC=46% 6/13    DC=25% 2/8     SCC=33% 2/6    MCDC=0% 0/3    FC=67% 4/6     CC=41% 7/17    
 
   Account::Account(Account&&)      LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
   Account::Account(double)         LC=67% 2/3     SC=67% 2/3     BC=67% 2/3     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=50% 1/2     
   Account::debit(double)           LC=100% 3/3    SC=100% 3/3    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 2/2    
   Account::deposit(double)         LC=100% 3/3    SC=100% 3/3    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 2/2    
-  Account::listTransactions(BaseDisplay &, UserRequest) LC=0% 0/8      SC=0% 0/8      BC=0% 0/5      DC=0% 0/4      SCC=0% 0/2     MCDC=0% 0/1    FC=0% 0/1      CC=0% 0/7      
+  Account::listTransactions(BaseDisplay &, UserRequest) LC=50% 4/8     SC=50% 4/8     BC=40% 2/5     DC=25% 1/4     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=29% 2/7     
   Account::listTransactions(BaseDisplay &, UserRequest)::[lambda(std::tuple<UserRequest, double>) (instance 1)] LC=0% 0/3      SC=0% 0/3      BC=0% 0/2      DC=0% 0/2      SCC=0% 0/2     MCDC=0% 0/1    FC=0% 0/1      CC=0% 0/4      
 
-> ATM/Account.hxx                  LC=100% 6/6    SC=100% 6/6    BC=100% 5/5    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 5/5    CC=100% 2/2    
+> CTDemo/Account.hxx               LC=0% 0/6      SC=0% 0/6      BC=0% 0/5      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/5      CC=0% 0/2      
 
-  Account::getAccountNumber() const LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
-  Account::getBalance() const      LC=100% 2/2    SC=100% 2/2    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 1/1    
-  Account::getPassword()           LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 1/1    
-  Account::setAccountNumber(int)   LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
-  Account::setPassword(const char *) LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  Account::getAccountNumber() const LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
+  Account::getBalance() const      LC=0% 0/2      SC=0% 0/2      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=0% 0/1      
+  Account::getPassword()           LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=0% 0/1      
+  Account::setAccountNumber(int)   LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
+  Account::setPassword(const char *) LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
 
-> ATM/Bank.cpp                     LC=100% 12/12  SC=100% 12/12  BC=100% 8/8    DC=100% 4/4    SCC=100% 6/6   MCDC=100% 3/3  FC=100% 4/4    CC=100% 5/5    
+> CTDemo/Bank.cpp                  LC=100% 12/12  SC=100% 12/12  BC=100% 8/8    DC=100% 4/4    SCC=100% 6/6   MCDC=100% 3/3  FC=100% 4/4    CC=100% 5/5    
 
   Bank::Bank()                     LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
   Bank::addAccount()               LC=100% 4/4    SC=100% 4/4    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 2/2    
   Bank::getAccount(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>) LC=100% 6/6    SC=100% 6/6    BC=100% 5/5    DC=100% 4/4    SCC=100% 6/6   MCDC=100% 3/3  FC=100% 1/1    CC=100% 3/3    
   Bank::~Bank()                    LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
 
-> ATM/BaseDisplay.cpp              LC=0% 0/17     SC=0% 0/17     BC=0% 0/12     DC=0% 0/8      SCC=0% 0/2     MCDC=0% 0/1    FC=0% 0/5      CC=N/A         
+> CTDemo/BaseDisplay.cpp           LC=12% 2/17    SC=12% 2/17    BC=17% 2/12    DC=0% 0/8      SCC=0% 0/2     MCDC=0% 0/1    FC=40% 2/5     CC=N/A         
 
-  BaseDisplay::getType()           LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
-  BaseDisplay::logError(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>) LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
+  BaseDisplay::getType()           LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
+  BaseDisplay::logError(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>) LC=100% 1/1    SC=100% 1/1    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=N/A         
   BaseDisplay::showBalance(double) LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
   BaseDisplay::showInfoToUser(const char *) LC=0% 0/2      SC=0% 0/2      BC=0% 0/2      DC=0% 0/2      SCC=0% 0/2     MCDC=0% 0/1    FC=0% 0/1      CC=N/A         
   BaseDisplay::showTransaction(UserRequest, double) LC=0% 0/12     SC=0% 0/12     BC=0% 0/7      DC=0% 0/6      SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
 
-> ATM/BaseDisplay.hxx              LC=0% 0/2      SC=0% 0/2      BC=0% 0/2      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/2      CC=N/A         
+> CTDemo/BaseDisplay.hxx           LC=0% 0/2      SC=0% 0/2      BC=0% 0/2      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/2      CC=N/A         
 
   BaseDisplay::BaseDisplay()       LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
   BaseDisplay::~BaseDisplay()      LC=0% 0/1      SC=0% 0/1      BC=0% 0/1      DC=N/A         SCC=N/A        MCDC=N/A       FC=0% 0/1      CC=N/A         
 
-> ATM/unitTests/AccountTest.hpp    LC=100% 48/48  SC=89% 64/72   BC=75% 24/32   DC=50% 8/16    SCC=50% 8/16   MCDC=0% 0/8    FC=100% 8/8    CC=85% 40/47   
-
-  Account_debitSimple_Test::TestBody() LC=100% 7/7    SC=90% 9/10    BC=75% 3/4     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=83% 5/6     
-  Account_depositSimple_Test::TestBody() LC=100% 7/7    SC=90% 9/10    BC=75% 3/4     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=83% 5/6     
-  Account_getAndSetAccountNumber_Test::TestBody() LC=100% 6/6    SC=89% 8/9     BC=75% 3/4     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=83% 5/6     
-  Account_getAndSetPasswordEmpty_Test::TestBody() LC=100% 7/7    SC=90% 9/10    BC=75% 3/4     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=86% 6/7     
-  Account_getAndSetPassword_Test::TestBody() LC=100% 7/7    SC=90% 9/10    BC=75% 3/4     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=86% 6/7     
-  Account_getBalanceDefault_Test::TestBody() LC=100% 4/4    SC=86% 6/7     BC=75% 3/4     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=80% 4/5     
-  Account_getBalanceInitBad_Test::TestBody() LC=100% 5/5    SC=88% 7/8     BC=75% 3/4     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=100% 5/5    
-  Account_getBalanceInit_Test::TestBody() LC=100% 5/5    SC=88% 7/8     BC=75% 3/4     DC=50% 1/2     SCC=50% 1/2    MCDC=0% 0/1    FC=100% 1/1    CC=80% 4/5     
-
-> ATM/unitTests/BankTest.hpp       LC=100% 33/33  SC=89% 47/53   BC=78% 21/27   DC=57% 8/14    SCC=54% 13/24  MCDC=8% 1/12   FC=100% 5/5    CC=67% 18/27   
-
-  Bank_addAccountMultiple_Test::TestBody() LC=100% 8/8    SC=88% 14/16   BC=82% 9/11    DC=67% 4/6     SCC=63% 5/8    MCDC=25% 1/4   FC=100% 1/1    CC=63% 5/8     
-  Bank_addAccount_Test::TestBody() LC=100% 5/5    SC=88% 7/8     BC=75% 3/4     DC=50% 1/2     SCC=50% 2/4    MCDC=0% 0/2    FC=100% 1/1    CC=60% 3/5     
-  Bank_getAccount_1_Test::TestBody() LC=100% 6/6    SC=89% 8/9     BC=75% 3/4     DC=50% 1/2     SCC=50% 2/4    MCDC=0% 0/2    FC=100% 1/1    CC=50% 2/4     
-  Bank_getAccount_2_Test::TestBody() LC=100% 7/7    SC=90% 9/10    BC=75% 3/4     DC=50% 1/2     SCC=50% 2/4    MCDC=0% 0/2    FC=100% 1/1    CC=60% 3/5     
-  Bank_getAccount_3_Test::TestBody() LC=100% 7/7    SC=90% 9/10    BC=75% 3/4     DC=50% 1/2     SCC=50% 2/4    MCDC=0% 0/2    FC=100% 1/1    CC=100% 5/5    
-
-> ATM/unitTests/gtest_main.cpp     LC=100% 2/2    SC=100% 2/2    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 2/2    
-
-  main()                           LC=100% 2/2    SC=100% 2/2    BC=100% 1/1    DC=N/A         SCC=N/A        MCDC=N/A       FC=100% 1/1    CC=100% 2/2    
-
-> TOTAL (9 files, 44 functions)    LC=67% 109/162 SC=67% 139/209 BC=55% 63/114  DC=36% 21/59   SCC=48% 28/58  MCDC=14% 4/29  FC=59% 26/44   CC=61% 72/119  
+> TOTAL (6 files, 30 functions)    LC=33% 26/79   SC=32% 26/82   BC=30% 16/54   DC=21% 6/29    SCC=44% 8/18   MCDC=33% 3/9   FC=33% 10/30   CC=28% 12/43   

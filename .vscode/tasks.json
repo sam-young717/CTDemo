@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Prepare Tests",
+            "type": "shell",
+            "command": "rm -rf .build || rm -rf .coverage && cmake -DCPPTEST_COVERAGE=ON -S . -B .build && cd .build && make && ./atm_test --gtest_output=xml:./gtest_results.xml && cd .build || make cpptestcov-compute cpptestcov-report",
+            "group": "build"
+        },
+        {
+            "label": "Launch and Report Tests",
+            "type": "shell",
+            "command": "cd .build && ./atm_test || cd .. && /mnt/c/Users/syoung/Documents/CppTestLinux/cpptest-ct/bin/cpptestcov report dtp -root . -settings cpptestct.properties .coverage /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build/gtest_results.xml && cd .build && make cpptestcov-compute cpptestcov-report",
+            "group": "build"
+        },
+    ]
+}

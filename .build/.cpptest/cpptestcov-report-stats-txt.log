@@ -1,0 +1,6 @@
+2025-04-03 14:41:36,712 [INFO] Starting cpptestcov-report-stats-txt 2025.1.0 (10.7.2.20250219B956)...
+2025-04-03 14:41:36,717 [INFO] Arguments: ['-root', '/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo', '-coverage', 'LC,SC,BC,DC,SCC,MCDC,FC,CC', '/mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.coverage']
+2025-04-03 14:41:36,718 [INFO] Working dir: /mnt/c/Users/syoung/Documents/CTRunner/actions-runner/_work/CTDemo/CTDemo/.build
+2025-04-03 14:41:36,719 [INFO] Python version: 3.12.3
+2025-04-03 14:41:36,719 [INFO] OS arch: x86_64
+2025-04-03 14:41:36,723 [INFO] OS name: Linux
