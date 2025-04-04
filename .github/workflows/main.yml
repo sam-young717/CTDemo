@@ -51,6 +51,15 @@ jobs:
       shell: bash
       run: make cpptestcov-compute cpptestcov-suppress cpptestcov-report
 
+    - name: Archive reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: CpptestReports
+        include-hidden-files: true
+        path: |
+          ${{github.workspace}}/.coverage/*.*
+
     - name: Publish Reports to DTP
       working-directory: ${{github.workspace}}
       shell: bash
