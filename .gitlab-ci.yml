@@ -1,0 +1,44 @@
+# This is a basic pipeline to help you get started with C/C++test integration to analyze a CMake-based project.
+
+stages:
+  - build-and-test
+
+build-and-analyze:
+  stage: build-and-test
+  tags:
+  - self-hosted
+  variables:
+    CPPTEST_HOME: "/mnt/c/Users/syoung/Documents/StandardLinux2025_2/cpptest"
+  script:
+    # Dependencies should be pre-installed on self-hosted runner
+    # cmake and build-essential are assumed to be available
+    
+    # Build project
+    - ls
+    - pwd
+    - echo "Configuring Cmake..."
+    - cmake -DCPPTEST_COVERAGE=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -S . -B build
+    - echo "Building project..."
+    - cmake --build build
+    
+    # Configure C/C++test reporting options and SCM integration
+    - echo "Configuring reporting options..."    
+    - echo "report.format=xml,html,sast-gitlab" > report.properties
+    - echo "report.scontrol=min" >> report.properties
+    - echo "scontrol.rep.type=git" >> report.properties
+    - echo "scontrol.rep.git.url=$CI_PROJECT_URL" >> report.properties
+    - echo "scontrol.rep.git.workspace=$CI_PROJECT_DIR" >> report.properties
+    - echo "scontrol.rep.git.branch=$CI_COMMIT_BRANCH" >> report.properties
+
+    # Run C/C++test analysis
+    - echo "Running C/C++test..."
+    - ${CPPTEST_HOME}/cpptestcli -compiler gcc_9-64 -config "builtin://Recommended Rules" -input build/compile_commands.json -module . -settings report.properties
+  
+  artifacts:
+    # Uploads analysis results in the GitLab SAST format, so that they are displayed in GitLab.
+    reports:
+      sast: reports/report.sast
+    # Uploads all report files and build artifacts.
+    paths:
+      - build/compile_commands.json
+      - reports/*
