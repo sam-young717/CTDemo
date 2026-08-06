@@ -23,5 +23,6 @@ pipeline {
                     sourceCodeEncoding: 'UTF-8'
                 )
             }
+        }
     }
 }
