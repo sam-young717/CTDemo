@@ -1,0 +1,5 @@
+if(EXISTS "/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/atm_test[1]_tests.cmake")
+  include("/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/atm_test[1]_tests.cmake")
+else()
+  add_test(atm_test_NOT_BUILT atm_test_NOT_BUILT)
+endif()

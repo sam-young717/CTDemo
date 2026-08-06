@@ -7,22 +7,10 @@ CTestTestfile.cmake
 Makefile
 compile_commands.json
 
-# Coverage files
-.coverage/
-coverage.html
-*.cov
-
 # C++Test files
 .cpptest/
 cpptest-runtime/
-reports/
 *.bdf
-
-# Test executables and results
-atm_test*
-*.xml
-test.xml
-gtest_results.xml
 
 # Library files
 lib/
