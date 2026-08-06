@@ -17,7 +17,7 @@ pipeline {
         stage('Publishing Test Execution Results') {
             steps {
                 xunit (
-                    tools: [[$class: 'ParasoftType', pattern: '/mnt/c/Users/syoung/parasoft/workspace2026.1/Timer/reports/report.xml']]   
+                    tools: [[$class: 'ParasoftType', pattern: 'C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\CT\\reports\\report.xml"']]   
                 )
             }
         }
