@@ -6,7 +6,7 @@ pipeline {
                 recordIssues (
                     tools: [
                         parasoftFindings (
-                            pattern: '**/report.xml',
+                            pattern: 'reports/report.xml',
                             localSettingsPath: 'settings.properties'
                         )
                     ]
@@ -26,7 +26,6 @@ pipeline {
             steps {
                 recordParasoftCoverage (
                     pattern: '**/coverage.xml',
-                    referenceBuild: '20',
                     referenceJob: 'CT',
                     sourceCodeEncoding: 'UTF-8',
                     coverageQualityGates: [
