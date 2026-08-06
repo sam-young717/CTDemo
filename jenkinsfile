@@ -17,7 +17,7 @@ pipeline {
         stage('Publishing Test Execution Results') {
             steps {
                 xunit (
-                    tools: [[$class: 'ParasoftType', pattern: 'reports/gtest_report.xml']]   
+                    junit 'reports/gtest_report.xml'
                 )
             }
         }
