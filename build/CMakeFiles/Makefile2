@@ -65,11 +65,10 @@ CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/C
 # The main recursive "all" target.
 all: CMakeFiles/ATM.dir/all
 all: CMakeFiles/atm_test.dir/all
-all: _deps/googletest-build/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: _deps/googletest-build/preinstall
+preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.

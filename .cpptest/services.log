@@ -1,4 +1,4 @@
-Diagnostics file initialized on Fri Jan 09 08:52:03 EST 2026
+Diagnostics file initialized on Fri May 22 09:30:40 EDT 2026
 ================================================================================================
 AVAILABLE BUNDLES AND SERVICES (104)
 ================================================================================================
@@ -110,13 +110,14 @@ Bundle [103]: stax2-api, state: [2], version: 4.2.1
 
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.common.dtp.DtpAutoconfPreferencesService@2b0f373b
-CONTEXT: com.parasoft.xtest.common.services.RawConsoleServiceContext@47289387
+SERVICE: com.parasoft.xtest.common.dtp.DtpAutoconfPreferencesService@4af0df05
+CONTEXT: com.parasoft.xtest.common.services.RawConsoleServiceContext@1601e47
 LICENSE ENABLED: 
 ================================================================================================
 LOCAL SETTINGS:
     configuration.dir.builtin=${cpptest:root_dir}/configs/builtin
     configuration.dir.user=${cpptest:root_dir}/configs/user
+    console.verbosity.level=high
     cpptest.analyzer.coverage.decision.enabled=false
     cpptest.analyzer.coverage.enabled=true
     cpptest.analyzer.coverage.line.enabled=true
@@ -149,6 +150,7 @@ LOCAL SETTINGS:
     cpptest.input.bdf.legacy.project.enabled=false
     cpptest.input.msvc.add.compiler.options=-I.
     cpptest.license.custom_edition_features=C++test,Static Analysis,Flow Analysis,Unit Test,Coverage,Automation,DTP Publish,Desktop Command Line,AUTOSAR Rules,CWE Rules,DISA STIG Rules,HIC++ Rules,JSF Rules,MISRA Rules,MISRA C 2012 Rules,MISRA C++ 2023 Rules,OWASP Rules,Security Rules,SEI CERT C Rules,SEI CERT C++ Rules,Code Dependency Export,LLM Integration
+    cpptest.license.local.password=>>hidden<<
     cpptest.license.network.edition=custom_edition
     cpptest.license.use_network=true
     cpptest.output.error.max.lines=10
@@ -180,6 +182,7 @@ LOCAL SETTINGS:
     dtp.password=>>hidden<<
     dtp.url=https://localhost:8443
     dtp.user=admin
+    license.network.auth.enabled=true
     local.storage.dir=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo//.cpptest
     parallel.mode=Auto
     parasoft.eula.accepted=true
@@ -276,115 +279,16 @@ LOCAL SETTINGS:
 
 DIAGNOSTICS INFO:
 DTP autoconfiguration is not enabled.
-================================================================================================
-PROFILER RESULTS
-================================================================================================
-
-License Profiler
-+ ----------------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-| NAME                                                  | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
-+ ----------------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-| LicenseModule.initializeModule                        | 1     | 0.988     | 0.988   | 0.988   | 0.988   |
-| LicenseService.isEnabled[LLM-Integration]             | 1     | 0.084     | 0.084   | 0.084   | 0.084   |
-| IntLicManager.getState[C++Test LLM Integration]       | 1     | 0.083     | 0.083   | 0.083   | 0.083   |
-| IntLicManager.getState[C++Test]                       | 23    | 0.082     | 0.0     | 0.081   | 0.003   |
-| IntLicManager.activateLicense                         | 1     | 0.082     | 0.082   | 0.082   | 0.082   |
-| IntLicManager.WAIT[main]                              | 1     | 0.081     | 0.081   | 0.081   | 0.081   |
-| LicenseService.isEnabled[Main]                        | 1     | 0.081     | 0.081   | 0.081   | 0.081   |
-| IntLicManager.WAIT[ServiceDiagnosticCollector Thread] | 1     | 0.08      | 0.08    | 0.08    | 0.08    |
-| IntLicManager.releaseLicenes                          | 1     | 0.026     | 0.026   | 0.026   | 0.026   |
-| IntLicManager.activateFinished                        | 1     | 0.019     | 0.019   | 0.019   | 0.019   |
-| IntLicManager.checkFinished                           | 1     | 0.014     | 0.014   | 0.014   | 0.014   |
-| LicenseService.isEnabled[Security]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Command-Line-Execution]      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Flow-Analysis]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test Flow Analysis]         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Mass-Creation]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Automation]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Performance-Benchmarking]    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Native-Tests-Import]         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Embedded-Testing]            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[API-Test-Creation]           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Runtime-Error-Detection]     | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Coverage]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Spring-Framework]            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test Automation]            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Enforce-Max-Errors]          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Rule-Wizard]                 | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test Unit Test]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Email-Reports]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Quick-Fix]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Unit-Testing]                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test Desktop Command Line]  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test Coverage Advisor]      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[DTP-Access]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Flow-Analysis-Data]          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[XML-Report-Generation]       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Team-Share-Results-Upload]   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Application-Monitoring]      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseServiceModules .statusChanged                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Coding-Standards]            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Change-Based-Testing]        | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Sniffer]                     | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Generate-Recommendations]    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test Coding Standards]      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Source-Control]              | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test DTP Publish]           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.invokeAsyncCallsQueue                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Parameterization]            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test Coverage]              | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Self-Healing]                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-+ ----------------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 1.62s
-
-Async Call Profiler
-+ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-| NAME                                        | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
-+ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-| InternalLicenseManager.activateLicense:428  | 1     | 0.101     | 0.101   | 0.101   | 0.101   |
-| InternalLicenseManager.invokeAsyncCall:1247 | 33    | 0.026     | 0.0     | 0.026   | 0.0     |
-| AsyncCallHandler.startThread                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-+ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.127s
-
-XRest Profiler
-+ ------------------------- + ----- + --------- + ------- + ------- + ------- +
-| NAME                      | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
-+ ------------------------- + ----- + --------- + ------- + ------- + ------- +
-| /grs/api/v1.9/dtpServices | 1     | 0.436     | 0.436   | 0.436   | 0.436   |
-| /licenseserver/api/v1.2   | 4     | 0.088     | 0.019   | 0.026   | 0.022   |
-| /grs/api/v1/dtpServices   | 1     | 0.024     | 0.024   | 0.024   | 0.024   |
-+ ------------------------- + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.548s
-
-VM Info Profiler
-+ ------ + ----- + --------- + ------- + ------- + ------- +
-| NAME   | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
-+ ------ + ----- + --------- + ------- + ------- + ------- +
-| Docker | 1     | 0.012     | 0.012   | 0.012   | 0.012   |
-| Azure  | 1     | 0.003     | 0.003   | 0.003   | 0.003   |
-+ ------ + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.015s
-
-Default Profiler
-+ ------------------------- + ----- + --------- + ------- + ------- + ------- +
-| NAME                      | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
-+ ------------------------- + ----- + --------- + ------- + ------- + ------- +
-| CryptUtil.decryptLSData   | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
-| CryptUtil.decryptPassword | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
-| CryptUtil.encryptPassword | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| CryptUtil.encryptLSData   | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
-+ ------------------------- + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.0s
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.lic.client.internal.service.LicenseService@37cd92d6
-CONTEXT: com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor$ResultsServiceContext@1ac85b0c
+SERVICE: com.parasoft.xtest.lic.client.internal.service.LicenseService@790174f2
+CONTEXT: com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor$ResultsServiceContext@db44aa2
 LICENSE ENABLED: 
 ================================================================================================
 LOCAL SETTINGS:
     c++test.license.custom_edition_features=C++test,Static Analysis,Flow Analysis,Unit Test,Coverage,Automation,DTP Publish,Desktop Command Line,AUTOSAR Rules,CWE Rules,DISA STIG Rules,HIC++ Rules,JSF Rules,MISRA Rules,MISRA C 2012 Rules,MISRA C++ 2023 Rules,OWASP Rules,Security Rules,SEI CERT C Rules,SEI CERT C++ Rules,Code Dependency Export,LLM Integration
     c++test.license.enabled=true
+    c++test.license.local.password=>>hidden<<
     c++test.license.network.edition=custom_edition
     c++test.license.network.type=ls
     c++test.license.use_network=true
@@ -404,56 +308,45 @@ License requirements statuses:
 | Bug-Detective                      | false         |
 | Concerto-Access                    | false         |
 | Code-Review                        | false         |
-| Enforce-Max-Errors                 | false         |
-| API-Test-Creation                  | false         |
-| Quick-Fix                          | false         |
-| Generate-Recommendations           | false         |
-| Automation                         | false         |
-| DTP-Access                         | false         |
 | Max-Unit-Test-Bulk-Testables-Value | false         |
-| Performance-Benchmarking           | false         |
 | Team-Share-Edit                    | false         |
 | Team-Share-Access                  | false         |
-| Self-Healing                       | false         |
-| Team-Share-Results-Upload          | false         |
 | Flow-Analysis-Data                 | false         |
 | Source-Control                     | true          |
 | Embedded-Testing                   | true          |
 | Security                           | true          |
 | Parameterization                   | true          |
 | Mass-Creation                      | true          |
+| Enforce-Max-Errors                 | true          |
 | XML-Report-Generation              | true          |
 | Change-Based-Testing               | true          |
+| API-Test-Creation                  | true          |
+| Quick-Fix                          | true          |
+| Generate-Recommendations           | true          |
 | Unit-Testing                       | true          |
+| Automation                         | true          |
 | Application-Monitoring             | true          |
+| DTP-Access                         | true          |
 | Rule-Wizard                        | true          |
 | Coverage                           | true          |
 | Sniffer                            | true          |
 | Email-Reports                      | true          |
+| Performance-Benchmarking           | true          |
 | Command-Line-Execution             | true          |
 | Runtime-Error-Detection            | true          |
 | Spring-Framework                   | true          |
+| Self-Healing                       | true          |
+| Team-Share-Results-Upload          | true          |
 | Native-Tests-Import                | true          |
 | Coding-Standards                   | true          |
 | Main                               | true          |
 | Flow-Analysis                      | true          |
 + ---------------------------------- + ------------- +
 
-================================================================================================
-MEMORY STATISTICS
-================================================================================================
-
-+ -------------- + --------- +
-| Memory Metric  | Size [MB] |
-+ -------------- + --------- +
-| Current memory | 22        |
-| Max memory     | 4295      |
-| Total memory   | 22        |
-+ -------------- + --------- +
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.common.telemetry.TelemetryReporter@65e39ff6
-CONTEXT: com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor$ResultsServiceContext@1ac85b0c
+SERVICE: com.parasoft.xtest.common.telemetry.TelemetryReporter@6955e60
+CONTEXT: com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor$ResultsServiceContext@db44aa2
 LICENSE ENABLED: 
 ================================================================================================
 LOCAL SETTINGS:
@@ -465,25 +358,10 @@ Connection string: not empty
 PARASOFT_TELEMETRY_CONNECTION_STRING: empty
 PARASOFT_TELEMETRY_DISABLED: null
 Disabled permanently: false
-================================================================================================
-LOG ISSUES
-================================================================================================
-
-+ ------------- + ----- +
-| Logging Level | Count |
-+ ------------- + ----- +
-| TRACE         | 0     |
-| TIME          | 0     |
-| DEBUG         | 244   |
-| INFO          | 127   |
-| WARN          | 3     |
-| ERROR         | 0     |
-| FATAL         | 0     |
-+ ------------- + ----- +
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.common.oidc.OidcService@613ca21d
-CONTEXT: com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor$ResultsServiceContext@1ac85b0c
+SERVICE: com.parasoft.xtest.common.oidc.OidcService@37cad077
+CONTEXT: com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor$ResultsServiceContext@db44aa2
 LICENSE ENABLED: 
 ================================================================================================
 LOCAL SETTINGS:
@@ -492,10 +370,116 @@ LOCAL SETTINGS:
 
 DIAGNOSTICS INFO:
 OpenID Connect Service is not enabled.
+================================================================================================
+PROFILER RESULTS
+================================================================================================
+
+License Profiler
++ ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+| NAME                                                         | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+| LicenseModule.initializeModule                               | 1     | 1.967     | 1.967   | 1.967   | 1.967   |
+| LicenseService.isEnabled[LLM-Integration]                    | 2     | 0.148     | 0.0     | 0.148   | 0.074   |
+| IntLicManager.getState[C++Test]                              | 28    | 0.147     | 0.0     | 0.142   | 0.005   |
+| IntLicManager.activateLicense                                | 1     | 0.146     | 0.146   | 0.146   | 0.146   |
+| IntLicManager.getState[C++Test LLM Integration]              | 2     | 0.145     | 0.0     | 0.145   | 0.072   |
+| LicenseService.isEnabled[Main]                               | 1     | 0.143     | 0.143   | 0.143   | 0.143   |
+| IntLicManager.WAIT[main]                                     | 1     | 0.141     | 0.141   | 0.141   | 0.141   |
+| IntLicManager.WAIT[ServiceDiagnosticCollector Thread]        | 1     | 0.139     | 0.139   | 0.139   | 0.139   |
+| IntLicManager.releaseLicenes                                 | 1     | 0.04      | 0.04    | 0.04    | 0.04    |
+| IntLicManager.activateFinished                               | 1     | 0.031     | 0.031   | 0.031   | 0.031   |
+| IntLicManager.checkFinished                                  | 1     | 0.021     | 0.021   | 0.021   | 0.021   |
+| LicenseService.isEnabled[Rule-Wizard]                        | 1     | 0.002     | 0.002   | 0.002   | 0.002   |
+| LicenseService.isEnabled[Security]                           | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
+| LicenseService.isEnabled[Command-Line-Execution]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Flow-Analysis]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Team-Share-Edit]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Team-Share-Access]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Flow Analysis]                | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Mass-Creation]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Automation]                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Performance-Benchmarking]           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Native-Tests-Import]                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Embedded-Testing]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[API-Test-Creation]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Runtime-Error-Detection]            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Code-Review]                        | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Coverage]                           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Spring-Framework]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Automation]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Concerto-Access]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Enforce-Max-Errors]                 | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Unit Test]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Email-Reports]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Quick-Fix]                          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Unit-Testing]                       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Desktop Command Line]         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Max-Unit-Test-Bulk-Testables-Value] | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Coverage Advisor]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[DTP-Access]                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Flow-Analysis-Data]                 | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[XML-Report-Generation]              | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Team-Share-Results-Upload]          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Application-Monitoring]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseServiceModules .statusChanged                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Coding-Standards]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Change-Based-Testing]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Sniffer]                            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Bug-Detective]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Generate-Recommendations]           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Coding Standards]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Source-Control]                     | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test DTP Publish]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.invokeAsyncCallsQueue                          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Parameterization]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| IntLicManager.getState[C++Test Coverage]                     | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| LicenseService.isEnabled[Self-Healing]                       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 3.071s
+
+Async Call Profiler
++ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                                        | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+| InternalLicenseManager.activateLicense:428  | 1     | 0.178     | 0.178   | 0.178   | 0.178   |
+| InternalLicenseManager.invokeAsyncCall:1247 | 40    | 0.04      | 0.0     | 0.04    | 0.001   |
+| AsyncCallHandler.startThread                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.218s
+
+XRest Profiler
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                      | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+| /grs/api/v1.9/dtpServices | 1     | 0.849     | 0.849   | 0.849   | 0.849   |
+| /licenseserver/api/v1.2   | 4     | 0.145     | 0.033   | 0.041   | 0.036   |
+| /grs/api/v1/dtpServices   | 1     | 0.053     | 0.053   | 0.053   | 0.053   |
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 1.047s
+
+VM Info Profiler
++ ------ + ----- + --------- + ------- + ------- + ------- +
+| NAME   | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------ + ----- + --------- + ------- + ------- + ------- +
+| Docker | 1     | 0.019     | 0.019   | 0.019   | 0.019   |
+| Azure  | 1     | 0.004     | 0.004   | 0.004   | 0.004   |
++ ------ + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.023s
+
+Default Profiler
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+| NAME                      | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+| CryptUtil.decryptLSData   | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
+| CryptUtil.decryptPassword | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
+| CryptUtil.encryptPassword | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
+| CryptUtil.encryptLSData   | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
++ ------------------------- + ----- + --------- + ------- + ------- + ------- +
+TOTAL: 0.0s
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.common.dtp.DtpServiceRegistry@bcf6499
-CONTEXT: com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor$ResultsServiceContext@1ac85b0c
+SERVICE: com.parasoft.xtest.common.dtp.DtpServiceRegistry@572710d1
+CONTEXT: com.parasoft.xtest.cpp.flowexecutor.DefaultFlowExecutor$ResultsServiceContext@db44aa2
 LICENSE ENABLED: 
 ================================================================================================
 LOCAL SETTINGS:
@@ -539,26 +523,52 @@ Available services:
     reportCenter : https://localhost:8443/grs/index.jsp
 
 ================================================================================================
+MEMORY STATISTICS
+================================================================================================
+
++ -------------- + --------- +
+| Memory Metric  | Size [MB] |
++ -------------- + --------- +
+| Current memory | 22        |
+| Max memory     | 4295      |
+| Total memory   | 41        |
++ -------------- + --------- +
+================================================================================================
+LOG ISSUES
+================================================================================================
+
++ ------------- + ----- +
+| Logging Level | Count |
++ ------------- + ----- +
+| TRACE         | 0     |
+| TIME          | 0     |
+| DEBUG         | 249   |
+| INFO          | 129   |
+| WARN          | 3     |
+| ERROR         | 0     |
+| FATAL         | 0     |
++ ------------- + ----- +
+================================================================================================
 SERVICES PROFILER
 ================================================================================================
 Services provider profiler (COUNT > 1):
 + ----------------------------------------- + ----- + --------- +
 | NAME                                      | COUNT | TOTAL [s] |
 + ----------------------------------------- + ----- + --------- +
-| getService(IProfilerService)              | 5     | 0.004     |
-| getServices(IPreferenceValidationRules)   | 2     | 0.005     |
-| getService(IProxySettingsProviderService) | 6     | 0.006     |
-| getService(IProfilerStatisticsService)    | 5     | 0.012     |
-| getService(ISystemService)                | 4     | 0.016     |
-| getService(IOidcService)                  | 5     | 0.03      |
-| getServices(IPreferences)                 | 20    | 0.046     |
-| getService(ILicenseService)               | 3     | 0.063     |
-| getService(IPreferencesService)           | 3     | 0.097     |
-| getService(ITelemetryReporter)            | 3     | 0.101     |
-| getService(IApplication)                  | 61    | 0.428     |
-| getService(IDtpServiceRegistry)           | 3     | 0.919     |
+| getService(IProfilerService)              | 5     | 0.008     |
+| getService(IProxySettingsProviderService) | 6     | 0.009     |
+| getService(IProfilerStatisticsService)    | 5     | 0.018     |
+| getServices(IPreferenceValidationRules)   | 2     | 0.018     |
+| getService(ISystemService)                | 4     | 0.028     |
+| getService(IOidcService)                  | 5     | 0.046     |
+| getServices(IPreferences)                 | 20    | 0.08      |
+| getService(ILicenseService)               | 3     | 0.14      |
+| getService(IPreferencesService)           | 3     | 0.167     |
+| getService(ITelemetryReporter)            | 3     | 0.206     |
+| getService(IApplication)                  | 60    | 0.785     |
+| getService(IDtpServiceRegistry)           | 3     | 1.854     |
 + ----------------------------------------- + ----- + --------- +
-TOTAL: 1.727
+TOTAL: 3.359
 ================================================================================================
 SERVICES INSTANCES COUNT
 ================================================================================================

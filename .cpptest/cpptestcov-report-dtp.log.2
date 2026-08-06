@@ -1,13 +1,60 @@
-2026-01-09 10:00:52,752 [INFO] Starting cpptestcov-report-dtp 2025.1.0 (10.7.2.20250520B1027)... at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:35)
-2026-01-09 10:00:52,756 [INFO] Arguments: [] at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:36)
-2026-01-09 10:00:52,757 [INFO] Max memory available: 4120903680 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:37)
-2026-01-09 10:00:52,758 [INFO] Available CPUs: 22 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:38)
-2026-01-09 10:00:52,758 [INFO] Java home: /usr/lib/jvm/java-21-openjdk-amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:39)
-2026-01-09 10:00:52,760 [INFO] Java version: 21.0.9 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:40)
-2026-01-09 10:00:52,760 [INFO] Java vendor: Ubuntu at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:41)
-2026-01-09 10:00:52,761 [INFO] OS arch: amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:42)
-2026-01-09 10:00:52,761 [INFO] OS name: Linux at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:43)
-2026-01-09 10:00:52,762 [INFO] OS version: 5.15.146.1-microsoft-standard-WSL2 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:44)
-2026-01-09 10:00:52,762 [INFO] Working dir (user.dir): /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:45)
-2026-01-09 10:00:52,763 [INFO] Home dir (user.home): /home/syoung at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:46)
-2026-01-09 10:00:52,942 [INFO] Exiting (code 2)... at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.executeReporter(DTPReporter.java:140)
+2026-01-09 10:01:56,013 [INFO] Starting cpptestcov-report-dtp 2025.1.0 (10.7.2.20250520B1027)... at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:35)
+2026-01-09 10:01:56,016 [INFO] Arguments: [report.xml] at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:36)
+2026-01-09 10:01:56,016 [INFO] Max memory available: 4120903680 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:37)
+2026-01-09 10:01:56,016 [INFO] Available CPUs: 22 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:38)
+2026-01-09 10:01:56,017 [INFO] Java home: /usr/lib/jvm/java-21-openjdk-amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:39)
+2026-01-09 10:01:56,018 [INFO] Java version: 21.0.9 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:40)
+2026-01-09 10:01:56,018 [INFO] Java vendor: Ubuntu at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:41)
+2026-01-09 10:01:56,019 [INFO] OS arch: amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:42)
+2026-01-09 10:01:56,019 [INFO] OS name: Linux at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:43)
+2026-01-09 10:01:56,020 [INFO] OS version: 5.15.146.1-microsoft-standard-WSL2 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:44)
+2026-01-09 10:01:56,021 [INFO] Working dir (user.dir): /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:45)
+2026-01-09 10:01:56,021 [INFO] Home dir (user.home): /home/syoung at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:46)
+2026-01-09 10:01:56,152 [INFO] [CONSOLE] cpptestcov-report-dtp 2025.1.0 (10.7.2.20250520B1027) -- Copyright (C) 2024 Parasoft Corporation at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2026-01-09 10:01:56,317 [INFO] Started ProfilerDumper listening thread on command file: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/xtest_dump_stats.cmd at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.<init>(ProfilerStatisticsService.java:54)
+2026-01-09 10:01:56,387 [WARN] Break execution at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.call(DTPReporter.java:107)
+com.parasoft.cpptest.coverage.common.BreakExecutionException: null
+	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.lambda$callImpl$0(DTPReporter.java:163) ~[com.parasoft.cpptest.coverage.report.dtp-2025.1.0.20250520B1027.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) ~[?:?]
+	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.callImpl(DTPReporter.java:160) ~[com.parasoft.cpptest.coverage.report.dtp-2025.1.0.20250520B1027.jar:?]
+	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.call(DTPReporter.java:105) ~[com.parasoft.cpptest.coverage.report.dtp-2025.1.0.20250520B1027.jar:?]
+	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.call(DTPReporter.java:34) ~[com.parasoft.cpptest.coverage.report.dtp-2025.1.0.20250520B1027.jar:?]
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine.access$1300(CommandLine.java:145) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine.execute(CommandLine.java:2078) ~[picocli-4.6.3.jar:4.6.3]
+	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.executeReporter(DTPReporter.java:138) ~[com.parasoft.cpptest.coverage.report.dtp-2025.1.0.20250520B1027.jar:?]
+	at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.main(DTPReporter.java:91) ~[com.parasoft.cpptest.coverage.report.dtp-2025.1.0.20250520B1027.jar:?]
+2026-01-09 10:01:56,409 [INFO] Diagnostics mode is ON. File=.cpptest/xtest.diagnostics.txt at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.initialize(ServiceDiagnosticCollector.java:294)
+2026-01-09 10:01:56,430 [DEBUG]  at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:133)
+2026-01-09 10:01:56,435 [DEBUG] Total: 0 seconds (total - 0 seconds) at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:136)
+2026-01-09 10:01:56,453 [DEBUG] Memory Statistics Profiler
++ -------------- + --------- +
+| Memory Metric  | Size [MB] |
++ -------------- + --------- +
+| Current memory | 12        |
+| Max memory     | 4121      |
+| Total memory   | 12        |
++ -------------- + --------- +
+ at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:140)
+2026-01-09 10:01:56,455 [DEBUG] Log Issues Profiler
++ ------------- + ----- +
+| Logging Level | Count |
++ ------------- + ----- +
+| TRACE         | 0     |
+| TIME          | 0     |
+| DEBUG         | 3     |
+| INFO          | 15    |
+| WARN          | 1     |
+| ERROR         | 0     |
+| FATAL         | 0     |
++ ------------- + ----- +
+ at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:144)
+2026-01-09 10:01:56,457 [DEBUG]  at com.parasoft.xtest.common.io.FileInfoServiceFactory.shutdown(FileInfoServiceFactory.java:76)
+2026-01-09 10:01:56,458 [INFO] [CONSOLE]  at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2026-01-09 10:01:56,458 [INFO] [CONSOLE] All done. [307 ms] at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
+2026-01-09 10:01:56,459 [INFO] Exiting (code 2)... at com.parasoft.cpptest.coverage.report.dtp.DTPReporter.executeReporter(DTPReporter.java:140)

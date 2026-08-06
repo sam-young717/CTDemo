@@ -1,6 +1,6 @@
-2026-01-09 10:13:43,201 [INFO] Starting cpptestcov-report-stats-txt 2025.1.0 (10.7.2.20250520B1027)...
-2026-01-09 10:13:43,203 [INFO] Arguments: ['-root', '/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo', '-coverage', 'LC,SC,BC,DC,SCC,MCDC,FC,CC', '/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage']
-2026-01-09 10:13:43,204 [INFO] Working dir: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build
-2026-01-09 10:13:43,204 [INFO] Python version: 3.12.3
-2026-01-09 10:13:43,205 [INFO] OS arch: x86_64
-2026-01-09 10:13:43,206 [INFO] OS name: Linux
+2026-03-31 10:47:14,685 [INFO] Starting cpptestcov-report-stats-txt 2025.1.0 (10.7.2.20250520B1027)...
+2026-03-31 10:47:14,687 [INFO] Arguments: ['-root', '/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo', '-coverage', 'LC,SC,BC,DC,SCC,MCDC,FC,CC', '/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage']
+2026-03-31 10:47:14,688 [INFO] Working dir: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build
+2026-03-31 10:47:14,688 [INFO] Python version: 3.12.3
+2026-03-31 10:47:14,689 [INFO] OS arch: x86_64
+2026-03-31 10:47:14,693 [INFO] OS name: Linux

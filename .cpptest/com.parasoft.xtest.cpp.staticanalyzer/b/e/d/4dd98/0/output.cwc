@@ -1,15 +1,5 @@
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>CODSTA-CPP-66
-<b>Do not use a C-style cast to the 'Account *' type
-<l>20
-<k>23
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
 <c>MISRA2004-20_4
 <b>'new' operator should not be used
 <l>36
@@ -20,150 +10,10 @@
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>NAMING-44
-<b>The name 'getAccount' should be composed only of lowercase letters
-<l>15
-<k>16
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>NAMING-44
-<b>The name 'addAccount' should be composed only of lowercase letters
-<l>34
-<k>16
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>NAMING-44
-<b>The name 'userAccount' should be composed only of lowercase letters
-<l>17
-<k>14
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>NAMING-44
-<b>The name 'userAccount' should be composed only of lowercase letters
-<l>36
-<k>14
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>OPT-14
-<b>The parameter 'password' of function 'getAccount' is passed by value
-<l>15
-<k>48
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>COMMENT-05
-<b>The 'userAccount' variable should be commented
-<l>17
-<k>14
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>CODSTA-99
-<b>Signed and unsigned values are mixed in '>' operator: LHS is 'unsigned long', RHS is 'int'
-<l>18
-<k>9
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>CODSTA-135
-<b>Cast to pointer type 'Account *' is not allowed
-<l>20
-<k>23
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>CODSTA-135
-<b>Cast from pointer type 'Account *' is not allowed
-<l>20
-<k>23
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>PB-56
-<b>Implicit conversion from signed type to unsigned type in function's argument
-<l>20
-<k>44
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>PB-56
-<b>Implicit conversion from signed type to unsigned type in function's argument
-<l>20
-<k>44
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>COMMENT-05
-<b>The 'userAccount' variable should be commented
-<l>36
-<k>14
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>COMMENT-02
-<b>Add comment containing the copyright information at the begin of file 'Bank.cpp'
-<l>1
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>COMMENT-03
-<b>Add comment containing the information on the file at the begin of file 'Bank.cpp'
-<l>1
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>FORMAT-01
-<b>Non-ascii tab found
-<l>6
-<k>1
+<c>CODSTA-123
+<b>The '++' operator should cause the only side effect in an expression
+<l>37
+<k>35
 <s>false
 <N>
 <f>
@@ -180,60 +30,10 @@
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>PREPROC-08
-<b>Not a proper header file (*.h ) is being included: "Bank.hxx"
-<l>1
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>PREPROC-09
-<b>Disallowed #include notation is being used: "Bank.hxx"
-<l>1
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>PREPROC-08
-<b>Not a proper header file (*.h ) is being included: "Account.hxx"
-<l>2
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>PREPROC-09
-<b>Disallowed #include notation is being used: "Account.hxx"
-<l>2
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
 <c>MISRA2004-6_3_b
-<b>The basic numerical type 'int' should not be used
+<b>The standard integer type 'int' should not be used
 <l>15
 <k>27
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp
-<c>CODSTA-17
-<b>Use 0 instead of 'NULL'
-<l>25
-<k>23
 <s>false
 <N>
 <f>

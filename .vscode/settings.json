@@ -1,4 +1,58 @@
 {
     "cpptest.testConfiguration": "builtin://MISRA C 2025",
-    "cpptest.commandLinePattern": "cpptestcli ${stopFile} ${compilerConfig} ${testConfig} ${reportDir} ${selectedFiles} -input build/compile_commands.json -exclude \"/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/_deps/*\" -exclude /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp -exclude \"/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/*\" -module ."
+    "cpptest.commandLinePattern": "cpptestcli ${stopFile} ${compilerConfig} ${testConfig} ${reportDir} ${selectedFiles} -input build/compile_commands.json -exclude \"/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/_deps/*\" -exclude /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/gtest_main.cpp -exclude \"/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/*\"",
+    "chat.mcp.serverSampling": {
+        "CTDemo/.vscode/mcp.json: cpptest-mcp": {
+            "allowedModels": [
+                "copilot/gpt-5.3-codex",
+                "copilot/auto",
+                "copilot/claude-haiku-4.5",
+                "copilot/claude-opus-4.5",
+                "copilot/claude-opus-4.6",
+                "copilot/claude-sonnet-4",
+                "copilot/claude-sonnet-4.5",
+                "copilot/claude-sonnet-4.6",
+                "copilot/gemini-2.5-pro",
+                "copilot/gemini-3-flash-preview",
+                "copilot/gemini-3-pro-preview",
+                "copilot/gpt-4.1",
+                "copilot/gpt-4o",
+                "copilot/gpt-5-mini",
+                "copilot/gpt-5.1",
+                "copilot/gpt-5.1-codex",
+                "copilot/gpt-5.1-codex-max",
+                "copilot/gpt-5.1-codex-mini",
+                "copilot/gpt-5.2",
+                "copilot/gpt-5.2-codex",
+                "copilot/grok-code-fast-1"
+            ]
+        },
+        "CTDemo/.vscode/mcp.json: cpptest-sa-mcp": {
+            "allowedModels": [
+                "copilot/gpt-5.3-codex",
+                "copilot/auto",
+                "copilot/claude-haiku-4.5",
+                "copilot/claude-opus-4.5",
+                "copilot/claude-opus-4.6",
+                "copilot/claude-sonnet-4",
+                "copilot/claude-sonnet-4.5",
+                "copilot/claude-sonnet-4.6",
+                "copilot/gemini-2.5-pro",
+                "copilot/gemini-3-flash-preview",
+                "copilot/gemini-3-pro-preview",
+                "copilot/gpt-4.1",
+                "copilot/gpt-4o",
+                "copilot/gpt-5-mini",
+                "copilot/gpt-5.1",
+                "copilot/gpt-5.1-codex",
+                "copilot/gpt-5.1-codex-max",
+                "copilot/gpt-5.1-codex-mini",
+                "copilot/gpt-5.2",
+                "copilot/gpt-5.2-codex",
+                "copilot/grok-code-fast-1"
+            ]
+        }
+    },
+    "cpptest.reportLocation": "${workspaceFolder}/reports",
+    "cpptest.compilerIdentifier": "gcc_11-64"
 }

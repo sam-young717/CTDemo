@@ -1,313 +1,68 @@
-2026-01-09 09:04:04,476 [INFO] Starting cpptestcov-compute 2025.1.0 (10.7.2.20250520B1027)... at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:35)
-2026-01-09 09:04:04,480 [INFO] Arguments: [-map=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc, -clog=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/ATM.clog, -out=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage, -coverage=LC,SC,BC,DC,SCC,MCDC,FC,CC] at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:36)
-2026-01-09 09:04:04,480 [INFO] Max memory available: 4120903680 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:37)
-2026-01-09 09:04:04,481 [INFO] Available CPUs: 22 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:38)
-2026-01-09 09:04:04,481 [INFO] Java home: /usr/lib/jvm/java-21-openjdk-amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:39)
-2026-01-09 09:04:04,481 [INFO] Java version: 21.0.9 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:40)
-2026-01-09 09:04:04,482 [INFO] Java vendor: Ubuntu at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:41)
-2026-01-09 09:04:04,482 [INFO] OS arch: amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:42)
-2026-01-09 09:04:04,483 [INFO] OS name: Linux at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:43)
-2026-01-09 09:04:04,483 [INFO] OS version: 5.15.146.1-microsoft-standard-WSL2 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:44)
-2026-01-09 09:04:04,484 [INFO] Working dir (user.dir): /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:45)
-2026-01-09 09:04:04,484 [INFO] Home dir (user.home): /home/syoung at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:46)
-2026-01-09 09:04:04,814 [INFO] Started ProfilerDumper listening thread on command file: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/xtest_dump_stats.cmd at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.<init>(ProfilerStatisticsService.java:54)
-2026-01-09 09:04:04,950 [INFO] Diagnostics mode is ON. File=.cpptest/xtest.diagnostics.txt at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.initialize(ServiceDiagnosticCollector.java:294)
-2026-01-09 09:04:04,971 [INFO] [CONSOLE]  at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:04,972 [INFO] [CONSOLE] Checking license ... at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:04,980 [DEBUG] Configured native libraries path by property "xtest.os.libs.dir": /mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/lib/os/linux/x86_64 at com.parasoft.xtest.common.nativecode.NativeDLL.loadLibrary(NativeDLL.java:62)
-2026-01-09 09:04:04,980 [DEBUG] Loading Xtest native library from: /mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/lib/os/linux/x86_64/... at com.parasoft.xtest.common.nativecode.NativeDLL.loadLibrary(NativeDLL.java:70)
-2026-01-09 09:04:05,018 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.lic.client.internal.service.LicenseService@79145d5a at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
-2026-01-09 09:04:05,041 [INFO] Using license source store from null at com.parasoft.xtest.lic.client.LicenseDefinitionStorage.setupPreferenceStore(LicenseDefinitionStorage.java:211)
-2026-01-09 09:04:05,052 [DEBUG] Setting: cpptestct.license.local.password mapped to storage key: cpptestct.license.local.password at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
-2026-01-09 09:04:05,052 [DEBUG] Setting: cpptestct.license.network.edition mapped to storage key: cpptestct.license.network.edition at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
-2026-01-09 09:04:05,053 [DEBUG] Setting: cpptestct.license.use_network mapped to storage key: cpptestct.license.use_network at com.parasoft.xtest.common.preferences.PreferenceStoreUtil.patchWithLocalSettings(PreferenceStoreUtil.java:213)
-2026-01-09 09:04:05,061 [INFO] Number of telemetry configurations: 1 at com.parasoft.xtest.common.telemetry.UTelemetry.getTelemetryConfiguration(UTelemetry.java:65)
-2026-01-09 09:04:05,065 [DEBUG] Telemetry connection string: qVx9N1NMROjrd/s5HgmLbh4kIv6dTNYdzEy4zAL6u0SUx7CLOwrBWyMGXcDILMBNTVAryX2ODUXg2PfuDcw6HNwMMYWqbGNm3sEiI+S6e9uXK5Drf/rIq7sl7+L9GQlWWXWWpD+TqJVq8yrwlAD1uS6Ltgs6fqZhCfD41sVTBXKodhCyhPb+OqYP45dEWdglGqC3a+n30GvHqRfROoHGbDuOk0JAHLpMcPa/1V+jxVC3RquIaZIc+9/XM4cVYgAzTSsb/wuUd+FHntPOe9oOmjZy+x0MFGeSJ7FDLFTG8KANa/rG7k4JPXx2AbD54SV1Rl6VfELg1rT61V38yglfNw== at com.parasoft.cpptest.coverage.common.telemetry.TelemetryConfiguration.getConnectionString(TelemetryConfiguration.java:27)
-2026-01-09 09:04:05,095 [INFO] Setting connection string by configuration service at com.parasoft.xtest.common.telemetry.TelemetryReporter.findConnectionString(TelemetryReporter.java:134)
-2026-01-09 09:04:05,142 [DEBUG] Cannot find company name. Probably will be provided by license event. at com.parasoft.xtest.common.telemetry.TelemetryReporter.findCompanyName(TelemetryReporter.java:215)
-2026-01-09 09:04:05,145 [DEBUG] Scheduling collecting of diagnostics information for com.parasoft.xtest.common.telemetry.TelemetryReporter@77dd519a at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.collect(ServiceDiagnosticCollector.java:108)
-2026-01-09 09:04:05,158 [DEBUG] Available Cloud VMs: [Docker, AWS, Azure] at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:45)
-2026-01-09 09:04:05,158 [DEBUG] Docker: Detection... at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:52)
-2026-01-09 09:04:05,162 [DEBUG] Docker: Processing file: cgroup at com.parasoft.xtest.common.vm.DockerDetector.extractDockerId(DockerDetector.java:152)
-2026-01-09 09:04:05,163 [DEBUG] Docker: Processing file: cgroup at com.parasoft.xtest.common.vm.DockerDetector.extractDockerId(DockerDetector.java:152)
-2026-01-09 09:04:05,165 [DEBUG] Docker: Processing file: mountinfo at com.parasoft.xtest.common.vm.DockerDetector.extractDockerId(DockerDetector.java:152)
-2026-01-09 09:04:05,169 [DEBUG] AWS: Detection... at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:52)
-2026-01-09 09:04:05,172 [DEBUG] AWS: No hypervisor file found. at com.parasoft.xtest.common.vm.AWSDetector.getAWSSystemUUID(AWSDetector.java:90)
-2026-01-09 09:04:05,172 [DEBUG] Azure: Detection... at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:52)
-2026-01-09 09:04:05,173 [DEBUG] Azure: /sys/devices/virtual/dmi/id/chassis_asset_tag file is not found... at com.parasoft.xtest.common.vm.AzureDetector.isAzureDetected(AzureDetector.java:124)
-2026-01-09 09:04:05,174 [DEBUG] Azure: /var/lib/dhclient/dhclient-eth0.lease file is not found... at com.parasoft.xtest.common.vm.AzureDetector.isAzureDetected(AzureDetector.java:124)
-2026-01-09 09:04:05,174 [DEBUG] Azure: /var/lib/dhcp/dhclient.eth0.leases file is not found... at com.parasoft.xtest.common.vm.AzureDetector.isAzureDetected(AzureDetector.java:124)
-2026-01-09 09:04:05,174 [DEBUG] Cannot detect Azure environment. None of used Azure id is valid at com.parasoft.xtest.common.vm.AzureDetector.usingAzureVM(AzureDetector.java:113)
-2026-01-09 09:04:05,174 [DEBUG] No Cloud VMInfo found at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:84)
-2026-01-09 09:04:05,182 [DEBUG] File [/home/syoung/.parasoft/cpptestct/10.7/license/current.bor] not exists. at com.parasoft.xtest.lic.client.internal.BorrowedLicenseManager.load(BorrowedLicenseManager.java:324)
-2026-01-09 09:04:05,194 [INFO] Encoding and charset detected: at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:30)
-2026-01-09 09:04:05,195 [INFO] - default charset: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:31)
-2026-01-09 09:04:05,195 [INFO] - native encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:35)
-2026-01-09 09:04:05,195 [INFO] - file encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:48)
-2026-01-09 09:04:05,195 [INFO] Configured to use:  at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:60)
-2026-01-09 09:04:05,195 [INFO] - native encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:61)
-2026-01-09 09:04:05,196 [INFO] - file encoding: UTF-8 at com.parasoft.xtest.common.encoding.EncodingUtil.<clinit>(EncodingUtil.java:62)
-2026-01-09 09:04:05,277 [INFO] security.provider.1=SUN at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,277 [INFO] security.provider.2=SunRsaSign at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,278 [INFO] security.provider.3=SunEC at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,278 [INFO] security.provider.4=SunJSSE at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,279 [INFO] security.provider.5=SunJCE at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,279 [INFO] security.provider.6=SunJGSS at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,279 [INFO] security.provider.7=SunSASL at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,280 [INFO] security.provider.8=XMLDSig at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,280 [INFO] security.provider.9=SunPCSC at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,280 [INFO] security.provider.10=JdkLDAP at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,280 [INFO] security.provider.11=JdkSASL at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,281 [INFO] security.provider.12=SunPKCS11 at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:42)
-2026-01-09 09:04:05,281 [INFO] [FIPS] - Expected exactly 3 providers but was: 12 at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:47)
-2026-01-09 09:04:05,281 [INFO] [FIPS] - security.provider.1=org.bouncycastle.jcajce.provider.BouncyCastleFipsProvider at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:51)
-2026-01-09 09:04:05,282 [INFO] [FIPS] - security.provider.2=org.bouncycastle.jsse.provider.BouncyCastleJsseProvider fips:BCFIPS at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:55)
-2026-01-09 09:04:05,282 [INFO] [FIPS] - ssl.KeyManagerFactory.algorithm=PKIX at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:69)
-2026-01-09 09:04:05,282 [INFO] [FIPS] - keystore.type.compat=false at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:69)
-2026-01-09 09:04:05,283 [INFO] [FIPS] - keystore.type=fips at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:69)
-2026-01-09 09:04:05,283 [INFO] [FIPS] - org.bouncycastle.fips.approved_only=true at com.parasoft.xtest.common.FIPSUtil.privilegedValidateFipsJavaConfiguration(FIPSUtil.java:75)
-2026-01-09 09:04:05,290 [INFO] [CONSOLE] License: Initializing local license for C/C++test CT 10.7 at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,290 [INFO] initialization: begin at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.doInitialize(InternalLicenseManager.java:683)
-2026-01-09 09:04:05,292 [DEBUG] CLI mode - not checking whether the license is starting as deactivated. at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.isStartingDeactivated(InternalLicenseManager.java:257)
-2026-01-09 09:04:05,292 [DEBUG] Asynchronous activation of the license during initialization at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.doInitialize(InternalLicenseManager.java:691)
-2026-01-09 09:04:05,294 [DEBUG] activateLicense: entered activation mode in THREAD: ServiceDiagnosticCollector Thread@e1489e4 THIS@35ce4af2 at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.activateLicense(InternalLicenseManager.java:424)
-2026-01-09 09:04:05,302 [INFO] [CONSOLE] License: Activating Custom Edition at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,303 [INFO] activateLicense: begin in THREAD: License Check Thread (IntLicMan@35ce4af2)@84483d2 THIS@35ce4af2 at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalActivateLicense(InternalLicenseManager.java:460)
-2026-01-09 09:04:05,304 [DEBUG] Waiting for license activation for: THREAD: main@659e0bfd THIS@35ce4af2 at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.waitForActivation(InternalLicenseManager.java:1327)
-2026-01-09 09:04:05,305 [DEBUG] Waiting for license activation for: THREAD: ServiceDiagnosticCollector Thread@e1489e4 THIS@35ce4af2 at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.waitForActivation(InternalLicenseManager.java:1327)
-2026-01-09 09:04:05,314 [DEBUG] No pending released found, skip releasing.. at com.parasoft.xtest.lic.client.internal.BorrowedLicenseManager.processReleassing(BorrowedLicenseManager.java:131)
-2026-01-09 09:04:05,314 [INFO] Borrowed license file [/home/syoung/.parasoft/cpptestct/10.7/license/current.bor] does not exist, moving to released skipped. at com.parasoft.xtest.lic.client.internal.BorrowedLicenseManager.moveToReleased(BorrowedLicenseManager.java:370)
-2026-01-09 09:04:05,314 [DEBUG] No pending released found, skip releasing.. at com.parasoft.xtest.lic.client.internal.BorrowedLicenseManager.processReleassing(BorrowedLicenseManager.java:131)
-2026-01-09 09:04:05,315 [INFO] [CONSOLE] License: Checking features at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,315 [INFO] Checking license features... at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkMainFeature(LicenseCheckThread.java:691)
-2026-01-09 09:04:05,316 [INFO] Feature: C/C++test CT, version: 10.7 at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkMainFeature(LicenseCheckThread.java:701)
-2026-01-09 09:04:05,321 [INFO] Using all users common parasoft directory to create token file. at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFileRoot(TokenFilesStorage.java:305)
-2026-01-09 09:04:05,321 [WARN] Call to find all users common parasoft directory is avaialble only on Windows. at com.parasoft.xtest.common.SystemInfoUtil.getAllUsersCommonParasoftDirectory(SystemInfoUtil.java:360)
-2026-01-09 09:04:05,321 [INFO] Cannot get all users common parasoft directory. (Windows only) at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFileRoot(TokenFilesStorage.java:309)
-2026-01-09 09:04:05,322 [INFO] Using system temp directory to create token file. at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFileRoot(TokenFilesStorage.java:319)
-2026-01-09 09:04:05,322 [INFO] Token dir: /tmp/.pslic at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.initRoot(TokenFilesStorage.java:299)
-2026-01-09 09:04:05,336 [DEBUG] Using token file for user syoung: /tmp/.pslic/606E14166E82775560526AB5641659_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
-2026-01-09 09:04:05,349 [INFO] License configured at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkMainFeature(LicenseCheckThread.java:711)
-2026-01-09 09:04:05,349 [INFO] [CONSOLE] License: Main C/C++test CT feature: License is valid at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,350 [INFO] Final main feature status: OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkMainFeature(LicenseCheckThread.java:724)
-2026-01-09 09:04:05,350 [DEBUG] Checking status of feature 'CT Core' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:544)
-2026-01-09 09:04:05,354 [DEBUG] Using token file for user syoung: /tmp/.pslic/606E14166E82775560526AB5641659_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
-2026-01-09 09:04:05,357 [INFO] Final status of feature 'CT Core': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:624)
-2026-01-09 09:04:05,358 [INFO] [CONSOLE] License: CT Core feature: License is valid at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,358 [DEBUG] Checking status of feature 'CT Extended Coverage' in single-check mode. at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.checkFeaturesStates(LicenseCheckThread.java:544)
-2026-01-09 09:04:05,360 [DEBUG] Using token file for user syoung: /tmp/.pslic/606E14166E82775560526AB5641659_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
-2026-01-09 09:04:05,362 [INFO] Final status of feature 'CT Extended Coverage': OK at com.parasoft.xtest.lic.client.internal.LicenseCheckThread.logFeatureStatus(LicenseCheckThread.java:624)
-2026-01-09 09:04:05,362 [INFO] [CONSOLE] License: CT Extended Coverage feature: License is valid at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,364 [DEBUG] Telemetry event: xtest.license.check.data at com.parasoft.xtest.common.telemetry.UTelemetry.reportEvent(UTelemetry.java:82)
-2026-01-09 09:04:05,367 [DEBUG] Updated company id to N0+Me3v9QnfZ3QaWlaEJ2pHxXb6vLfAzHpCWKhlkbyE= at com.parasoft.xtest.common.telemetry.TelemetryReporter.updateCompanyName(TelemetryReporter.java:385)
-2026-01-09 09:04:05,368 [DEBUG] Ignoring telemetry event: xtest.license.check.data at com.parasoft.xtest.common.telemetry.TelemetryReporter.reportEvent(TelemetryReporter.java:229)
-2026-01-09 09:04:05,368 [DEBUG] C/C++test CT STATUS: License is valid at com.parasoft.xtest.lic.client.internal.FeaturesStates.getMainFeatureStatus(FeaturesStates.java:203)
-2026-01-09 09:04:05,368 [INFO] activateLicense: end, overall status: OK in THREAD: License Check Thread (IntLicMan@35ce4af2)@84483d2 THIS@35ce4af2 at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalActivateLicense(InternalLicenseManager.java:468)
-2026-01-09 09:04:05,369 [INFO] [CONSOLE] License: Activation finished: License is valid at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,369 [INFO] [CONSOLE] License: Machine id LINUX2-793d518f (Default) at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,369 [INFO] cancelOtherThreads: begin at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.cancelOtherThreads(InternalLicenseManager.java:988)
-2026-01-09 09:04:05,370 [DEBUG] C/C++test CT STATUS: License is valid at com.parasoft.xtest.lic.client.internal.FeaturesStates.getMainFeatureStatus(FeaturesStates.java:203)
-2026-01-09 09:04:05,370 [DEBUG] activateLicense: leaving activation mode in THREAD: License Check Thread (IntLicMan@35ce4af2)@84483d2 THIS@35ce4af2 at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.activateLicenseFinished(InternalLicenseManager.java:1105)
-2026-01-09 09:04:05,370 [DEBUG] Finished waiting for license activation for: THREAD: main@659e0bfd THIS@35ce4af2 at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.waitForActivation(InternalLicenseManager.java:1339)
-2026-01-09 09:04:05,371 [DEBUG] Finished waiting for license activation for: THREAD: ServiceDiagnosticCollector Thread@e1489e4 THIS@35ce4af2 at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.waitForActivation(InternalLicenseManager.java:1339)
-2026-01-09 09:04:05,372 [INFO] [CONSOLE] Done. [449 ms] at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,373 [DEBUG] C/C++test CT STATUS: License is valid at com.parasoft.xtest.lic.client.internal.FeaturesStates.getMainFeatureStatus(FeaturesStates.java:203)
-2026-01-09 09:04:05,386 [INFO] [CONSOLE] Sending usage data is disabled, use usage.reporting.enabled to enable at com.parasoft.cpptest.coverage.common.Console.writeln(Console.java:55)
-2026-01-09 09:04:05,395 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.lic.client.internal.service.LicenseService@79145d5a at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
-2026-01-09 09:04:05,398 [DEBUG] Finished collecting of diagnostics information for com.parasoft.xtest.common.telemetry.TelemetryReporter@77dd519a at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector$2.run(ServiceDiagnosticCollector.java:118)
-2026-01-09 09:04:05,687 [DEBUG] CoverageSrcRoot - missing mapping file ignored: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc/0a/858ff4/0/.pathmap at com.parasoft.xtest.cpp.coverage.map.MapReader$CoverageSrcRootMapper.getMappings(MapReader.java:694)
-2026-01-09 09:04:05,688 [DEBUG] Reading coverage data file (.map): /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc/0a/858ff4/0/Bank.cpp.map at com.parasoft.xtest.cpp.coverage.map.MapReader.<init>(MapReader.java:79)
-2026-01-09 09:04:05,703 [DEBUG] Coverage data file (.map) header: mode=2024, version=8, correct=true, translationUnitId=-896357797774491648 at com.parasoft.xtest.cpp.coverage.map.MapReader.checkHeaderData(MapReader.java:235)
-2026-01-09 09:04:05,704 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Account.hxx at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:05,705 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Bank.cpp at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:05,714 [DEBUG] End of coverage data file reached. at com.parasoft.xtest.cpp.coverage.map.RecordReader.readData(RecordReader.java:76)
-2026-01-09 09:04:06,062 [DEBUG] CoverageSrcRoot - missing mapping file ignored: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc/79/873aec/0/.pathmap at com.parasoft.xtest.cpp.coverage.map.MapReader$CoverageSrcRootMapper.getMappings(MapReader.java:694)
-2026-01-09 09:04:06,063 [DEBUG] Reading coverage data file (.map): /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc/79/873aec/0/ATM.cpp.map at com.parasoft.xtest.cpp.coverage.map.MapReader.<init>(MapReader.java:79)
-2026-01-09 09:04:06,067 [DEBUG] Coverage data file (.map) header: mode=2024, version=8, correct=true, translationUnitId=-1424705020758065152 at com.parasoft.xtest.cpp.coverage.map.MapReader.checkHeaderData(MapReader.java:235)
-2026-01-09 09:04:06,068 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,069 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Account.hxx at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,070 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.hxx at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,070 [DEBUG] Coverable file detected - may be ignored later: /tmp/ParaSoft21870ypLY2Z7/ParaSoft21870yBr9n12.cpp at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,075 [DEBUG] End of coverage data file reached. at com.parasoft.xtest.cpp.coverage.map.RecordReader.readData(RecordReader.java:76)
-2026-01-09 09:04:06,082 [DEBUG] CoverageSrcRoot - missing mapping file ignored: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc/8a/838083/0/.pathmap at com.parasoft.xtest.cpp.coverage.map.MapReader$CoverageSrcRootMapper.getMappings(MapReader.java:694)
-2026-01-09 09:04:06,083 [DEBUG] Reading coverage data file (.map): /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc/8a/838083/0/BaseDisplay.cpp.map at com.parasoft.xtest.cpp.coverage.map.MapReader.<init>(MapReader.java:79)
-2026-01-09 09:04:06,088 [DEBUG] Coverage data file (.map) header: mode=2024, version=8, correct=true, translationUnitId=-9043312349083074560 at com.parasoft.xtest.cpp.coverage.map.MapReader.checkHeaderData(MapReader.java:235)
-2026-01-09 09:04:06,088 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.cpp at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,088 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.hxx at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,088 [DEBUG] Coverable file detected - may be ignored later: /tmp/ParaSoft21939yuccTuy/ParaSoft21939yIc0hHa.cpp at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,089 [DEBUG] End of coverage data file reached. at com.parasoft.xtest.cpp.coverage.map.RecordReader.readData(RecordReader.java:76)
-2026-01-09 09:04:06,099 [DEBUG] CoverageSrcRoot - missing mapping file ignored: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc/bf/c8b67f/0/.pathmap at com.parasoft.xtest.cpp.coverage.map.MapReader$CoverageSrcRootMapper.getMappings(MapReader.java:694)
-2026-01-09 09:04:06,099 [DEBUG] Reading coverage data file (.map): /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc/bf/c8b67f/0/Account.cpp.map at com.parasoft.xtest.cpp.coverage.map.MapReader.<init>(MapReader.java:79)
-2026-01-09 09:04:06,106 [DEBUG] Coverage data file (.map) header: mode=2024, version=8, correct=true, translationUnitId=9130556028356657152 at com.parasoft.xtest.cpp.coverage.map.MapReader.checkHeaderData(MapReader.java:235)
-2026-01-09 09:04:06,106 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Account.cpp at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,108 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/Account.hxx at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,109 [DEBUG] Coverable file detected - may be ignored later: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.hxx at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,109 [DEBUG] Coverable file detected - may be ignored later: /tmp/ParaSoft21824yvfmKMc/ParaSoft21824ywLNRaE.cpp at com.parasoft.xtest.cpp.coverage.map.MapReader.readFileData(MapReader.java:254)
-2026-01-09 09:04:06,111 [DEBUG] End of coverage data file reached. at com.parasoft.xtest.cpp.coverage.map.RecordReader.readData(RecordReader.java:76)
-2026-01-09 09:04:06,115 [DEBUG] Is Network License check time: 1 ms at com.parasoft.cpptest.coverage.common.license.LicenseClient.isNetworkLicense(LicenseClient.java:64)
-2026-01-09 09:04:06,122 [DEBUG] Available Cloud VMs: [Docker, AWS, Azure] at com.parasoft.xtest.common.vm.VMInfoFactory.provideVMInfo(VMInfoFactory.java:45)
-2026-01-09 09:04:06,127 [DEBUG] [contrib-dev]: Executing Git command git rev-parse --show-toplevel in /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo at com.parasoft.cpptest.coverage.usage.GitRepoUtil.executeGitCommand(GitRepoUtil.java:117)
-2026-01-09 09:04:06,146 [DEBUG] [contrib-dev]: Git command output: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo
- at com.parasoft.cpptest.coverage.usage.GitRepoUtil.executeGitCommand(GitRepoUtil.java:175)
-2026-01-09 09:04:06,147 [DEBUG] [contrib-dev]: Executing Git command git config --get remote.origin.url in /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo at com.parasoft.cpptest.coverage.usage.GitRepoUtil.executeGitCommand(GitRepoUtil.java:117)
-2026-01-09 09:04:06,165 [DEBUG] [contrib-dev]: Git command output: https://github.com/sam-young717/CTdemonstrate.git
- at com.parasoft.cpptest.coverage.usage.GitRepoUtil.executeGitCommand(GitRepoUtil.java:175)
-2026-01-09 09:04:06,197 [DEBUG] [contrib-dev]: json result created.
-[contrib-dev]: Git util ask time: 39 ms
-[contrib-dev]: Git util ask count: 1
-[contrib-dev]: No repo files time: 0ms
-[contrib-dev]: Total time: 48 ms at com.parasoft.cpptest.coverage.usage.RepDataCollector.calculateJsonResult(RepDataCollector.java:144)
-2026-01-09 09:04:06,197 [DEBUG] [contrib-dev]: Number of git command executions: 2 at com.parasoft.cpptest.coverage.usage.GitRepoUtil.logStats(GitRepoUtil.java:272)
-2026-01-09 09:04:06,198 [DEBUG] [contrib-dev] json data:
->>>>>>>>>>>>>>>>>>>>>>>>>>>>
-{
-  "formatVersion" : "1",
-  "status" : 0,
-  "timestamp" : "2026-01-09T14:04:06Z",
-  "tool" : {
-    "name" : "C/C++test CT",
-    "version" : "2025.1.0 (10.7.2.20250520B1027)"
-  },
-  "system" : {
-    "machineid" : "LINUX2-793d518f",
-    "host" : "syoung-pc",
-    "ip" : "192.168.40.186",
-    "user" : "syoung"
-  },
-  "files" : [ {
-    "remoteUrl" : "https://github.com/sam-young717/CTdemonstrate.git",
-    "localPath" : "/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo",
-    "numberOfFiles" : 6
-  } ]
-}
-<<<<<<<<<<<<<<<<<<<<<<<<<
- at com.parasoft.cpptest.coverage.usage.RepDataCollector.calculateJsonResult(RepDataCollector.java:150)
-2026-01-09 09:04:06,199 [DEBUG] [contrib-dev]: Local license detected, json not uploaded at com.parasoft.cpptest.coverage.CoverageCompute.collectRepositoryData(CoverageCompute.java:345)
-2026-01-09 09:04:06,216 [INFO] Coverage - reading dynamic data file: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/ATM.clog at com.parasoft.xtest.cpp.coverage.clog.LogReader.read(LogReader.java:57)
-2026-01-09 09:04:06,222 [DEBUG] Size of .clog file: 6456 at com.parasoft.xtest.cpp.coverage.clog.RecordReader.<init>(RecordReader.java:60)
-2026-01-09 09:04:06,230 [DEBUG] End of .clog file reached: 6456 of 6456 at com.parasoft.xtest.cpp.coverage.clog.RecordReader.readRecord(RecordReader.java:71)
-2026-01-09 09:04:06,232 [INFO] Coverage - finished reading dynamic data file. at com.parasoft.xtest.cpp.coverage.clog.LogReader.read(LogReader.java:122)
-2026-01-09 09:04:06,354 [DEBUG] Ignoring telemetry event: cpptest.test.configuration.run.data at com.parasoft.xtest.common.telemetry.TelemetryReporter.reportEvent(TelemetryReporter.java:229)
-2026-01-09 09:04:06,354 [DEBUG] Ignoring telemetry event: xtest.test.configuration.run.data at com.parasoft.xtest.common.telemetry.TelemetryReporter.reportEvent(TelemetryReporter.java:229)
-2026-01-09 09:04:06,355 [DEBUG] Ignoring telemetry event: cpptest.command.run.data at com.parasoft.xtest.common.telemetry.TelemetryReporter.reportEvent(TelemetryReporter.java:229)
-2026-01-09 09:04:06,377 [DEBUG] 
-License Profiler
-+ ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
-| NAME                                                         | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
-+ ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
-| IntLicManager.getState[C++Test]                              | 38    | 0.138     | 0.0     | 0.068   | 0.003   |
-| LicenseService.isEnabled[Main]                               | 2     | 0.136     | 0.066   | 0.07    | 0.068   |
-| LicenseModule.initializeModule                               | 1     | 0.112     | 0.112   | 0.112   | 0.112   |
-| IntLicManager.activateLicense                                | 1     | 0.068     | 0.068   | 0.068   | 0.068   |
-| IntLicManager.WAIT[main]                                     | 1     | 0.065     | 0.065   | 0.065   | 0.065   |
-| IntLicManager.WAIT[ServiceDiagnosticCollector Thread]        | 1     | 0.065     | 0.065   | 0.065   | 0.065   |
-| IntLicManager.activateFinished                               | 1     | 0.018     | 0.018   | 0.018   | 0.018   |
-| IntLicManager.checkFinished                                  | 1     | 0.014     | 0.014   | 0.014   | 0.014   |
-| LicenseService.isEnabled[CT-Extended-Coverage]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Security]                           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Command-Line-Execution]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Flow-Analysis]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Team-Share-Edit]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Team-Share-Access]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Mass-Creation]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Automation]                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Performance-Benchmarking]           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Native-Tests-Import]                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Embedded-Testing]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[API-Test-Creation]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Runtime-Error-Detection]            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Code-Review]                        | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Coverage]                           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Spring-Framework]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Concerto-Access]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Enforce-Max-Errors]                 | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Rule-Wizard]                        | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test CT Core]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Email-Reports]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Quick-Fix]                          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Unit-Testing]                       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Max-Unit-Test-Bulk-Testables-Value] | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[LLM-Integration]                    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[DTP-Access]                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Flow-Analysis-Data]                 | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[XML-Report-Generation]              | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Team-Share-Results-Upload]          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Application-Monitoring]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Coding-Standards]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Change-Based-Testing]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseServiceModules .statusChanged                         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Sniffer]                            | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Bug-Detective]                      | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Generate-Recommendations]           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Source-Control]                     | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.invokeAsyncCallsQueue                          | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Parameterization]                   | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| IntLicManager.getState[C++Test CT Extended Coverage]         | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[CT-Basic-Coverage]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| LicenseService.isEnabled[Self-Healing]                       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-+ ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.616s
-
-Async Call Profiler
-+ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-| NAME                                        | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
-+ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-| InternalLicenseManager.activateLicense:429  | 1     | 0.087     | 0.087   | 0.087   | 0.087   |
-| AsyncCallHandler.startThread                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| InternalLicenseManager.invokeAsyncCall:1282 | 40    | 0.0       | 0.0     | 0.0     | 0.0     |
-+ ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.087s
-
-VM Info Profiler
-+ ------ + ----- + --------- + ------- + ------- + ------- +
-| NAME   | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
-+ ------ + ----- + --------- + ------- + ------- + ------- +
-| Docker | 1     | 0.008     | 0.008   | 0.008   | 0.008   |
-| Azure  | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
-| AWS    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-+ ------ + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.009s
-
+2026-06-04 14:02:03,478 [INFO] Starting cpptestcov-compute 2025.1.0 (10.7.2.20250520B1027)... at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:35)
+2026-06-04 14:02:03,481 [INFO] Arguments: [-map=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc, -clog=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/ATM.clog, -out=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage, -coverage=LC,SC,BC,DC,SCC,MCDC,FC,CC] at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:36)
+2026-06-04 14:02:03,482 [INFO] Max memory available: 4120903680 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:37)
+2026-06-04 14:02:03,482 [INFO] Available CPUs: 22 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:38)
+2026-06-04 14:02:03,483 [INFO] Java home: /usr/lib/jvm/java-21-openjdk-amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:39)
+2026-06-04 14:02:03,483 [INFO] Java version: 21.0.11 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:40)
+2026-06-04 14:02:03,484 [INFO] Java vendor: Ubuntu at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:41)
+2026-06-04 14:02:03,484 [INFO] OS arch: amd64 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:42)
+2026-06-04 14:02:03,485 [INFO] OS name: Linux at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:43)
+2026-06-04 14:02:03,485 [INFO] OS version: 5.15.146.1-microsoft-standard-WSL2 at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:44)
+2026-06-04 14:02:03,486 [INFO] Working dir (user.dir): /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:45)
+2026-06-04 14:02:03,486 [INFO] Home dir (user.home): /home/syoung at com.parasoft.cpptest.coverage.common.Logging.initLogger(Logging.java:46)
+2026-06-04 14:02:03,883 [INFO] Started ProfilerDumper listening thread on command file: /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/xtest_dump_stats.cmd at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.<init>(ProfilerStatisticsService.java:54)
+2026-06-04 14:02:04,001 [WARN] Break execution at com.parasoft.cpptest.coverage.CoverageCompute.call(CoverageCompute.java:161)
+com.parasoft.cpptest.coverage.common.BreakExecutionException: null
+	at com.parasoft.cpptest.coverage.CoverageCompute.callImpl(CoverageCompute.java:205) ~[com.parasoft.cpptest.coverage.compute-2025.1.0.20250520B1027.jar:?]
+	at com.parasoft.cpptest.coverage.CoverageCompute.call(CoverageCompute.java:158) ~[com.parasoft.cpptest.coverage.compute-2025.1.0.20250520B1027.jar:?]
+	at com.parasoft.cpptest.coverage.CoverageCompute.call(CoverageCompute.java:71) ~[com.parasoft.cpptest.coverage.compute-2025.1.0.20250520B1027.jar:?]
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1953) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine.access$1300(CommandLine.java:145) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316) ~[picocli-4.6.3.jar:4.6.3]
+	at picocli.CommandLine.execute(CommandLine.java:2078) ~[picocli-4.6.3.jar:4.6.3]
+	at com.parasoft.cpptest.coverage.CoverageCompute.executeCC(CoverageCompute.java:148) ~[com.parasoft.cpptest.coverage.compute-2025.1.0.20250520B1027.jar:?]
+	at com.parasoft.cpptest.coverage.CoverageCompute.main(CoverageCompute.java:130) ~[com.parasoft.cpptest.coverage.compute-2025.1.0.20250520B1027.jar:?]
+2026-06-04 14:02:04,031 [INFO] Diagnostics mode is ON. File=.cpptest/xtest.diagnostics.txt at com.parasoft.xtest.services.api.diagnostics.ServiceDiagnosticCollector.initialize(ServiceDiagnosticCollector.java:294)
+2026-06-04 14:02:04,050 [INFO] Number of telemetry configurations: 1 at com.parasoft.xtest.common.telemetry.UTelemetry.getTelemetryConfiguration(UTelemetry.java:65)
+2026-06-04 14:02:04,053 [DEBUG] Telemetry connection string: qVx9N1NMROjrd/s5HgmLbh4kIv6dTNYdzEy4zAL6u0SUx7CLOwrBWyMGXcDILMBNTVAryX2ODUXg2PfuDcw6HNwMMYWqbGNm3sEiI+S6e9uXK5Drf/rIq7sl7+L9GQlWWXWWpD+TqJVq8yrwlAD1uS6Ltgs6fqZhCfD41sVTBXKodhCyhPb+OqYP45dEWdglGqC3a+n30GvHqRfROoHGbDuOk0JAHLpMcPa/1V+jxVC3RquIaZIc+9/XM4cVYgAzTSsb/wuUd+FHntPOe9oOmjZy+x0MFGeSJ7FDLFTG8KANa/rG7k4JPXx2AbD54SV1Rl6VfELg1rT61V38yglfNw== at com.parasoft.cpptest.coverage.common.telemetry.TelemetryConfiguration.getConnectionString(TelemetryConfiguration.java:27)
+2026-06-04 14:02:04,086 [INFO] Setting connection string by configuration service at com.parasoft.xtest.common.telemetry.TelemetryReporter.findConnectionString(TelemetryReporter.java:134)
+2026-06-04 14:02:04,143 [DEBUG] Cannot find company name. Probably will be provided by license event. at com.parasoft.xtest.common.telemetry.TelemetryReporter.findCompanyName(TelemetryReporter.java:215)
+2026-06-04 14:02:04,146 [DEBUG] Ignoring telemetry event: cpptest.command.run.data at com.parasoft.xtest.common.telemetry.TelemetryReporter.reportEvent(TelemetryReporter.java:229)
+2026-06-04 14:02:04,160 [DEBUG] 
 Default Profiler
 + ------------------------- + ----- + --------- + ------- + ------- + ------- +
 | NAME                      | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------------------------- + ----- + --------- + ------- + ------- + ------- +
 | CryptUtil.decryptPassword | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
-| CryptUtil.encryptPassword | 2     | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------------------------- + ----- + --------- + ------- + ------- + ------- +
 TOTAL: 0.0s
  at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:133)
-2026-01-09 09:04:06,383 [DEBUG] Total: 0 seconds (total - 0 seconds) at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:136)
-2026-01-09 09:04:06,405 [DEBUG] Memory Statistics Profiler
+2026-06-04 14:02:04,167 [DEBUG] Total: 0 seconds (total - 0 seconds) at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:136)
+2026-06-04 14:02:04,191 [DEBUG] Memory Statistics Profiler
 + -------------- + --------- +
 | Memory Metric  | Size [MB] |
 + -------------- + --------- +
-| Current memory | 20        |
+| Current memory | 16        |
 | Max memory     | 4121      |
-| Total memory   | 20        |
+| Total memory   | 16        |
 + -------------- + --------- +
  at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:140)
-2026-01-09 09:04:06,409 [DEBUG] Log Issues Profiler
+2026-06-04 14:02:04,193 [DEBUG] Log Issues Profiler
 + ------------- + ----- +
 | Logging Level | Count |
 + ------------- + ----- +
 | TRACE         | 0     |
 | TIME          | 0     |
-| DEBUG         | 93    |
-| INFO          | 72    |
+| DEBUG         | 6     |
+| INFO          | 16    |
 | WARN          | 1     |
 | ERROR         | 0     |
 | FATAL         | 0     |
 + ------------- + ----- +
  at com.parasoft.xtest.common.profiler.ProfilerStatisticsService.doLog(ProfilerStatisticsService.java:144)
-2026-01-09 09:04:06,411 [INFO] Disposing module and releasing license for cpptestct at com.parasoft.xtest.lic.client.internal.service.LicenseServiceModules.dispose(LicenseServiceModules.java:188)
-2026-01-09 09:04:06,413 [WARN] Blocking method called from main thread! at com.parasoft.xtest.common.async.AsyncCallHandler.invoke(AsyncCallHandler.java:73)
-2026-01-09 09:04:06,413 [INFO] cancelTask: Timer at com.parasoft.xtest.lic.client.internal.LicenseCheckTimer.cancelTask(LicenseCheckTimer.java:40)
-2026-01-09 09:04:06,414 [INFO] Releasing license feature: C++Test at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:562)
-2026-01-09 09:04:06,416 [DEBUG] Using token file for user syoung: /tmp/.pslic/606E14166E82775560526AB5641659_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
-2026-01-09 09:04:06,418 [INFO] Releasing license feature: C++Test CT Core at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:562)
-2026-01-09 09:04:06,420 [DEBUG] Using token file for user syoung: /tmp/.pslic/606E14166E82775560526AB5641659_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
-2026-01-09 09:04:06,422 [INFO] Releasing license feature: C++Test CT Extended Coverage at com.parasoft.xtest.lic.client.internal.InternalLicenseManager.internalStopLicenseCheck(InternalLicenseManager.java:562)
-2026-01-09 09:04:06,424 [DEBUG] Using token file for user syoung: /tmp/.pslic/606E14166E82775560526AB5641659_903a40975e5dd76b931c.tok at com.parasoft.xtest.lic.client.internal.validator.tokens.TokenFilesStorage.getTokenFile(TokenFilesStorage.java:271)
-2026-01-09 09:04:06,425 [DEBUG]  at com.parasoft.xtest.common.io.FileInfoServiceFactory.shutdown(FileInfoServiceFactory.java:76)
-2026-01-09 09:04:06,427 [INFO] Exiting (code 0)... at com.parasoft.cpptest.coverage.CoverageCompute.main(CoverageCompute.java:131)
+2026-06-04 14:02:04,195 [DEBUG]  at com.parasoft.xtest.common.io.FileInfoServiceFactory.shutdown(FileInfoServiceFactory.java:76)
+2026-06-04 14:02:04,197 [INFO] Exiting (code 1)... at com.parasoft.cpptest.coverage.CoverageCompute.main(CoverageCompute.java:131)

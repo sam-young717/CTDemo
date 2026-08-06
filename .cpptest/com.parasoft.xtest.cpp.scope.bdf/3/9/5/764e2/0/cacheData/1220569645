@@ -1,5 +1,5 @@
 file=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/_deps/googletest-src/googlemock/src/gmock_main.cc
-compiler=gcc_9-64
+compiler=gcc_11-64
 working_dir=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/_deps/googletest-build/googlemock
 arg=/usr/bin/c++
 arg=-isystem

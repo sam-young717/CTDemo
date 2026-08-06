@@ -1,28 +1,18 @@
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>CODSTA-103
-<b>The called function 'basic_string' has side-effect and is used in improper context
-<l>15
-<k>65
+<c>MISRA2004-8_7
+<b>Global variable 'external_memory_data_array' is being used only in a single function 'TestCase2'
+<l>81
+<k>22
 <s>false
 <N>
 <f>
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>CODSTA-103
-<b>The called function 'basic_string' has side-effect and is used in improper context
-<l>15
-<k>65
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>NAMING-44
-<b>The name 'viewAccount' should be composed only of lowercase letters
-<l>13
+<c>OPT-02
+<b>Local variable 'decimal_value' declared but not used
+<l>102
 <k>11
 <s>false
 <N>
@@ -30,370 +20,120 @@
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>NAMING-44
-<b>The name 'fillUserRequest' should be composed only of lowercase letters
-<l>21
-<k>11
+<c>OPT-02
+<b>Local variable 'shift_variable' declared but not used
+<l>103
+<k>18
 <s>false
 <N>
 <f>
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>NAMING-44
-<b>The name 'showBalance' should be composed only of lowercase letters
-<l>37
-<k>11
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
+<l>1
+<k>1
 <s>false
 <N>
 <f>
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>NAMING-44
-<b>The name 'showTransations' should be composed only of lowercase letters
-<l>44
-<k>11
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>NAMING-44
-<b>The name 'makeDeposit' should be composed only of lowercase letters
-<l>54
-<k>11
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>NAMING-45
-<b>The identifier 'bank' differs only by case from identifier 'Bank' declared in file 'Bank.hxx'
-<l>7
-<k>16
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>CODSTA-CPP-36
-<b>Do not use the 'using' directive in the global namespace
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
 <l>5
-<k>12
+<k>1
 <s>false
 <N>
 <f>
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>CODSTA-102
-<b>A single operation '=' with side-effect is used in improper context
-<l>15
-<k>12
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
+<l>7
+<k>1
 <s>false
 <N>
 <f>
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>OPT-14
-<b>The parameter 'password' of function 'viewAccount' is passed by value
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
 <l>13
-<k>49
+<k>1
 <s>false
 <N>
 <f>
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>CODSTA-102
-<b>A single operation '=' with side-effect is used in improper context
-<l>15
-<k>12
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>MISRA2004-13_1
-<b>Assignment to 'myCurrentAccount' used in expression that yield a Boolean value
-<l>15
-<k>12
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>MISRA2004-13_1
-<b>Assignment to 'myCurrentAccount' used in expression that yield a Boolean value
-<l>15
-<k>12
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>CODSTA-61
-<b>There is no 'default' clause in switch statement
-<l>24
-<k>9
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>MISRA2004-14_9
-<b>Conditional statement 'if' in a function 'fillUserRequest' should be followed by a block
-<l>23
-<k>5
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>MISRA2004-15_2
-<b>Every non empty case clause in a switch statement shall be terminated with a break statement
-<l>32
-<k>13
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>COMMENT-05
-<b>The 'bal' variable should be commented
-<l>39
-<k>12
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>OPT-24
-<b>Function 'showTransations' is not inlined
-<l>44
-<k>11
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>COMMENT-05
-<b>The 'bal' variable should be commented
-<l>56
-<k>10
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>COMMENT-05
-<b>The 'bal' variable should be commented
-<l>63
-<k>10
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>FORMAT-06
-<b>Too many statements in line
-<l>27
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>FORMAT-06
-<b>Too many statements in line
-<l>29
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>FORMAT-06
-<b>Too many statements in line
-<l>31
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>COMMENT-02
-<b>Add comment containing the copyright information at the begin of file 'ATM.cpp'
-<l>1
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>COMMENT-03
-<b>Add comment containing the information on the file at the begin of file 'ATM.cpp'
-<l>1
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>FORMAT-01
-<b>Non-ascii tab found
-<l>47
-<k>5
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>FORMAT-01
-<b>Non-ascii tab found
-<l>47
-<k>6
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>FORMAT-01
-<b>Non-ascii tab found
-<l>48
-<k>5
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>PREPROC-08
-<b>Not a proper header file (*.h ) is being included: "ATM.hxx"
-<l>1
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>PREPROC-09
-<b>Disallowed #include notation is being used: "ATM.hxx"
-<l>1
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>PREPROC-08
-<b>Not a proper header file (*.h ) is being included: "Account.hxx"
-<l>2
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>PREPROC-09
-<b>Disallowed #include notation is being used: "Account.hxx"
-<l>2
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>PREPROC-08
-<b>Not a proper header file (*.h ) is being included: "BaseDisplay.hxx"
-<l>3
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>PREPROC-09
-<b>Disallowed #include notation is being used: "BaseDisplay.hxx"
-<l>3
-<k>-1
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>MISRA2004-6_3_b
-<b>The basic numerical type 'int' should not be used
-<l>13
-<k>23
-<s>false
-<N>
-<f>
-<L>0
-<->
-<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>MISRA2004-6_3_b
-<b>The basic numerical type 'double' should not be used
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
 <l>21
-<k>48
+<k>1
 <s>false
 <N>
 <f>
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>MISRA2004-6_3_b
-<b>The basic numerical type 'double' should not be used
-<l>39
-<k>5
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
+<l>37
+<k>1
 <s>false
 <N>
 <f>
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>MISRA2004-6_3_b
-<b>The basic numerical type 'double' should not be used
-<l>47
-<k>45
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
+<l>44
+<k>1
 <s>false
 <N>
 <f>
 <L>0
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
-<c>MISRA2004-6_3_b
-<b>The basic numerical type 'double' should not be used
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
 <l>54
-<k>23
+<k>1
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
+<l>61
+<k>1
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
+<l>68
+<k>1
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-2_4
+<b>Section of code should not be 'commented out'
+<l>72
+<k>1
 <s>false
 <N>
 <f>
@@ -401,9 +141,139 @@
 <->
 <F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
 <c>MISRA2004-6_3_b
-<b>The basic numerical type 'double' should not be used
-<l>61
-<k>20
+<b>The standard integer type 'char' should not be used
+<l>81
+<k>17
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>83
+<k>36
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>83
+<k>59
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>83
+<k>82
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>91
+<k>17
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>91
+<k>44
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>91
+<k>67
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'int' should not be used
+<l>103
+<k>14
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>104
+<k>14
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>105
+<k>14
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>106
+<k>14
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>107
+<k>14
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>108
+<k>14
+<s>false
+<N>
+<f>
+<L>0
+<->
+<F>/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/ATM.cpp
+<c>MISRA2004-6_3_b
+<b>The standard integer type 'char' should not be used
+<l>109
+<k>14
 <s>false
 <N>
 <f>

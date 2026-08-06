@@ -42,9 +42,11 @@ if(ENABLE_GT_TESTS)
   if(NOT googletest_POPULATED)
     FetchContent_Populate(googletest)
     set(gtest_disable_pthreads ON CACHE BOOL "" FORCE)
+    set(BUILD_TESTING OFF)
     add_subdirectory(
-      ${googletest_SOURCE_DIR}
-      ${googletest_BINARY_DIR}
+      ${googletest_SOURCE_DIR} EXCLUDE_FROM_ALL
+      ${googletest_BINARY_DIR} EXCLUDE_FROM_ALL
+
     )
   endif()
 

@@ -9,7 +9,7 @@ Apply the recommended fix or suppress the violation if it cannot be resolved in 
 Re-run the static analysis to ensure that all violations have been addressed.
 Improve Unit Tests and Coverage:
 
-Always start with rebuilding and executing tests to gather initial coverage data. To build and execute tests use "Configure" and then "Build and Run" build task. Do not use other build tasks or call CMake directly.
+Always start with rebuilding and executing tests to gather initial coverage data. To build and execute tests use "Prepare Tests" and then "Build and Run" build task. Do not use other build tasks or call CMake directly.
 Use available tools to identify uncovered lines, focusing on line and MC/DC coverage. The coverage data is located in .coverage workspace subdirectory.
 Generate tests to cover uncovered lines, ensuring that logical conditions and branches are exercised.
 If given line cannot be covered due to unreachable code, apply coverage suppressions with justification. When suppressing unreachable code line, apply suppression for all metrics, using "ALL" for the <COVERAGE_TYPE> suppression parameter, e.g.: // parasoft-cov-suppress ALL "Unreachable code - all conditions above return values"

@@ -1,8 +1,8 @@
-Diagnostics file initialized on Fri Jan 09 10:13:34 EST 2026
+Diagnostics file initialized on Thu Jun 04 14:02:17 EDT 2026
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.lic.client.internal.service.LicenseService@79145d5a
-CONTEXT: com.parasoft.cpptest.coverage.common.services.ServiceContextWithConsole@1f2f9244
+SERVICE: com.parasoft.xtest.lic.client.internal.service.LicenseService@cb191ca
+CONTEXT: com.parasoft.cpptest.coverage.common.services.ServiceContextWithConsole@42f48531
 LICENSE ENABLED: 
 ================================================================================================
 LOCAL SETTINGS:
@@ -23,7 +23,7 @@ LOCAL SETTINGS:
     oidc.callback.host=localhost
     oidc.callback.timeout=60
     oidc.cli.mode=DeviceCode
-    oidc.devicecode.token.file=/tmp/parasoft-syoung/storages/storage_2026-01-09_10-13-33/oidc_device_code
+    oidc.devicecode.token.file=/tmp/parasoft-syoung/storages/storage_2026-06-04_14-02-15/oidc_device_code
     oidc.scopes=openid profile offline_access
     parasoft.user=syoung
     use.default.user.name=true
@@ -79,8 +79,8 @@ License requirements statuses:
 
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.common.telemetry.TelemetryReporter@1f909c16
-CONTEXT: com.parasoft.cpptest.coverage.common.services.ServiceContextWithConsole@1f2f9244
+SERVICE: com.parasoft.xtest.common.telemetry.TelemetryReporter@39d345b1
+CONTEXT: com.parasoft.cpptest.coverage.common.services.ServiceContextWithConsole@42f48531
 LICENSE ENABLED: 
 ================================================================================================
 LOCAL SETTINGS:
@@ -94,8 +94,8 @@ PARASOFT_TELEMETRY_DISABLED: null
 Disabled permanently: false
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.common.oidc.OidcService@14f00c5f
-CONTEXT: com.parasoft.cpptest.coverage.common.services.ServiceContextWithConsole@1f2f9244
+SERVICE: com.parasoft.xtest.common.oidc.OidcService@41bc119c
+CONTEXT: com.parasoft.cpptest.coverage.common.services.ServiceContextWithConsole@42f48531
 LICENSE ENABLED: 
 ================================================================================================
 LOCAL SETTINGS:
@@ -106,8 +106,8 @@ DIAGNOSTICS INFO:
 OpenID Connect Service is not enabled.
 
 ================================================================================================
-SERVICE: com.parasoft.xtest.common.dtp.DtpServiceRegistry@42bc2f68
-CONTEXT: com.parasoft.cpptest.coverage.common.services.ServiceContextWithConsole@1f2f9244
+SERVICE: com.parasoft.xtest.common.dtp.DtpServiceRegistry@323fde35
+CONTEXT: com.parasoft.cpptest.coverage.common.services.ServiceContextWithConsole@42f48531
 LICENSE ENABLED: 
 ================================================================================================
 LOCAL SETTINGS:
@@ -160,16 +160,16 @@ Services provider profiler (COUNT > 1):
 | getService(IProfilerStatisticsService)    | 4     | 0.0       |
 | getService(IProfilerService)              | 4     | 0.0       |
 | getService(ITelemetryReporter$Factory)    | 2     | 0.0       |
-| getService(IApplication)                  | 60    | 0.0       |
-| getService(IProxySettingsProviderService) | 7     | 0.0       |
-| getService(ILicenseService)               | 5     | 0.013     |
-| getService(IOidcService)                  | 7     | 0.015     |
-| getService(ISystemService)                | 3     | 0.024     |
-| getServices(IPreferences)                 | 22    | 0.04      |
-| getService(ITelemetryReporter)            | 3     | 0.078     |
-| getService(IDtpServiceRegistry)           | 5     | 0.787     |
+| getService(IApplication)                  | 60    | 0.001     |
+| getService(IProxySettingsProviderService) | 7     | 0.002     |
+| getService(ILicenseService)               | 5     | 0.018     |
+| getService(IOidcService)                  | 7     | 0.02      |
+| getService(ISystemService)                | 3     | 0.029     |
+| getServices(IPreferences)                 | 22    | 0.044     |
+| getService(ITelemetryReporter)            | 3     | 0.079     |
+| getService(IDtpServiceRegistry)           | 5     | 1.792     |
 + ----------------------------------------- + ----- + --------- +
-TOTAL: 0.957
+TOTAL: 1.985
 ================================================================================================
 SERVICES INSTANCES COUNT
 ================================================================================================
@@ -203,14 +203,14 @@ License Profiler
 + ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
 | NAME                                                         | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
-| LicenseModule.initializeModule                               | 1     | 0.857     | 0.857   | 0.857   | 0.857   |
-| IntLicManager.getState[C++Test]                              | 38    | 0.257     | 0.0     | 0.128   | 0.006   |
-| LicenseService.isEnabled[Main]                               | 2     | 0.256     | 0.126   | 0.13    | 0.128   |
-| IntLicManager.activateLicense                                | 1     | 0.128     | 0.128   | 0.128   | 0.128   |
-| IntLicManager.WAIT[main]                                     | 1     | 0.126     | 0.126   | 0.126   | 0.126   |
-| IntLicManager.WAIT[ServiceDiagnosticCollector Thread]        | 1     | 0.125     | 0.125   | 0.125   | 0.125   |
-| IntLicManager.activateFinished                               | 1     | 0.028     | 0.028   | 0.028   | 0.028   |
-| IntLicManager.checkFinished                                  | 1     | 0.022     | 0.022   | 0.022   | 0.022   |
+| LicenseModule.initializeModule                               | 1     | 1.89      | 1.89    | 1.89    | 1.89    |
+| LicenseService.isEnabled[Main]                               | 2     | 0.519     | 0.257   | 0.262   | 0.259   |
+| IntLicManager.getState[C++Test]                              | 38    | 0.517     | 0.0     | 0.259   | 0.013   |
+| IntLicManager.activateLicense                                | 1     | 0.262     | 0.262   | 0.262   | 0.262   |
+| IntLicManager.WAIT[main]                                     | 1     | 0.256     | 0.256   | 0.256   | 0.256   |
+| IntLicManager.WAIT[ServiceDiagnosticCollector Thread]        | 1     | 0.255     | 0.255   | 0.255   | 0.255   |
+| IntLicManager.activateFinished                               | 1     | 0.022     | 0.022   | 0.022   | 0.022   |
+| IntLicManager.checkFinished                                  | 1     | 0.018     | 0.018   | 0.018   | 0.018   |
 | LicenseService.isEnabled[CT-Extended-Coverage]               | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Security]                           | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Command-Line-Execution]             | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
@@ -254,38 +254,38 @@ License Profiler
 | LicenseService.isEnabled[CT-Basic-Coverage]                  | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | LicenseService.isEnabled[Self-Healing]                       | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------------------------------------------------------------ + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 1.799s
+TOTAL: 3.739s
 
 Async Call Profiler
 + ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
 | NAME                                        | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-| InternalLicenseManager.activateLicense:429  | 1     | 0.156     | 0.156   | 0.156   | 0.156   |
+| InternalLicenseManager.activateLicense:429  | 1     | 0.285     | 0.285   | 0.285   | 0.285   |
 | AsyncCallHandler.startThread                | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 | InternalLicenseManager.invokeAsyncCall:1282 | 40    | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------------------------------------------- + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.156s
+TOTAL: 0.285s
 
 XRest Profiler
 + ------------------------- + ----- + --------- + ------- + ------- + ------- +
 | NAME                      | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------------------------- + ----- + --------- + ------- + ------- + ------- +
-| /grs/api/v1.9/dtpServices | 1     | 0.195     | 0.195   | 0.195   | 0.195   |
-| /licenseserver/api/v1.1   | 4     | 0.107     | 0.022   | 0.033   | 0.026   |
-| /                         | 1     | 0.036     | 0.036   | 0.036   | 0.036   |
-| /grs/api/v1/dtpServices   | 1     | 0.024     | 0.024   | 0.024   | 0.024   |
+| /grs/api/v1.9/dtpServices | 1     | 0.922     | 0.922   | 0.922   | 0.922   |
+| /licenseserver/api/v1.1   | 4     | 0.151     | 0.019   | 0.059   | 0.037   |
+| /                         | 1     | 0.113     | 0.113   | 0.113   | 0.113   |
+| /grs/api/v1/dtpServices   | 1     | 0.031     | 0.031   | 0.031   | 0.031   |
 + ------------------------- + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.362s
+TOTAL: 1.217s
 
 VM Info Profiler
 + ------ + ----- + --------- + ------- + ------- + ------- +
 | NAME   | COUNT | TOTAL [s] | MIN [s] | MAX [s] | AVG [s] |
 + ------ + ----- + --------- + ------- + ------- + ------- +
-| Docker | 1     | 0.007     | 0.007   | 0.007   | 0.007   |
+| Docker | 1     | 0.01      | 0.01    | 0.01    | 0.01    |
 | Azure  | 1     | 0.001     | 0.001   | 0.001   | 0.001   |
 | AWS    | 1     | 0.0       | 0.0     | 0.0     | 0.0     |
 + ------ + ----- + --------- + ------- + ------- + ------- +
-TOTAL: 0.008s
+TOTAL: 0.011s
 
 Default Profiler
 + ------------------------- + ----- + --------- + ------- + ------- + ------- +
@@ -304,9 +304,9 @@ MEMORY STATISTICS
 + -------------- + --------- +
 | Memory Metric  | Size [MB] |
 + -------------- + --------- +
-| Current memory | 23        |
+| Current memory | 25        |
 | Max memory     | 4121      |
-| Total memory   | 23        |
+| Total memory   | 25        |
 + -------------- + --------- +
 ================================================================================================
 LOG ISSUES
@@ -317,7 +317,7 @@ LOG ISSUES
 + ------------- + ----- +
 | TRACE         | 0     |
 | TIME          | 0     |
-| DEBUG         | 198   |
+| DEBUG         | 195   |
 | INFO          | 90    |
 | WARN          | 0     |
 | ERROR         | 0     |
