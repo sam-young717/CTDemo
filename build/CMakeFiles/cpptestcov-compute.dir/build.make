@@ -67,7 +67,7 @@ include CMakeFiles/cpptestcov-compute.dir/compiler_depend.make
 include CMakeFiles/cpptestcov-compute.dir/progress.make
 
 CMakeFiles/cpptestcov-compute:
-	mkdir -p /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage && /mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/bin/cpptestcov compute -map="/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc" -clog="/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/ATM.clog" -out="/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage" -coverage=LC,SC,BC,DC,SCC,MCDC,FC,CC && /mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/bin/cpptestcov index /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage
+	mkdir -p /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage && /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/bin/cpptestcov compute -map="/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/.cpptest/cpptestcc" -clog="/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-coverage/ATM/ATM.clog" -out="/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage" -coverage=LC,SC,BC,DC,SCC,MCDC,FC,CC && /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/bin/cpptestcov index /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage
 
 cpptestcov-compute: CMakeFiles/cpptestcov-compute
 cpptestcov-compute: CMakeFiles/cpptestcov-compute.dir/build.make

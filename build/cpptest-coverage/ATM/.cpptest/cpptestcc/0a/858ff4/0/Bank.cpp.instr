@@ -13,14 +13,14 @@ struct __CPTR_Dummy_Type {
 
 
 
-struct __CPTR_Finalizer_176525300_800005_133839153
+struct __CPTR_Finalizer_176525300_103344_64739275
 {
-    __CPTR_Finalizer_176525300_800005_133839153()
+    __CPTR_Finalizer_176525300_103344_64739275()
     {
         cpptestAutoFinalizerConstructor();
     }
 
-    ~__CPTR_Finalizer_176525300_800005_133839153()
+    ~__CPTR_Finalizer_176525300_103344_64739275()
     {
         cpptestAutoFinalizerDestructor();
     }
@@ -40,10 +40,10 @@ struct __CPTR_Finalizer_176525300_800005_133839153
 static unsigned char _coverage_code[_coverage_code_size];
 
 EXTERN_C_LINKAGE_START
-CppTestCoverageInfo __CPTR_cui_176525300_800005_133839153 = 
+CppTestCoverageInfo __CPTR_cui_176525300_103344_64739275 = 
 {
     /*id=*/0U,
-    /*externalId=*/{244, 143, 5, 53, 7, 0, 0, 0}, 
+    /*externalId=*/{244, 143, 176, 147, 3, 0, 0, 0}, 
     /*idAssociationWasSent=*/0,
     /*prev=*/0, 
     /*covDataUnitSize=*/_coverage_data_unit_size,
@@ -55,7 +55,7 @@ CppTestCoverageInfo __CPTR_cui_176525300_800005_133839153 =
 };
 EXTERN_C_LINKAGE_END
 
-#define __CPTR_cui &__CPTR_cui_176525300_800005_133839153
+#define __CPTR_cui &__CPTR_cui_176525300_103344_64739275
 
 
 #define _cpptest_strdata_var(id, bogus) _cpptest_strdata[id]
@@ -1189,19 +1189,19 @@ struct is_null_pointer
 : public false_type { } ;
 
 
-template<> struct is_null_pointer< nullptr_t>  : public true_type { 
+template<> struct is_null_pointer< std::nullptr_t>  : public true_type { 
 }; 
 
 
-template<> struct is_null_pointer< const nullptr_t>  : public true_type { 
+template<> struct is_null_pointer< const std::nullptr_t>  : public true_type { 
 }; 
 
 
-template<> struct is_null_pointer< volatile nullptr_t>  : public true_type { 
+template<> struct is_null_pointer< volatile std::nullptr_t>  : public true_type { 
 }; 
 
 
-template<> struct is_null_pointer< const volatile nullptr_t>  : public true_type { 
+template<> struct is_null_pointer< const volatile std::nullptr_t>  : public true_type { 
 }; 
 
 
@@ -5554,10 +5554,10 @@ return __out ;
 
 
 
-extern template basic_ostream< char>  &__ostream_insert(basic_ostream< char>  & __out, const char * __s, streamsize __n);
+extern template ostream &__ostream_insert(ostream &, const char *, streamsize);
 
 
-extern template basic_ostream< wchar_t>  &__ostream_insert(basic_ostream< wchar_t>  & __out, const wchar_t * __s, streamsize __n);
+extern template wostream &__ostream_insert(wostream &, const wchar_t *, streamsize);
 # 132
 }
 # 74 "/usr/include/c++/13/bits/stl_iterator_base_types.h" 3
@@ -10517,7 +10517,7 @@ template < typename _Tp, typename _VTp >
 
 
 
-inline void __fill_a1(_Bit_iterator, _Bit_iterator, const bool &); 
+inline void __fill_a1(std::_Bit_iterator, std::_Bit_iterator, const bool &); 
 
 
 template < typename _FIte , typename _Tp > 
@@ -12443,10 +12443,10 @@ using void_pointer = void *;
 using const_void_pointer = const void *; 
 
 
-using difference_type = ptrdiff_t; 
+using difference_type = std::ptrdiff_t; 
 
 
-using size_type = size_t; 
+using size_type = std::size_t; 
 
 
 using propagate_on_container_copy_assignment = false_type; 
@@ -16676,7 +16676,7 @@ struct __is_fast_hash : public std :: true_type
 { } ;
 
 
-template<> struct __is_fast_hash< hash< long double> >  : public false_type { 
+template<> struct __is_fast_hash< hash< long double> >  : public std::false_type { 
 }; 
 
 
@@ -16727,10 +16727,10 @@ struct hash < basic_string < char32_t , char_traits < char32_t > , _Alloc > >
 
 
 
-template<> struct __is_fast_hash< hash< string> >  : public false_type { }; 
-template<> struct __is_fast_hash< hash< wstring> >  : public false_type { }; 
-template<> struct __is_fast_hash< hash< u16string> >  : public false_type { }; 
-template<> struct __is_fast_hash< hash< u32string> >  : public false_type { }; 
+template<> struct __is_fast_hash< hash< string> >  : public std::false_type { }; 
+template<> struct __is_fast_hash< hash< wstring> >  : public std::false_type { }; 
+template<> struct __is_fast_hash< hash< u16string> >  : public std::false_type { }; 
+template<> struct __is_fast_hash< hash< u32string> >  : public std::false_type { }; 
 # 4472 "/usr/include/c++/13/bits/basic_string.h" 3
 inline namespace literals { 
 
@@ -17613,29 +17613,29 @@ return __in ;
 # 969 "/usr/include/c++/13/bits/basic_string.tcc" 3
 extern template class __cxx11::basic_string< char> ;
 # 982 "/usr/include/c++/13/bits/basic_string.tcc" 3
-extern template basic_istream< char>  &operator>>(basic_istream< char>  & __is, __cxx11::basic_string< char>  & __str);
+extern template basic_istream< char>  &operator>>(basic_istream< char>  &, string &);
 
 
-extern template basic_ostream< char>  &operator<<(basic_ostream< char>  & __os, const __cxx11::basic_string< char>  & __str);
+extern template basic_ostream< char>  &operator<<(basic_ostream< char>  &, const string &);
 
 
-extern template basic_istream< char>  &getline(basic_istream< char>  & __is, __cxx11::basic_string< char>  & __str, char __delim);
+extern template basic_istream< char>  &getline(basic_istream< char>  &, string &, char);
 
 
-extern template basic_istream< char>  &getline(basic_istream< char>  & __is, __cxx11::basic_string< char>  & __str);
+extern template basic_istream< char>  &getline(basic_istream< char>  &, string &);
 # 997
 extern template class __cxx11::basic_string< wchar_t> ;
 # 1008 "/usr/include/c++/13/bits/basic_string.tcc" 3
-extern template basic_istream< wchar_t>  &operator>>(basic_istream< wchar_t>  & __is, __cxx11::basic_string< wchar_t>  & __str);
+extern template basic_istream< wchar_t>  &operator>>(basic_istream< wchar_t>  &, wstring &);
 
 
-extern template basic_ostream< wchar_t>  &operator<<(basic_ostream< wchar_t>  & __os, const __cxx11::basic_string< wchar_t>  & __str);
+extern template basic_ostream< wchar_t>  &operator<<(basic_ostream< wchar_t>  &, const wstring &);
 
 
-extern template basic_istream< wchar_t>  &getline(basic_istream< wchar_t>  & __is, __cxx11::basic_string< wchar_t>  & __str, wchar_t __delim);
+extern template basic_istream< wchar_t>  &getline(basic_istream< wchar_t>  &, wstring &, wchar_t);
 
 
-extern template basic_istream< wchar_t>  &getline(basic_istream< wchar_t>  & __is, __cxx11::basic_string< wchar_t>  & __str);
+extern template basic_istream< wchar_t>  &getline(basic_istream< wchar_t>  &, wstring &);
 # 1024
 }
 # 70 "/usr/include/c++/13/bits/stl_uninitialized.h" 3
@@ -19673,7 +19673,7 @@ __x = __y;
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-struct _Bit_iterator_base : public iterator< random_access_iterator_tag, bool>  { 
+struct _Bit_iterator_base : public std::iterator< std::random_access_iterator_tag, bool>  { 
 
 
 _Bit_type *_M_p; 
@@ -19685,7 +19685,7 @@ __attribute((__always_inline__)) void _M_assume_normalized() const
 { 
 
 unsigned __ofst = _M_offset; 
-__attribute((__assume__(__ofst < unsigned ( _S_word_bit ) ))) ; 
+__attribute((__assume__(__ofst < (unsigned)_S_word_bit))) ; 
 
 } 
 
@@ -20905,7 +20905,7 @@ __builtin_memset(__p, __x ? ~0 : 0, __n * sizeof(_Bit_type));
 
 
 
-inline void __fill_a1(_Bit_iterator __first, _Bit_iterator 
+inline void __fill_a1(std::_Bit_iterator __first, std::_Bit_iterator 
 __last, const bool &__x) 
 { 
 if (__first._M_p != __last._M_p) 
@@ -29171,7 +29171,7 @@ virtual const char *what() const noexcept;
 # 45 "/usr/include/c++/13/bits/std_function.h" 3
 namespace std __attribute((__visibility__("default"))) { 
 # 54
-class bad_function_call : public exception { 
+class bad_function_call : public std::exception { 
 
 
 public: virtual ~bad_function_call() noexcept; 
@@ -30501,7 +30501,7 @@ return userAccount;
 
 
 #if CPPTEST_USE_GLOBAL_AUTO_FINALIZER
-static __CPTR_Finalizer_176525300_800005_133839153 __CPTR_finalizer;
+static __CPTR_Finalizer_176525300_103344_64739275 __CPTR_finalizer;
 #endif
 
 

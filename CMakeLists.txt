@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.11)
 project(ATM LANGUAGES CXX VERSION "1.0.0")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-set(CPPTEST_HOME /mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct)
+set(CPPTEST_HOME /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct)
 if(CPPTEST_COVERAGE)
   include(cpptest-coverage.cmake)
 endif()

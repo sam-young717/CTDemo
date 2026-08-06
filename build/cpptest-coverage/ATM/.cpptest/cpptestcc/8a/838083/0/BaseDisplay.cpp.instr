@@ -13,14 +13,14 @@ struct __CPTR_Dummy_Type {
 
 
 
-struct __CPTR_Finalizer_2323873923_800054_133841802
+struct __CPTR_Finalizer_2323873923_103425_64745238
 {
-    __CPTR_Finalizer_2323873923_800054_133841802()
+    __CPTR_Finalizer_2323873923_103425_64745238()
     {
         cpptestAutoFinalizerConstructor();
     }
 
-    ~__CPTR_Finalizer_2323873923_800054_133841802()
+    ~__CPTR_Finalizer_2323873923_103425_64745238()
     {
         cpptestAutoFinalizerDestructor();
     }
@@ -40,10 +40,10 @@ struct __CPTR_Finalizer_2323873923_800054_133841802
 static unsigned char _coverage_code[_coverage_code_size];
 
 EXTERN_C_LINKAGE_START
-CppTestCoverageInfo __CPTR_cui_2323873923_800054_133841802 = 
+CppTestCoverageInfo __CPTR_cui_2323873923_103425_64745238 = 
 {
     /*id=*/0U,
-    /*externalId=*/{131, 128, 54, 53, 7, 0, 0, 0}, 
+    /*externalId=*/{131, 128, 1, 148, 3, 0, 0, 0}, 
     /*idAssociationWasSent=*/0,
     /*prev=*/0, 
     /*covDataUnitSize=*/_coverage_data_unit_size,
@@ -55,7 +55,7 @@ CppTestCoverageInfo __CPTR_cui_2323873923_800054_133841802 =
 };
 EXTERN_C_LINKAGE_END
 
-#define __CPTR_cui &__CPTR_cui_2323873923_800054_133841802
+#define __CPTR_cui &__CPTR_cui_2323873923_103425_64745238
 
 
 #define _cpptest_strdata_var(id, bogus) _cpptest_strdata[id]
@@ -1189,19 +1189,19 @@ struct is_null_pointer
 : public false_type { } ;
 
 
-template<> struct is_null_pointer< nullptr_t>  : public true_type { 
+template<> struct is_null_pointer< std::nullptr_t>  : public true_type { 
 }; 
 
 
-template<> struct is_null_pointer< const nullptr_t>  : public true_type { 
+template<> struct is_null_pointer< const std::nullptr_t>  : public true_type { 
 }; 
 
 
-template<> struct is_null_pointer< volatile nullptr_t>  : public true_type { 
+template<> struct is_null_pointer< volatile std::nullptr_t>  : public true_type { 
 }; 
 
 
-template<> struct is_null_pointer< const volatile nullptr_t>  : public true_type { 
+template<> struct is_null_pointer< const volatile std::nullptr_t>  : public true_type { 
 }; 
 
 
@@ -5554,10 +5554,10 @@ return __out ;
 
 
 
-extern template basic_ostream< char>  &__ostream_insert(basic_ostream< char>  & __out, const char * __s, streamsize __n);
+extern template ostream &__ostream_insert(ostream &, const char *, streamsize);
 
 
-extern template basic_ostream< wchar_t>  &__ostream_insert(basic_ostream< wchar_t>  & __out, const wchar_t * __s, streamsize __n);
+extern template wostream &__ostream_insert(wostream &, const wchar_t *, streamsize);
 # 132
 }
 # 74 "/usr/include/c++/13/bits/stl_iterator_base_types.h" 3
@@ -10517,7 +10517,7 @@ template < typename _Tp, typename _VTp >
 
 
 
-inline void __fill_a1(_Bit_iterator, _Bit_iterator, const bool &); 
+inline void __fill_a1(std::_Bit_iterator, std::_Bit_iterator, const bool &); 
 
 
 template < typename _FIte , typename _Tp > 
@@ -12443,10 +12443,10 @@ using void_pointer = void *;
 using const_void_pointer = const void *; 
 
 
-using difference_type = ptrdiff_t; 
+using difference_type = std::ptrdiff_t; 
 
 
-using size_type = size_t; 
+using size_type = std::size_t; 
 
 
 using propagate_on_container_copy_assignment = false_type; 
@@ -16676,7 +16676,7 @@ struct __is_fast_hash : public std :: true_type
 { } ;
 
 
-template<> struct __is_fast_hash< hash< long double> >  : public false_type { 
+template<> struct __is_fast_hash< hash< long double> >  : public std::false_type { 
 }; 
 
 
@@ -16727,10 +16727,10 @@ struct hash < basic_string < char32_t , char_traits < char32_t > , _Alloc > >
 
 
 
-template<> struct __is_fast_hash< hash< string> >  : public false_type { }; 
-template<> struct __is_fast_hash< hash< wstring> >  : public false_type { }; 
-template<> struct __is_fast_hash< hash< u16string> >  : public false_type { }; 
-template<> struct __is_fast_hash< hash< u32string> >  : public false_type { }; 
+template<> struct __is_fast_hash< hash< string> >  : public std::false_type { }; 
+template<> struct __is_fast_hash< hash< wstring> >  : public std::false_type { }; 
+template<> struct __is_fast_hash< hash< u16string> >  : public std::false_type { }; 
+template<> struct __is_fast_hash< hash< u32string> >  : public std::false_type { }; 
 # 4472 "/usr/include/c++/13/bits/basic_string.h" 3
 inline namespace literals { 
 
@@ -17613,29 +17613,29 @@ return __in ;
 # 969 "/usr/include/c++/13/bits/basic_string.tcc" 3
 extern template class __cxx11::basic_string< char> ;
 # 982 "/usr/include/c++/13/bits/basic_string.tcc" 3
-extern template basic_istream< char>  &operator>>(basic_istream< char>  & __is, __cxx11::basic_string< char>  & __str);
+extern template basic_istream< char>  &operator>>(basic_istream< char>  &, string &);
 
 
-extern template basic_ostream< char>  &operator<<(basic_ostream< char>  & __os, const __cxx11::basic_string< char>  & __str);
+extern template basic_ostream< char>  &operator<<(basic_ostream< char>  &, const string &);
 
 
-extern template basic_istream< char>  &getline(basic_istream< char>  & __is, __cxx11::basic_string< char>  & __str, char __delim);
+extern template basic_istream< char>  &getline(basic_istream< char>  &, string &, char);
 
 
-extern template basic_istream< char>  &getline(basic_istream< char>  & __is, __cxx11::basic_string< char>  & __str);
+extern template basic_istream< char>  &getline(basic_istream< char>  &, string &);
 # 997
 extern template class __cxx11::basic_string< wchar_t> ;
 # 1008 "/usr/include/c++/13/bits/basic_string.tcc" 3
-extern template basic_istream< wchar_t>  &operator>>(basic_istream< wchar_t>  & __is, __cxx11::basic_string< wchar_t>  & __str);
+extern template basic_istream< wchar_t>  &operator>>(basic_istream< wchar_t>  &, wstring &);
 
 
-extern template basic_ostream< wchar_t>  &operator<<(basic_ostream< wchar_t>  & __os, const __cxx11::basic_string< wchar_t>  & __str);
+extern template basic_ostream< wchar_t>  &operator<<(basic_ostream< wchar_t>  &, const wstring &);
 
 
-extern template basic_istream< wchar_t>  &getline(basic_istream< wchar_t>  & __is, __cxx11::basic_string< wchar_t>  & __str, wchar_t __delim);
+extern template basic_istream< wchar_t>  &getline(basic_istream< wchar_t>  &, wstring &, wchar_t);
 
 
-extern template basic_istream< wchar_t>  &getline(basic_istream< wchar_t>  & __is, __cxx11::basic_string< wchar_t>  & __str);
+extern template basic_istream< wchar_t>  &getline(basic_istream< wchar_t>  &, wstring &);
 # 1024
 }
 # 6 "/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/BaseDisplay.hxx"
@@ -19692,7 +19692,7 @@ __x = __y;
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-struct _Bit_iterator_base : public iterator< random_access_iterator_tag, bool>  { 
+struct _Bit_iterator_base : public std::iterator< std::random_access_iterator_tag, bool>  { 
 
 
 _Bit_type *_M_p; 
@@ -19704,7 +19704,7 @@ __attribute((__always_inline__)) void _M_assume_normalized() const
 { 
 
 unsigned __ofst = _M_offset; 
-__attribute((__assume__(__ofst < unsigned ( _S_word_bit ) ))) ; 
+__attribute((__assume__(__ofst < (unsigned)_S_word_bit))) ; 
 
 } 
 
@@ -20924,7 +20924,7 @@ __builtin_memset(__p, __x ? ~0 : 0, __n * sizeof(_Bit_type));
 
 
 
-inline void __fill_a1(_Bit_iterator __first, _Bit_iterator 
+inline void __fill_a1(std::_Bit_iterator __first, std::_Bit_iterator 
 __last, const bool &__x) 
 { 
 if (__first._M_p != __last._M_p) 
@@ -22311,7 +22311,7 @@ friend inline bool operator!=(const exception_ptr &__x, const exception_ptr &__y
 
 
 
-const type_info *__cxa_exception_type() const noexcept __attribute((__pure__)); 
+const std::type_info *__cxa_exception_type() const noexcept __attribute((__pure__)); 
 
 }; 
 
@@ -23672,9 +23672,9 @@ explicit locale(const char * __s);
 # 155 "/usr/include/c++/13/bits/locale_classes.h" 3
 locale(const locale & __base, const char * __s, category __cat); 
 # 167 "/usr/include/c++/13/bits/locale_classes.h" 3
-explicit locale(const string &__s) : locale(__s.c_str()) { } 
+explicit locale(const std::string &__s) : locale(__s.c_str()) { } 
 # 181 "/usr/include/c++/13/bits/locale_classes.h" 3
-locale(const locale &__base, const string &__s, category __cat) : locale(__base, __s.c_str(), __cat) 
+locale(const locale &__base, const std::string &__s, category __cat) : locale(__base, __s.c_str(), __cat) 
 { } 
 # 196 "/usr/include/c++/13/bits/locale_classes.h" 3
 locale(const locale & __base, const locale & __add, category __cat); 
@@ -23749,7 +23749,7 @@ class locale::facet {
 
 
 friend class locale; 
-friend class _Impl; 
+friend class locale::_Impl; 
 
 mutable _Atomic_word _M_refcount; 
 
@@ -23831,7 +23831,7 @@ class locale::id {
 
 
 friend class locale; 
-friend class _Impl; 
+friend class locale::_Impl; 
 
 template < typename _Facet >
       friend const _Facet &
@@ -23871,7 +23871,7 @@ class locale::_Impl {
 
 
 friend class locale; 
-friend class facet; 
+friend class locale::facet; 
 
 template < typename _Facet >
       friend bool
@@ -23895,13 +23895,13 @@ const facet **_M_facets;
 size_t _M_facets_size; 
 const facet **_M_caches; 
 char **_M_names; 
-static const id *const _S_id_ctype[]; 
-static const id *const _S_id_numeric[]; 
-static const id *const _S_id_collate[]; 
-static const id *const _S_id_time[]; 
-static const id *const _S_id_monetary[]; 
-static const id *const _S_id_messages[]; 
-static const id *const *const _S_facet_categories[]; 
+static const locale::id *const _S_id_ctype[]; 
+static const locale::id *const _S_id_numeric[]; 
+static const locale::id *const _S_id_collate[]; 
+static const locale::id *const _S_id_time[]; 
+static const locale::id *const _S_id_monetary[]; 
+static const locale::id *const _S_id_messages[]; 
+static const locale::id *const *const _S_facet_categories[]; 
 
 
 void _M_add_reference() throw() 
@@ -23948,13 +23948,13 @@ return __ret;
 void _M_replace_categories(const _Impl *, category); 
 
 
-void _M_replace_category(const _Impl *, const id *const *); 
+void _M_replace_category(const _Impl *, const locale::id *const *); 
 
 
-void _M_replace_facet(const _Impl *, const id *); 
+void _M_replace_facet(const _Impl *, const locale::id *); 
 
 
-void _M_install_facet(const id *, const facet *); 
+void _M_install_facet(const locale::id *, const facet *); 
 
 template < typename _Facet > 
 void 
@@ -24377,7 +24377,7 @@ extern template const __cxx11::collate< char>  &use_facet< __cxx11::collate< cha
 
 
 
-extern template bool has_facet< __cxx11::collate< char> > (const locale &) throw();
+extern template bool has_facet< __cxx11::collate< char> > (const locale &);
 
 
 
@@ -24393,7 +24393,7 @@ extern template const __cxx11::collate< wchar_t>  &use_facet< __cxx11::collate< 
 
 
 
-extern template bool has_facet< __cxx11::collate< wchar_t> > (const locale &) throw();
+extern template bool has_facet< __cxx11::collate< wchar_t> > (const locale &);
 # 365
 }
 # 36 "/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h" 3
@@ -24551,7 +24551,7 @@ char _M_bytes[sizeof(const char *)];
 }; 
 
 __cow_string(); 
-__cow_string(const string &); 
+__cow_string(const std::string &); 
 __cow_string(const char *, size_t); 
 __cow_string(const __cow_string &) noexcept; 
 __cow_string &operator=(const __cow_string &) noexcept; 
@@ -25022,7 +25022,7 @@ inline bool operator!=(const error_condition &__lhs, const error_condition &
 __rhs) noexcept 
 { return !((__lhs == __rhs)); } 
 # 556 "/usr/include/c++/13/system_error" 3
-class system_error : public runtime_error { 
+class system_error : public std::runtime_error { 
 
 
 error_code _M_code; 
@@ -25421,11 +25421,11 @@ struct _Callback_list {
 
 
 _Callback_list *_M_next; 
-event_callback _M_fn; 
+ios_base::event_callback _M_fn; 
 int _M_index; 
 _Atomic_word _M_refcount; 
 
-_Callback_list(event_callback __fn, int __index, _Callback_list *
+_Callback_list(ios_base::event_callback __fn, int __index, _Callback_list *
 __cb) : _M_next(__cb), _M_fn(__fn), _M_index(__index), _M_refcount(0) 
 { } 
 
@@ -26281,11 +26281,11 @@ return __copy_streambufs_eof (__sbin , __sbout , __ineof) ;
 
 extern template class basic_streambuf< char> ;
 
-extern template streamsize __copy_streambufs(basic_streambuf< char>  * __sbin, basic_streambuf< char>  * __sbout);
+extern template streamsize __copy_streambufs(basic_streambuf< char>  *, basic_streambuf< char>  *);
 # 157
 extern template class basic_streambuf< wchar_t> ;
 
-extern template streamsize __copy_streambufs(basic_streambuf< wchar_t>  * __sbin, basic_streambuf< wchar_t>  * __sbout);
+extern template streamsize __copy_streambufs(basic_streambuf< wchar_t>  *, basic_streambuf< wchar_t>  *);
 # 167
 }
 # 38 "/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h" 3
@@ -29327,19 +29327,19 @@ extern template const num_get< char>  &use_facet< num_get< char> > (const locale
 
 
 
-extern template bool has_facet< ctype< char> > (const locale &) throw();
+extern template bool has_facet< ctype< char> > (const locale &);
 
 
 
-extern template bool has_facet< __cxx11::numpunct< char> > (const locale &) throw();
+extern template bool has_facet< __cxx11::numpunct< char> > (const locale &);
 
 
 
-extern template bool has_facet< num_put< char> > (const locale &) throw();
+extern template bool has_facet< num_put< char> > (const locale &);
 
 
 
-extern template bool has_facet< num_get< char> > (const locale &) throw();
+extern template bool has_facet< num_get< char> > (const locale &);
 
 
 
@@ -29382,19 +29382,19 @@ extern template const num_get< wchar_t>  &use_facet< num_get< wchar_t> > (const 
 
 
 
-extern template bool has_facet< ctype< wchar_t> > (const locale &) throw();
+extern template bool has_facet< ctype< wchar_t> > (const locale &);
 
 
 
-extern template bool has_facet< __cxx11::numpunct< wchar_t> > (const locale &) throw();
+extern template bool has_facet< __cxx11::numpunct< wchar_t> > (const locale &);
 
 
 
-extern template bool has_facet< num_put< wchar_t> > (const locale &) throw();
+extern template bool has_facet< num_put< wchar_t> > (const locale &);
 
 
 
-extern template bool has_facet< num_get< wchar_t> > (const locale &) throw();
+extern template bool has_facet< num_get< wchar_t> > (const locale &);
 # 1434
 }
 # 41 "/usr/include/c++/13/bits/basic_ios.h" 3
@@ -29933,19 +29933,28 @@ _M_write (const char_type * __s , streamsize __n)
 
 } ;
 # 479 "/usr/include/c++/13/ostream" 3
-template< class _CharT, class _Traits> 
-class basic_ostream< _CharT, _Traits> ::sentry { 
+template < typename _CharT, typename _Traits >
+    class basic_ostream < _CharT, _Traits > :: sentry
+    {
 
+      bool _M_ok;
+      basic_ostream < _CharT, _Traits > & _M_os;
 
-bool _M_ok; 
-basic_ostream &_M_os; 
-# 499 "/usr/include/c++/13/ostream" 3
-public: explicit sentry(basic_ostream & __os); 
+    public :
+
+      explicit
+      sentry ( basic_ostream < _CharT, _Traits > & __os );
 
 #pragma GCC diagnostic push
 #pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-# 510
-~sentry() 
+
+
+
+
+
+
+
+      ~ sentry ( )
       {
 
  if ( bool ( _M_os . flags ( ) & ios_base :: unitbuf ) && ! uncaught_exception ( ) )
@@ -29955,13 +29964,13 @@ public: explicit sentry(basic_ostream & __os);
        _M_os . setstate ( ios_base :: badbit );
    }
       }
-# 520
 #pragma GCC diagnostic pop
-# 532 "/usr/include/c++/13/ostream" 3
-explicit operator bool() const 
-      { return _M_ok; }
 
-}; 
+      explicit
+
+      operator bool ( ) const
+      { return _M_ok; }
+    };
 # 552 "/usr/include/c++/13/ostream" 3
 template < typename _CharT , typename _Traits > 
 inline basic_ostream < _CharT , _Traits > & 
@@ -30366,47 +30375,47 @@ return __out ;
 
 
 extern template class basic_ostream< char> ;
-extern template basic_ostream< char>  &endl(basic_ostream< char>  & __os);
-extern template basic_ostream< char>  &ends(basic_ostream< char>  & __os);
-extern template basic_ostream< char>  &flush(basic_ostream< char>  & __os);
-extern template basic_ostream< char>  &operator<<(basic_ostream< char>  & __out, char __c);
-extern template basic_ostream< char>  &operator<<(basic_ostream< char>  & __out, unsigned char __c);
-extern template basic_ostream< char>  &operator<<(basic_ostream< char>  & __out, signed char __c);
-extern template basic_ostream< char>  &operator<<(basic_ostream< char>  & __out, const char * __s);
-extern template basic_ostream< char>  &operator<<(basic_ostream< char>  & __out, const unsigned char * __s);
-extern template basic_ostream< char>  &operator<<(basic_ostream< char>  & __out, const signed char * __s);
+extern template ostream &endl(ostream &);
+extern template ostream &ends(ostream &);
+extern template ostream &flush(ostream &);
+extern template ostream &operator<<(ostream &, char);
+extern template ostream &operator<<(ostream &, unsigned char);
+extern template ostream &operator<<(ostream &, signed char);
+extern template ostream &operator<<(ostream &, const char *);
+extern template ostream &operator<<(ostream &, const unsigned char *);
+extern template ostream &operator<<(ostream &, const signed char *);
 
-extern template basic_ostream< char> ::__ostream_type &basic_ostream< char> ::_M_insert(long __v);
-extern template basic_ostream< char> ::__ostream_type &basic_ostream< char> ::_M_insert(unsigned long __v);
-extern template basic_ostream< char> ::__ostream_type &basic_ostream< char> ::_M_insert(bool __v);
+extern template ostream &basic_ostream< char> ::_M_insert(long);
+extern template ostream &basic_ostream< char> ::_M_insert(unsigned long);
+extern template ostream &basic_ostream< char> ::_M_insert(bool);
 
-extern template basic_ostream< char> ::__ostream_type &basic_ostream< char> ::_M_insert(long long __v);
-extern template basic_ostream< char> ::__ostream_type &basic_ostream< char> ::_M_insert(unsigned long long __v);
+extern template ostream &basic_ostream< char> ::_M_insert(long long);
+extern template ostream &basic_ostream< char> ::_M_insert(unsigned long long);
 
-extern template basic_ostream< char> ::__ostream_type &basic_ostream< char> ::_M_insert(double __v);
-extern template basic_ostream< char> ::__ostream_type &basic_ostream< char> ::_M_insert(long double __v);
-extern template basic_ostream< char> ::__ostream_type &basic_ostream< char> ::_M_insert(const void * __v);
+extern template ostream &basic_ostream< char> ::_M_insert(double);
+extern template ostream &basic_ostream< char> ::_M_insert(long double);
+extern template ostream &basic_ostream< char> ::_M_insert(const void *);
 
 
 extern template class basic_ostream< wchar_t> ;
-extern template basic_ostream< wchar_t>  &endl(basic_ostream< wchar_t>  & __os);
-extern template basic_ostream< wchar_t>  &ends(basic_ostream< wchar_t>  & __os);
-extern template basic_ostream< wchar_t>  &flush(basic_ostream< wchar_t>  & __os);
-extern template basic_ostream< wchar_t>  &operator<<(basic_ostream< wchar_t>  & __out, wchar_t __c);
-extern template basic_ostream< wchar_t>  &operator<<(basic_ostream< wchar_t>  & __out, char __c);
-extern template basic_ostream< wchar_t>  &operator<<(basic_ostream< wchar_t>  & __out, const wchar_t * __s);
-extern template basic_ostream< wchar_t>  &operator<<(basic_ostream< wchar_t>  & __out, const char * __s);
+extern template wostream &endl(wostream &);
+extern template wostream &ends(wostream &);
+extern template wostream &flush(wostream &);
+extern template wostream &operator<<(wostream &, wchar_t);
+extern template wostream &operator<<(wostream &, char);
+extern template wostream &operator<<(wostream &, const wchar_t *);
+extern template wostream &operator<<(wostream &, const char *);
 
-extern template basic_ostream< wchar_t> ::__ostream_type &basic_ostream< wchar_t> ::_M_insert(long __v);
-extern template basic_ostream< wchar_t> ::__ostream_type &basic_ostream< wchar_t> ::_M_insert(unsigned long __v);
-extern template basic_ostream< wchar_t> ::__ostream_type &basic_ostream< wchar_t> ::_M_insert(bool __v);
+extern template wostream &basic_ostream< wchar_t> ::_M_insert(long);
+extern template wostream &basic_ostream< wchar_t> ::_M_insert(unsigned long);
+extern template wostream &basic_ostream< wchar_t> ::_M_insert(bool);
 
-extern template basic_ostream< wchar_t> ::__ostream_type &basic_ostream< wchar_t> ::_M_insert(long long __v);
-extern template basic_ostream< wchar_t> ::__ostream_type &basic_ostream< wchar_t> ::_M_insert(unsigned long long __v);
+extern template wostream &basic_ostream< wchar_t> ::_M_insert(long long);
+extern template wostream &basic_ostream< wchar_t> ::_M_insert(unsigned long long);
 
-extern template basic_ostream< wchar_t> ::__ostream_type &basic_ostream< wchar_t> ::_M_insert(double __v);
-extern template basic_ostream< wchar_t> ::__ostream_type &basic_ostream< wchar_t> ::_M_insert(long double __v);
-extern template basic_ostream< wchar_t> ::__ostream_type &basic_ostream< wchar_t> ::_M_insert(const void * __v);
+extern template wostream &basic_ostream< wchar_t> ::_M_insert(double);
+extern template wostream &basic_ostream< wchar_t> ::_M_insert(long double);
+extern template wostream &basic_ostream< wchar_t> ::_M_insert(const void *);
 
 
 
@@ -30656,26 +30665,28 @@ template<> basic_istream< wchar_t>  &basic_istream< wchar_t> ::ignore(streamsize
 
 template<> basic_istream< wchar_t>  &basic_istream< wchar_t> ::ignore(streamsize __n, int_type __delim); 
 # 775 "/usr/include/c++/13/istream" 3
-template< class _CharT, class _Traits> 
-class basic_istream< _CharT, _Traits> ::sentry { 
+template < typename _CharT, typename _Traits >
+    class basic_istream < _CharT, _Traits > :: sentry
+    {
 
+      bool _M_ok;
 
-bool _M_ok; 
+    public :
 
+      typedef _Traits traits_type;
+      typedef basic_streambuf < _CharT, _Traits > __streambuf_type;
+      typedef basic_istream < _CharT, _Traits > __istream_type;
+      typedef typename __istream_type :: __ctype_type __ctype_type;
+      typedef typename _Traits :: int_type __int_type;
 
+      explicit
+      sentry ( basic_istream < _CharT, _Traits > & __is, bool __noskipws = false );
 
-public: typedef _Traits traits_type; 
-typedef basic_streambuf< _CharT, _Traits>  __streambuf_type; 
-typedef basic_istream __istream_type; 
-typedef typename basic_istream< _CharT, _Traits> ::__ctype_type __ctype_type; 
-typedef typename _Traits::int_type __int_type; 
-# 812 "/usr/include/c++/13/istream" 3
-explicit sentry(basic_istream & __is, bool __noskipws = false); 
-# 824 "/usr/include/c++/13/istream" 3
-explicit operator bool() const 
+      explicit
+
+      operator bool ( ) const
       { return _M_ok; }
-
-}; 
+    };
 # 840 "/usr/include/c++/13/istream" 3
 template < typename _CharT, typename _Traits >
     basic_istream < _CharT, _Traits > &
@@ -31877,46 +31888,46 @@ return __in ;
 
 
 extern template class basic_istream< char> ;
-extern template basic_istream< char>  &ws(basic_istream< char>  & __is);
-extern template basic_istream< char>  &operator>>(basic_istream< char>  & __in, char & __c);
-extern template basic_istream< char>  &operator>>(basic_istream< char>  & __in, unsigned char & __c);
-extern template basic_istream< char>  &operator>>(basic_istream< char>  & __in, signed char & __c);
+extern template istream &ws(istream &);
+extern template istream &operator>>(istream &, char &);
+extern template istream &operator>>(istream &, unsigned char &);
+extern template istream &operator>>(istream &, signed char &);
 
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(unsigned short & __v);
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(unsigned & __v);
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(long & __v);
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(unsigned long & __v);
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(bool & __v);
+extern template istream &basic_istream< char> ::_M_extract(unsigned short &);
+extern template istream &basic_istream< char> ::_M_extract(unsigned &);
+extern template istream &basic_istream< char> ::_M_extract(long &);
+extern template istream &basic_istream< char> ::_M_extract(unsigned long &);
+extern template istream &basic_istream< char> ::_M_extract(bool &);
 
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(long long & __v);
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(unsigned long long & __v);
+extern template istream &basic_istream< char> ::_M_extract(long long &);
+extern template istream &basic_istream< char> ::_M_extract(unsigned long long &);
 
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(float & __v);
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(double & __v);
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(long double & __v);
-extern template basic_istream< char> ::__istream_type &basic_istream< char> ::_M_extract(void *& __v);
+extern template istream &basic_istream< char> ::_M_extract(float &);
+extern template istream &basic_istream< char> ::_M_extract(double &);
+extern template istream &basic_istream< char> ::_M_extract(long double &);
+extern template istream &basic_istream< char> ::_M_extract(void *&);
 
 extern template class basic_iostream< char> ;
 
 
 extern template class basic_istream< wchar_t> ;
-extern template basic_istream< wchar_t>  &ws(basic_istream< wchar_t>  & __is);
-extern template basic_istream< wchar_t>  &operator>>(basic_istream< wchar_t>  & __in, wchar_t & __c);
-extern template void __istream_extract(basic_istream< wchar_t>  &, wchar_t *, streamsize);
+extern template wistream &ws(wistream &);
+extern template wistream &operator>>(wistream &, wchar_t &);
+extern template void __istream_extract(wistream &, wchar_t *, streamsize);
 
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(unsigned short & __v);
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(unsigned & __v);
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(long & __v);
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(unsigned long & __v);
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(bool & __v);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(unsigned short &);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(unsigned &);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(long &);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(unsigned long &);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(bool &);
 
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(long long & __v);
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(unsigned long long & __v);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(long long &);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(unsigned long long &);
 
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(float & __v);
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(double & __v);
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(long double & __v);
-extern template basic_istream< wchar_t> ::__istream_type &basic_istream< wchar_t> ::_M_extract(void *& __v);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(float &);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(double &);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(long double &);
+extern template wistream &basic_istream< wchar_t> ::_M_extract(void *&);
 
 extern template class basic_iostream< wchar_t> ;
 
@@ -31988,7 +31999,7 @@ break;
 
 
 #if CPPTEST_USE_GLOBAL_AUTO_FINALIZER
-static __CPTR_Finalizer_2323873923_800054_133841802 __CPTR_finalizer;
+static __CPTR_Finalizer_2323873923_103425_64745238 __CPTR_finalizer;
 #endif
 
 

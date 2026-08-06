@@ -67,7 +67,7 @@ include CMakeFiles/cpptestcov-suppress.dir/compiler_depend.make
 include CMakeFiles/cpptestcov-suppress.dir/progress.make
 
 CMakeFiles/cpptestcov-suppress:
-	/mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/bin/cpptestcov suppress /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage
+	/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/bin/cpptestcov suppress /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/.coverage
 
 cpptestcov-suppress: CMakeFiles/cpptestcov-suppress
 cpptestcov-suppress: CMakeFiles/cpptestcov-suppress.dir/build.make
