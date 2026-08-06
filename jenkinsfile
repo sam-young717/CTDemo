@@ -14,12 +14,14 @@ pipeline {
             }
         }
 
-        stage('Publishing Test Execution Results') {
+        stage('Publishing Code Coverage Results') {
             steps {
-                xunit (
-                    tools: [[$class: 'ParasoftType', pattern: '**/report.xml']]   
+                recordParasoftCoverage (
+                    pattern: '**/coverage.xml',
+                    referenceBuild: '20',
+                    referenceJob: 'CT',
+                    sourceCodeEncoding: 'UTF-8'
                 )
             }
-        }
     }
 }
