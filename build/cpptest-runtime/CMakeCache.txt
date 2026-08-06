@@ -205,6 +205,9 @@ CPPTEST_FLUSH_DATA_IMMEDIATELY:STRING=0
 // gethostbyname function to be present
 CPPTEST_GETHOSTBYNAME_ENABLED:STRING=1
 
+//Add PID to results file name
+CPPTEST_INSERT_PID_IN_LOG_FILE_NAME:STRING=0
+
 //Enable internal communication channel buffering
 CPPTEST_INTERNAL_BUFFER:STRING=0
 
@@ -230,7 +233,7 @@ CPPTEST_LOG_SOCKET_PORT:STRING=2345
 CPPTEST_MAX_ALLOWED_NUMBER_OF_BYTES_PER_FILE:STRING=2000000000
 
 //Put test executable PID in log file
-CPPTEST_MULTI_PROCESSES_LOG:STRING=0
+CPPTEST_MULTI_PROCESSES_LOG:STRING=1
 
 //Transmission baud rate
 CPPTEST_RS232_BAUD_RATE:STRING=B19200
@@ -250,6 +253,15 @@ CPPTEST_RS232_STOP_BIT:STRING=0
 //Transmission timeout value
 CPPTEST_RS232_TIMEOUT:STRING=3600000
 
+//Build object
+CPPTEST_RUNTIME_OBJECT:BOOL=ON
+
+//Build shared library
+CPPTEST_RUNTIME_SHARED:BOOL=ON
+
+//Build static library
+CPPTEST_RUNTIME_STATIC:BOOL=ON
+
 //Enable runtime library support for multithreaded applications
 CPPTEST_THREADS:STRING=auto
 
@@ -260,7 +272,7 @@ cpptest_BINARY_DIR:STATIC=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/
 cpptest_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-cpptest_SOURCE_DIR:STATIC=/mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/runtime
+cpptest_SOURCE_DIR:STATIC=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/runtime
 
 
 ########################
@@ -333,7 +345,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/runtime
+CMAKE_HOME_DIRECTORY:INTERNAL=/mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/runtime
 //Install .so files without execute permission.
 CMAKE_INSTALL_SO_NO_EXE:INTERNAL=1
 //ADVANCED property for variable: CMAKE_LINKER
@@ -404,6 +416,10 @@ CPPTEST_COMMUNICATION-STRINGS:INTERNAL=CPPTEST_NULL_COMMUNICATION;CPPTEST_FILE_C
 CPPTEST_THREADS-STRINGS:INTERNAL=auto;CPPTEST_NO_THREADS;CPPTEST_UNIX_THREADS;CPPTEST_WINDOWS_THREADS;CPPTEST_VXWORKS_THREADS;CPPTEST_CUSTOM_THREADS
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//Have symbol GetCurrentProcessId
+HAVE_GETCURRENTPROCESSID:INTERNAL=
+//Have symbol getpid
+HAVE_GETPID:INTERNAL=1
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

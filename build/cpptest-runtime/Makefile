@@ -57,7 +57,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/runtime
+CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/runtime
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime
@@ -84,51 +84,6 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -175,19 +130,6 @@ cpptest_lib/fast:
 .PHONY : cpptest_lib/fast
 
 #=============================================================================
-# Target rules for targets named cpptest_shared
-
-# Build rule for target.
-cpptest_shared: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpptest_shared
-.PHONY : cpptest_shared
-
-# fast build rule for target.
-cpptest_shared/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/build
-.PHONY : cpptest_shared/fast
-
-#=============================================================================
 # Target rules for targets named cpptest_static
 
 # Build rule for target.
@@ -200,14 +142,27 @@ cpptest_static/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_static.dir/build.make CMakeFiles/cpptest_static.dir/build
 .PHONY : cpptest_static/fast
 
+#=============================================================================
+# Target rules for targets named cpptest_shared
+
+# Build rule for target.
+cpptest_shared: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cpptest_shared
+.PHONY : cpptest_shared
+
+# fast build rule for target.
+cpptest_shared/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/build
+.PHONY : cpptest_shared/fast
+
 src/cpptest.o: src/cpptest.c.o
 .PHONY : src/cpptest.o
 
 # target to build an object file
 src/cpptest.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_lib.dir/build.make CMakeFiles/cpptest_lib.dir/src/cpptest.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/src/cpptest.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_static.dir/build.make CMakeFiles/cpptest_static.dir/src/cpptest.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/src/cpptest.c.o
 .PHONY : src/cpptest.c.o
 
 src/cpptest.i: src/cpptest.c.i
@@ -216,8 +171,8 @@ src/cpptest.i: src/cpptest.c.i
 # target to preprocess a source file
 src/cpptest.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_lib.dir/build.make CMakeFiles/cpptest_lib.dir/src/cpptest.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/src/cpptest.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_static.dir/build.make CMakeFiles/cpptest_static.dir/src/cpptest.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/src/cpptest.c.i
 .PHONY : src/cpptest.c.i
 
 src/cpptest.s: src/cpptest.c.s
@@ -226,8 +181,8 @@ src/cpptest.s: src/cpptest.c.s
 # target to generate assembly for a file
 src/cpptest.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_lib.dir/build.make CMakeFiles/cpptest_lib.dir/src/cpptest.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/src/cpptest.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_static.dir/build.make CMakeFiles/cpptest_static.dir/src/cpptest.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/src/cpptest.c.s
 .PHONY : src/cpptest.c.s
 
 # Help Target
@@ -237,10 +192,6 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... cpptest_lib"
 	@echo "... cpptest_shared"

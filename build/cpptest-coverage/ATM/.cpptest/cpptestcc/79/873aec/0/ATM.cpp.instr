@@ -13,14 +13,14 @@ struct __CPTR_Dummy_Type {
 
 
 
-struct __CPTR_Finalizer_2038905580_103310_64734318
+struct __CPTR_Finalizer_2038905580_119916_67069181
 {
-    __CPTR_Finalizer_2038905580_103310_64734318()
+    __CPTR_Finalizer_2038905580_119916_67069181()
     {
         cpptestAutoFinalizerConstructor();
     }
 
-    ~__CPTR_Finalizer_2038905580_103310_64734318()
+    ~__CPTR_Finalizer_2038905580_119916_67069181()
     {
         cpptestAutoFinalizerDestructor();
     }
@@ -40,10 +40,10 @@ struct __CPTR_Finalizer_2038905580_103310_64734318
 static unsigned char _coverage_code[_coverage_code_size];
 
 EXTERN_C_LINKAGE_START
-CppTestCoverageInfo __CPTR_cui_2038905580_103310_64734318 = 
+CppTestCoverageInfo __CPTR_cui_2038905580_119916_67069181 = 
 {
     /*id=*/0U,
-    /*externalId=*/{236, 58, 142, 147, 3, 0, 0, 0}, 
+    /*externalId=*/{236, 58, 108, 212, 3, 0, 0, 0}, 
     /*idAssociationWasSent=*/0,
     /*prev=*/0, 
     /*covDataUnitSize=*/_coverage_data_unit_size,
@@ -55,7 +55,7 @@ CppTestCoverageInfo __CPTR_cui_2038905580_103310_64734318 =
 };
 EXTERN_C_LINKAGE_END
 
-#define __CPTR_cui &__CPTR_cui_2038905580_103310_64734318
+#define __CPTR_cui &__CPTR_cui_2038905580_119916_67069181
 
 
 #define _cpptest_strdata_var(id, bogus) _cpptest_strdata[id]
@@ -129,7 +129,7 @@ parsing_counter++;
 
 
 #if CPPTEST_USE_GLOBAL_AUTO_FINALIZER
-static __CPTR_Finalizer_2038905580_103310_64734318 __CPTR_finalizer;
+static __CPTR_Finalizer_2038905580_119916_67069181 __CPTR_finalizer;
 #endif
 
 

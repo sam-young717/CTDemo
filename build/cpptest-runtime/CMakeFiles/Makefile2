@@ -54,7 +54,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/runtime
+CMAKE_SOURCE_DIR = /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/runtime
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime
@@ -64,8 +64,8 @@ CMAKE_BINARY_DIR = /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/C
 
 # The main recursive "all" target.
 all: CMakeFiles/cpptest_lib.dir/all
-all: CMakeFiles/cpptest_shared.dir/all
 all: CMakeFiles/cpptest_static.dir/all
+all: CMakeFiles/cpptest_shared.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,8 +74,8 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/cpptest_lib.dir/clean
-clean: CMakeFiles/cpptest_shared.dir/clean
 clean: CMakeFiles/cpptest_static.dir/clean
+clean: CMakeFiles/cpptest_shared.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -105,32 +105,6 @@ CMakeFiles/cpptest_lib.dir/clean:
 .PHONY : CMakeFiles/cpptest_lib.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cpptest_shared.dir
-
-# All Build rule for target.
-CMakeFiles/cpptest_shared.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime/CMakeFiles --progress-num=2,3 "Built target cpptest_shared"
-.PHONY : CMakeFiles/cpptest_shared.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/cpptest_shared.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpptest_shared.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime/CMakeFiles 0
-.PHONY : CMakeFiles/cpptest_shared.dir/rule
-
-# Convenience name for target.
-cpptest_shared: CMakeFiles/cpptest_shared.dir/rule
-.PHONY : cpptest_shared
-
-# clean rule for target.
-CMakeFiles/cpptest_shared.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/clean
-.PHONY : CMakeFiles/cpptest_shared.dir/clean
-
-#=============================================================================
 # Target rules for target CMakeFiles/cpptest_static.dir
 
 # All Build rule for target.
@@ -155,6 +129,32 @@ cpptest_static: CMakeFiles/cpptest_static.dir/rule
 CMakeFiles/cpptest_static.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_static.dir/build.make CMakeFiles/cpptest_static.dir/clean
 .PHONY : CMakeFiles/cpptest_static.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/cpptest_shared.dir
+
+# All Build rule for target.
+CMakeFiles/cpptest_shared.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime/CMakeFiles --progress-num=2,3 "Built target cpptest_shared"
+.PHONY : CMakeFiles/cpptest_shared.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/cpptest_shared.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cpptest_shared.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime/CMakeFiles 0
+.PHONY : CMakeFiles/cpptest_shared.dir/rule
+
+# Convenience name for target.
+cpptest_shared: CMakeFiles/cpptest_shared.dir/rule
+.PHONY : cpptest_shared
+
+# clean rule for target.
+CMakeFiles/cpptest_shared.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpptest_shared.dir/build.make CMakeFiles/cpptest_shared.dir/clean
+.PHONY : CMakeFiles/cpptest_shared.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

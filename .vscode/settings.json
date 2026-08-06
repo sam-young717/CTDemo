@@ -54,5 +54,12 @@
         }
     },
     "cpptest.reportLocation": "${workspaceFolder}/reports",
-    "cpptest.compilerIdentifier": "gcc_11-64"
+    "cpptest.compilerIdentifier": "gcc_11-64",
+    "python-envs.pythonProjects": [
+        {
+            "path": "Testing/Temporary",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
 }

@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/syoung/Documents/ToolRawDownloads/cpptestct/cpptest-ct/runtime
+# Install script for directory: /mnt/c/Users/syoung/Documents/Solutions/Linux/2026.1/CT/cpptest-ct/runtime
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,33 +40,6 @@ endif()
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
   set(CMAKE_OBJDUMP "/usr/bin/objdump")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/objects/cpptest_lib" TYPE FILE FILES "src/cpptest.c.o" FILES_FROM_DIR "/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime/CMakeFiles/cpptest_lib.dir/")
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcpptest_shared.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcpptest_shared.so")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcpptest_shared.so"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime/libcpptest_shared.so")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcpptest_shared.so" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcpptest_shared.so")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libcpptest_shared.so")
-    endif()
-  endif()
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/mnt/c/Users/syoung/Documents/RunnerCT/actions-runner/_work/CTDemo/CTDemo/build/cpptest-runtime/libcpptest_static.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
