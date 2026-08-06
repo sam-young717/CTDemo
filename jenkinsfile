@@ -21,14 +21,21 @@ pipeline {
                 )
             }
         }
-        
+
         stage('Publishing Code Coverage Results') {
             steps {
                 recordParasoftCoverage (
                     pattern: '**/coverage.xml',
                     referenceBuild: '20',
                     referenceJob: 'CT',
-                    sourceCodeEncoding: 'UTF-8'
+                    sourceCodeEncoding: 'UTF-8',
+                    coverageQualityGates: [
+                        [
+                            criticality: 'NOTE',
+                            threshold: 60.0,
+                            type: 'PROJECT'
+                        ]
+                    ]
                 )
             }
         }
